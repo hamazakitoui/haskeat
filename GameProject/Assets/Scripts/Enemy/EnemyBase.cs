@@ -81,6 +81,20 @@ public class EnemyBase : MonoBehaviour
     {
         get { return moveSpeed; }
     }
+    /// <summary> プレイヤー発見 </summary>
+    /// <param name="value">発見フラグ</param>
+    public void SetFoundPlayer(bool value)
+    {
+        foundPlayer = value; // 発見フラグ更新
+        // 発見したら
+        if (foundPlayer)
+        {
+            UnityEngine.AI.NavMeshAgent agent = GetComponent<UnityEngine.AI.NavMeshAgent>(); // ナビ取得
+            agent.SetDestination(playerPos.position); // プレイヤー位置に向かって移動
+            agent.nextPosition = transform.position;
+            agent.speed = nowMoveSpeed; // 移動速度設定
+        }
+    }
     /// <summary> プレイヤーセッター </summary>
     public Transform SetPlayer { set { playerPos = value; } }
 }

@@ -7,9 +7,12 @@ using UnityEngine.AI;
 public class SecurityGuard : EnemyBase, IEnemy
 {
     int moveIndex = 0; // 移動番号
-    bool returnMove = false; // 移動フラグ
+    float foundDelta = 0.0f;
+    // 移動フラグ、見失いフラグ
+    bool returnMove = false, lostFlag = false;
     NavMeshAgent agent;
-    [SerializeField] float foundRad = 30.0f; // 発見角度
+    // 発見角度、見失う時間
+    [SerializeField] float foundRad = 30.0f, lostSpan = 3.0f;
     [SerializeField] bool isAround = false; // 周回移動
     [SerializeField] Vector3[] movePoints; // 移動先リスト
     // Start is called before the first frame update
@@ -23,6 +26,7 @@ public class SecurityGuard : EnemyBase, IEnemy
             agent.updateUpAxis = false;
             agent.isStopped = false;
         }
+        playerPos = GameObject.FindGameObjectWithTag(Dictionary.PLAYER_TAG).transform;
         // 関数登録
         handler += PlayerFound;
     }
@@ -43,7 +47,24 @@ public class SecurityGuard : EnemyBase, IEnemy
         // 視認範囲を計算
         float r = Mathf.Acos(Vector3.Dot
             (transform.localScale.x > 0 ? Vector3.right : Vector3.left, dir.normalized)) * Mathf.Rad2Deg;
+        bool temp = foundPlayer; // 一時保存
         foundPlayer = r < foundRad && dir.magnitude < sight; // 発見かどうか更新
+        if (temp && !foundPlayer)
+        {
+            foundPlayer = true;
+            lostFlag = true;
+        }
+        // 見失い中なら
+        if (lostFlag)
+        {
+            foundDelta += Time.deltaTime;
+            if (foundDelta >= lostSpan)
+            {
+                foundPlayer = false;
+                lostFlag = false;
+                foundDelta = 0;
+            }
+        }
     }
     /// <summary> 移動 </summary>
     protected override void Move()
@@ -52,9 +73,10 @@ public class SecurityGuard : EnemyBase, IEnemy
         // プレイヤーを発見したら
         if (foundPlayer)
         {
-            agent.SetDestination(playerPos.position); // プレイヤー位置に向かって移動
-            agent.nextPosition = transform.position;
-            agent.speed = nowMoveSpeed; // 移動速度設定
+            //agent.SetDestination(playerPos.position); // プレイヤー位置に向かって移動
+            //agent.nextPosition = transform.position;
+            //agent.speed = nowMoveSpeed; // 移動速度設定
+            Debug.Log("fffref");
         }
         // 通常周回
         else
