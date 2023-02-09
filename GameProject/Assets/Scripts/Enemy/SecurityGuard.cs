@@ -25,6 +25,7 @@ public class SecurityGuard : EnemyBase, IEnemy
             agent.updateRotation = false;
             agent.updateUpAxis = false;
         }
+        // デバッグ用ビルド時削除してください
         playerPos = GameObject.FindGameObjectWithTag(Dictionary.PLAYER_TAG).transform;
         // 関数登録
         handler += PlayerFound;
@@ -74,7 +75,6 @@ public class SecurityGuard : EnemyBase, IEnemy
             agent.SetDestination(playerPos.position); // プレイヤー位置に向かって移動
             agent.nextPosition = transform.position;
             agent.speed = nowMoveSpeed; // 移動速度設定
-            Debug.Log("fffref");
         }
         // 通常周回
         else
