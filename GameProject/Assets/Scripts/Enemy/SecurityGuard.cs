@@ -24,7 +24,6 @@ public class SecurityGuard : EnemyBase, IEnemy
             agent.speed = nowMoveSpeed; // 追跡速度設定
             agent.updateRotation = false;
             agent.updateUpAxis = false;
-            agent.isStopped = false;
         }
         playerPos = GameObject.FindGameObjectWithTag(Dictionary.PLAYER_TAG).transform;
         // 関数登録
@@ -69,13 +68,12 @@ public class SecurityGuard : EnemyBase, IEnemy
     /// <summary> 移動 </summary>
     protected override void Move()
     {
-        agent.isStopped = !foundPlayer; // 追跡設定更新
         // プレイヤーを発見したら
         if (foundPlayer)
         {
-            //agent.SetDestination(playerPos.position); // プレイヤー位置に向かって移動
-            //agent.nextPosition = transform.position;
-            //agent.speed = nowMoveSpeed; // 移動速度設定
+            agent.SetDestination(playerPos.position); // プレイヤー位置に向かって移動
+            agent.nextPosition = transform.position;
+            agent.speed = nowMoveSpeed; // 移動速度設定
             Debug.Log("fffref");
         }
         // 通常周回
@@ -85,18 +83,12 @@ public class SecurityGuard : EnemyBase, IEnemy
             if (!isAround)
             {
                 int nextPoint = moveIndex + (returnMove ? -1 : 1); // 移動先
-                // 移動先まで距離があるなら
-                if (Vector2.SqrMagnitude(movePoints[nextPoint] - transform.position) > 0.1f)
-                {
-                    // 移動速度
-                    Vector2 moveVec = Vector2.MoveTowards
-                        (transform.position, movePoints[nextPoint], nowMoveSpeed * Time.deltaTime);
-                    rigidbody2.MovePosition(moveVec); // 移動
-                }
+                agent.SetDestination(movePoints[nextPoint]); // 位置に向かって移動
+                agent.nextPosition = transform.position;
+                agent.speed = nowMoveSpeed; // 移動速度設定
                 // 移動先まで近づいたら
-                else
+                if (Vector2.SqrMagnitude(movePoints[nextPoint] - transform.position) <= 0.1f)
                 {
-                    rigidbody2.MovePosition(movePoints[nextPoint]); // 移動
                     moveIndex += returnMove ? -1 : 1; // 次のポイントに変更
                     // 移動方向変更
                     if (moveIndex >= movePoints.Length - 1 || moveIndex <= 0) returnMove = !returnMove;
@@ -106,18 +98,12 @@ public class SecurityGuard : EnemyBase, IEnemy
             else
             {
                 int nextPoint = moveIndex < movePoints.Length - 1 ? moveIndex + 1 : 0; // 移動先
-                // 移動先まで距離があるなら
-                if (Vector2.SqrMagnitude(movePoints[nextPoint] - transform.position) > 0.1f)
-                {
-                    // 移動速度
-                    Vector2 moveVec = Vector2.MoveTowards
-                        (transform.position, movePoints[nextPoint], nowMoveSpeed * Time.deltaTime);
-                    rigidbody2.MovePosition(moveVec); // 移動
-                }
+                agent.SetDestination(movePoints[nextPoint]); // 位置に向かって移動
+                agent.nextPosition = transform.position;
+                agent.speed = nowMoveSpeed; // 移動速度設定
                 // 移動先まで近づいたら
-                else
+                if (Vector2.SqrMagnitude(movePoints[nextPoint] - transform.position) <= 0.1f)
                 {
-                    rigidbody2.MovePosition(movePoints[nextPoint]); // 移動
                     moveIndex++; // 次のポイントに変更
                     // 移動方向変更
                     if (moveIndex >= movePoints.Length) moveIndex = 0;
