@@ -6,6 +6,7 @@ public class StageManager : MonoBehaviour
 {
     // 破壊した美術品数
     private int pictureSum = 0, potSum = 0, sculpSum = 0, mpSum = 0, msSum = 0;
+    private bool runAway = false; // 逃亡フラグ
     // ノルマ
     [SerializeField] int picNolma, potNolma, sculpNolma, mpNolma, msNolma;
     [SerializeField] ClearCondition Condition; // クリア条件
@@ -49,12 +50,33 @@ public class StageManager : MonoBehaviour
             default:
                 break;
         }
-        // クリア条件
-        switch (Condition)
+        // ノルマを達成したか
         {
-
-            default:
-                break;
+            bool clear = false; // クリアフラグ
+            // クリア条件
+            switch (Condition)
+            {
+                // 絵画を破壊
+                case ClearCondition.Picture:
+                    if (pictureSum >= picNolma) clear = true;
+                    break;
+                // 壺を破壊
+                case ClearCondition.Pot:
+                    if (potSum >= potNolma) clear = true;
+                    break;
+                // 彫刻を破壊
+                case ClearCondition.Sculpture:
+                    if (sculpSum >= sculpNolma) clear = true;
+                    break;
+                default:
+                    break;
+            }
+            if (!runAway && clear) runAway = true; // ノルマを達成したら逃亡する
         }
+    }
+    /// <summary> ゲームクリア </summary>
+    void GameClear()
+    {
+        Debug.Log("GameClear");
     }
 }
