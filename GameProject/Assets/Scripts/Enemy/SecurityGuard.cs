@@ -18,6 +18,7 @@ public class SecurityGuard : EnemyBase, IEnemy
     // Start is called before the first frame update
     void Start()
     {
+        StartSet(); // 初期処理
         // ナビ設定
         {
             agent = GetComponent<NavMeshAgent>(); // ナビ取得
@@ -29,16 +30,13 @@ public class SecurityGuard : EnemyBase, IEnemy
         playerPos = GameObject.FindGameObjectWithTag(Dictionary.PLAYER_TAG).transform;
         // 関数登録
         handler += PlayerFound;
+        handler += Move;
     }
 
     // Update is called once per frame
     void Update()
     {
         handler(); // 行動
-    }
-    void FixedUpdate()
-    {
-        Move(); // 移動
     }
     /// <summary> プレイヤー発見 </summary>
     void PlayerFound()
@@ -108,6 +106,28 @@ public class SecurityGuard : EnemyBase, IEnemy
                     // 移動方向変更
                     if (moveIndex >= movePoints.Length) moveIndex = 0;
                 }
+            }
+        }
+        // 右移動時
+        if (agent.velocity.x > 0)
+        {
+            // 左向きの時
+            if (transform.localScale.x < 0)
+            {
+                Vector3 scale = transform.localScale; // 向き
+                scale.x = -scale.x;
+                transform.localScale = scale;
+            }
+        }
+        // 左移動時
+        else
+        {
+            // 右向きの時
+            if (transform.localScale.x > 0)
+            {
+                Vector3 scale = transform.localScale; // 向き
+                scale.x = -scale.x;
+                transform.localScale = scale;
             }
         }
     }
