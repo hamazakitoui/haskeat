@@ -9,6 +9,7 @@ public class StageManager : MonoBehaviour
     private bool runAway = false; // 逃亡フラグ
     // ノルマ
     [SerializeField] int picNolma, potNolma, sculpNolma, mpNolma, msNolma;
+    [SerializeField] GameObject MissionText;
     [SerializeField] ClearCondition Condition; // クリア条件
     // Start is called before the first frame update
     void Start()
@@ -20,6 +21,14 @@ public class StageManager : MonoBehaviour
     void Update()
     {
         
+    }
+    /// <summary> 開始時イベント </summary>
+    /// <returns></returns>
+    IEnumerator MissionStart()
+    {
+        yield return null;
+        MissionText.SetActive(true); // 内容を表示
+        MissionText.SetActive(false); // 内容を非表示
     }
     /// <summary> 芸術品破壊 </summary>
     /// <param name="type">破壊した芸術品のタイプ</param>
@@ -75,7 +84,7 @@ public class StageManager : MonoBehaviour
         }
     }
     /// <summary> ゲームクリア </summary>
-    void GameClear()
+    public void GameClear()
     {
         Debug.Log("GameClear");
     }
