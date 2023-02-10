@@ -4,19 +4,20 @@ using UnityEngine;
 
 public class PlMoveAction : MonoBehaviour
 {
-    [SerializeField] float MoveSpeed;
-    [SerializeField] float RayLength;
-    [SerializeField] LayerMask NothitLayer;
-    [SerializeField] float HP;
-    [SerializeField] float invincibleTime;
-    BoxCollider2D Collsion;
-    SpriteRenderer spriteRenderer;
-    Rigidbody2D rigid2D;
-    const int NowMove = 1;
+    [SerializeField] float MoveSpeed;       //移動速度
+    [SerializeField] float RayLength;　　　 //raycastの長さ
+    [SerializeField] LayerMask hitLayer;    //当たるLayer
+    [SerializeField] float HP;　　　　　　　//プレイヤーのHP
+    [SerializeField] float invinciblenum;　 //何回点滅するか
+    [SerializeField] Colormaneger Colorscript;
+    BoxCollider2D Collsion;　　　　　　　　 //当たり判定の保存用関数
+    SpriteRenderer spriteRenderer;　　　　　//画像のコンポーネント取得関数
+    Rigidbody2D rigid2D;                    //重力取得
+    const int Nowdrection = 1;                  //
     float InputX;
     float InputY;
-    int nowcolor;
     Vector3 dirctionkeap;
+    Vector3 direction;
     [SerializeField] GameObject[] coloreffect = new GameObject[4];
     enum Plstate
     {
@@ -24,6 +25,7 @@ public class PlMoveAction : MonoBehaviour
         invincible,
 
     }
+    bool movestart = true;
     Plstate state = Plstate.none;
     // Start is called before the first frame update
     void Start()
@@ -32,7 +34,7 @@ public class PlMoveAction : MonoBehaviour
         Collsion = GetComponent<BoxCollider2D>();
         rigid2D = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        StartCoroutine("flash");
+        //StartCoroutine("flash");
     }
 
     // Update is called once per frame
@@ -45,112 +47,111 @@ public class PlMoveAction : MonoBehaviour
         //スピード代入
         float speedX = 0;
         float speedY = 0;
-        if (InputX == NowMove)
+
+        if (movestart)
+        {
+            direction = Vector3.up;
+            if (InputX != 0 || InputY != 0)
+            {
+                movestart = false;
+            }
+        }
+        else
+        {
+            direction = new Vector3((int)InputX, (int)InputY);
+
+        }
+        //止まる前の向きを取得
+        if (direction != Vector3.zero)
+        {
+            dirctionkeap = direction;
+        }
+        //止まっているときに向きを代入
+        else if (direction == Vector3.zero)
+        {
+            direction = dirctionkeap;
+        }
+
+        if (InputX == Nowdrection)
         {
             speedX = MoveSpeed;
         }
-        else if (InputX == -NowMove)
+        else if (InputX == -Nowdrection)
         {
             speedX = -MoveSpeed;
         }
 
-        if (InputY == NowMove)
+        if (InputY == Nowdrection)
         {
             speedY = MoveSpeed;
         }
-        else if (InputY == -NowMove)
+        else if (InputY == -Nowdrection)
         {
             speedY = -MoveSpeed;
         }
 
+
+
+        rigid2D.velocity = new Vector2(speedX, speedY);
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            if (Colorscript.uselimitnum[Colorscript.colornum] >= 0)
+            {
+                int nowcolor = Colorscript.colornum;
+                GameObject paintEffect = null;
+                paintEffect = Instantiate(coloreffect[nowcolor]);
+                paintEffect.transform.position = transform.position + (direction * 2);
+                Colorscript.uselimitnum[nowcolor]--;
+            }
+        }
         //移動
-        rigid2D.velocity = new Vector2(speedX, speedY);
-        //Move();
+
 
     }
-    private void Move()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        float speedX = 0;
-        float speedY = 0;
-        if (InputX == NowMove)
+        //敵に当たった時に点滅開始
+        if (collision.tag == "Enemy")
         {
-            speedX = MoveSpeed;
-        }
-        else if (InputX == -NowMove)
-        {
-            speedX = -MoveSpeed;
-        }
-
-        if (InputY == NowMove)
-        {
-            speedY = MoveSpeed;
-        }
-        else if (InputY == -NowMove)
-        {
-            speedY = -MoveSpeed;
-        }
-        rigid2D.velocity = new Vector2(speedX, speedY);
-    }
-    int colorchenge()
-    {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            nowcolor = 1;
+            StartCoroutine("flash");
 
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            nowcolor = 2;
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            nowcolor = 3;
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            nowcolor = 4;
-        }
-        return nowcolor;
+        
     }
     bool checkfront()
     {
         //rayの初期位置
         Vector3 RaystartPos = transform.position;
-        Vector3 direction = Vector3.up;
-        direction = new Vector3((int)InputX, (int)InputY);
-        if (direction != Vector3.zero)
-        {
-            dirctionkeap = direction;
-
-        }
-        else if (direction == Vector3.zero)
-        {
-            direction = dirctionkeap;
-        }
+        //結果を宣言
         bool result = false;
-        result |= Physics2D.Raycast(RaystartPos, direction, RayLength, NothitLayer);
+        //raycastを飛ばす
+        result |= Physics2D.Raycast(RaystartPos, direction, RayLength, hitLayer);
+        //rayを表示する
         Debug.DrawRay(RaystartPos, direction, Color.red);
         return result;
 
     }
+    //点滅と無敵の処理
     IEnumerator flash()
     {
-
+        //色を取得
         Color co = spriteRenderer.color;
-        Color Before = co;
+        //点滅回数の宣言
         int count = 0;
-
-
-        Debug.Log("フェード中");
+        //当たり判定を消す
+        Collsion.enabled = false;
+        //規定回数まで点滅を繰り返す
         while (count < 10)
         {
             count++;
 
-            spriteRenderer.color = new Color(co.r, co.g, co.b,0);
+            spriteRenderer.color = new Color(co.r, co.g, co.b, 0);
             yield return new WaitForSeconds(0.07f);
-            spriteRenderer.color = new Color(co.r,co.g,co.b,1);
+            spriteRenderer.color = new Color(co.r, co.g, co.b, 1);
             yield return new WaitForSeconds(0.07f);
         }
+        //最後に当たり判定を戻す
+        Collsion.enabled = true;
     }
 
 
