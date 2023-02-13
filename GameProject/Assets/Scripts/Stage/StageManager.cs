@@ -9,7 +9,7 @@ public class StageManager : MonoBehaviour
     private bool runAway = false; // 逃亡フラグ
     // ノルマ
     [SerializeField] int picNolma, potNolma, sculpNolma, mpNolma, msNolma;
-    [SerializeField] GameObject MissionText;
+    [SerializeField] GameObject MissionText; // ミッション表示オブジェクト
     [SerializeField] ClearCondition Condition; // クリア条件
     // Start is called before the first frame update
     void Start()
