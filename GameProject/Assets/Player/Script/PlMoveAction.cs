@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlMoveAction : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class PlMoveAction : MonoBehaviour
     [SerializeField] float HP;　　　　　　　//プレイヤーのHP
     [SerializeField] float invinciblenum;　 //何回点滅するか
     [SerializeField] Colormaneger Colorscript;
+    [SerializeField] StageManager StageManager;
+    [SerializeField] Slider HPSlider;
     BoxCollider2D Collsion;　　　　　　　　 //当たり判定の保存用関数
     SpriteRenderer spriteRenderer;　　　　　//画像のコンポーネント取得関数
     Rigidbody2D rigid2D;                    //重力取得
@@ -18,6 +21,8 @@ public class PlMoveAction : MonoBehaviour
     float InputY;
     Vector3 dirctionkeap;
     Vector3 direction;
+    RaycastHit2D hit2;
+
     [SerializeField] GameObject[] coloreffect = new GameObject[4];
     enum Plstate
     {
@@ -89,24 +94,68 @@ public class PlMoveAction : MonoBehaviour
         {
             speedY = -MoveSpeed;
         }
-
-
-
         rigid2D.velocity = new Vector2(speedX, speedY);
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (checkfront())
         {
-            if (Colorscript.uselimitnum[Colorscript.colornum] >= 0)
+            Debug.Log(hit2.transform.gameObject);
+            if (Input.GetKeyDown(KeyCode.Z))
             {
-                int nowcolor = Colorscript.colornum;
-                GameObject paintEffect = null;
-                paintEffect = Instantiate(coloreffect[nowcolor]);
-                paintEffect.transform.position = transform.position + (direction * 2);
-                Colorscript.uselimitnum[nowcolor]--;
+                if (Colorscript.uselimitnum[Colorscript.colornum] >= 0)
+                {
+
+                    Art art = hit2.collider.GetComponent<Art>();
+                    if (art != null)
+                    {
+                        StageManager.AddDestroyArt(art.GetArtType);
+                        if (art.GetArtType == ArtType.Picture)
+                        {
+                            hit2.transform.gameObject.SetActive(false);
+                        }
+                        if (art.GetArtType == ArtType.Pot)
+                        {
+                            Destroy(hit2.transform.gameObject);
+                        }
+                    }
+                }
             }
+
+        }
+        else
+        {
+            if (Input.GetKeyDown(KeyCode.Z))
+            {
+                if (Colorscript.uselimitnum[Colorscript.colornum] >= 0)
+                {
+                    int nowcolor = Colorscript.colornum;
+                    GameObject paintEffect = null;
+                    paintEffect = Instantiate(coloreffect[nowcolor]);
+                    paintEffect.transform.position = transform.position + (direction * 2);
+                    Colorscript.uselimitnum[nowcolor]--;
+                }
+            }
+
+        }
+        if (Input.GetKey(KeyCode.X))
+        {
+            Debug.Log("コルーチンチェック");
+            //StartCoroutine("Action");
         }
         //移動
+    }
 
-
+    IEnumerator Action()
+    {
+        bool combo = false;
+        float Rotatenum = 0;
+        Collsion.enabled = false;
+        while (Rotatenum<=360)
+        {
+            Rotatenum+=10;
+            transform.eulerAngles += new Vector3(0, 0, Rotatenum);
+            //transform.Rotate(0, 0, 10f);
+        }
+        //Rotatenum = 0;
+        yield return null; 
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -116,7 +165,7 @@ public class PlMoveAction : MonoBehaviour
             StartCoroutine("flash");
 
         }
-        
+
     }
     bool checkfront()
     {
@@ -125,7 +174,8 @@ public class PlMoveAction : MonoBehaviour
         //結果を宣言
         bool result = false;
         //raycastを飛ばす
-        result |= Physics2D.Raycast(RaystartPos, direction, RayLength, hitLayer);
+        hit2 = Physics2D.Raycast(RaystartPos, direction, RayLength, hitLayer);
+        result |= hit2.collider != null;
         //rayを表示する
         Debug.DrawRay(RaystartPos, direction, Color.red);
         return result;
@@ -136,6 +186,7 @@ public class PlMoveAction : MonoBehaviour
     {
         //色を取得
         Color co = spriteRenderer.color;
+        HPSlider.value -= 10;
         //点滅回数の宣言
         int count = 0;
         //当たり判定を消す

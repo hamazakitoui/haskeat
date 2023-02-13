@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Colormaneger : MonoBehaviour
 {
@@ -13,9 +14,10 @@ public class Colormaneger : MonoBehaviour
         purple
     };
     nowcolor colorstate = nowcolor.red;
-    public int[] uselimitnum=new int[3];
-    [SerializeField]Sprite[] Color=new Sprite[3];
+    public int[] uselimitnum=new int[4];
+    [SerializeField]Sprite[] Color=new Sprite[4];
     [SerializeField] GameObject Colorobject;
+    [SerializeField] Text UesNumtext;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +32,8 @@ public class Colormaneger : MonoBehaviour
         {
             case (int)nowcolor.red:
                 Colorobject.GetComponent<SpriteRenderer>().sprite = Color[0];
+                
+
                 break;
             case (int)nowcolor.brue:
                 Colorobject.GetComponent<SpriteRenderer>().sprite = Color[1];
@@ -41,6 +45,9 @@ public class Colormaneger : MonoBehaviour
                 Colorobject.GetComponent<SpriteRenderer>().sprite = Color[3];
                 break;
         }
+        UesNumtext.text = "残り"+uselimitnum[colorchenge()].ToString();
+
+
     }
     int colorchenge()
     {
