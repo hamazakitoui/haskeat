@@ -6,8 +6,8 @@ using UnityEngine;
 public class Policeman : EnemyBase, IEnemy
 {
     float foundDelta = 0.0f, shotDelta = 0.0f;
-    // 移動フラグ、見失いフラグ
-    bool returnMove = false, lostFlag = false;
+    // 見失いフラグ
+    bool lostFlag = false;
     // 発見角度、見失う時間、発射間隔
     [SerializeField] float foundRad = 30.0f, lostSpan = 3.0f, shotSpan = 3.0f;
     // 発射速度
@@ -25,10 +25,6 @@ public class Policeman : EnemyBase, IEnemy
     void Update()
     {
         handler(); // 行動
-    }
-    void FixedUpdate()
-    {
-        
     }
     /// <summary> プレイヤー発見 </summary>
     void PlayerFound()
@@ -61,12 +57,13 @@ public class Policeman : EnemyBase, IEnemy
     {
         if (!foundPlayer) return; // プレイヤーを見つけていないなら
         shotDelta += Time.deltaTime;
+        // 一定時間ごとに弾を発射
         if (shotDelta > shotSpan)
         {
             // 弾を発射
             Rigidbody2D rb = Instantiate(bullet, transform.position, Quaternion.identity).
                 GetComponent<Rigidbody2D>();
-            rb.AddForce(new Vector2(transform.localScale.x > 0 ? 1 : -1, 0) * shotPower,
+            rb.AddForce((transform.localScale.x > 0 ? Vector2.right : Vector2.left) * shotPower,
                 ForceMode2D.Impulse);
             shotDelta = 0.0f;
         }
