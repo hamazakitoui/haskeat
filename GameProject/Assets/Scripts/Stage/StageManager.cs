@@ -6,6 +6,10 @@ public class StageManager : MonoBehaviour
 {
     // 破壊した美術品数
     private int pictureSum = 0, potSum = 0, sculpSum = 0, mpSum = 0, msSum = 0;
+    // アニメ名
+    private readonly string startAnim = "Start";
+    // ミッション表示時間
+    private const float MISSION_WAIT = 3.0f;
     private bool runAway = false; // 逃亡フラグ
     // ノルマ
     [SerializeField] int picNolma, potNolma, sculpNolma, mpNolma, msNolma;
@@ -28,6 +32,9 @@ public class StageManager : MonoBehaviour
     {
         yield return null;
         MissionText.SetActive(true); // 内容を表示
+        yield return new WaitForSeconds(MISSION_WAIT); // 一定時間表示
+        Animator animator = MissionText.GetComponent<Animator>(); // アニメーター取得
+        if (animator != null) animator.SetTrigger(startAnim); // アニメ変更
         MissionText.SetActive(false); // 内容を非表示
     }
     /// <summary> 芸術品破壊 </summary>
