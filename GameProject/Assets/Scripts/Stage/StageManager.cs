@@ -81,6 +81,7 @@ public class StageManager : MonoBehaviour
                     break;
             }
             if (!runAway && clear) runAway = true; // ノルマを達成したら逃亡する
+            Debug.Log(runAway ? "逃げろ!" : "汚せ!");
         }
     }
     /// <summary> ゲームクリア </summary>
@@ -88,4 +89,6 @@ public class StageManager : MonoBehaviour
     {
         Debug.Log("GameClear");
     }
+    /// <summary> 逃亡フラグ </summary>
+    public bool IsRunAway { get { return runAway; } }
 }
