@@ -13,6 +13,8 @@ public class PlMoveAction : MonoBehaviour
     [SerializeField] Colormaneger Colorscript;
     [SerializeField] StageManager StageManager;
     [SerializeField] Slider HPSlider;
+    [SerializeField] Slider staminaSlider;
+    [SerializeField] float Actionmovenum;
     BoxCollider2D Collsion;　　　　　　　　 //当たり判定の保存用関数
     SpriteRenderer spriteRenderer;　　　　　//画像のコンポーネント取得関数
     Rigidbody2D rigid2D;                    //重力取得
@@ -22,16 +24,11 @@ public class PlMoveAction : MonoBehaviour
     Vector3 dirctionkeap;
     Vector3 direction;
     RaycastHit2D hit2;
-
+    float stamina;
+    const float StaminaMax=100;
+    [SerializeField] float staminarecoverynum;
     [SerializeField] GameObject[] coloreffect = new GameObject[4];
-    enum Plstate
-    {
-        none,
-        invincible,
-
-    }
     bool movestart = true;
-    Plstate state = Plstate.none;
     // Start is called before the first frame update
     void Start()
     {
@@ -64,7 +61,6 @@ public class PlMoveAction : MonoBehaviour
         else
         {
             direction = new Vector3((int)InputX, (int)InputY);
-
         }
         //止まる前の向きを取得
         if (direction != Vector3.zero)
@@ -95,22 +91,28 @@ public class PlMoveAction : MonoBehaviour
             speedY = -MoveSpeed;
         }
         rigid2D.velocity = new Vector2(speedX, speedY);
+
         if (checkfront())
         {
             Debug.Log(hit2.transform.gameObject);
+            //目の前に美術品があれば美術品を破壊もしくは塗りつぶす
             if (Input.GetKeyDown(KeyCode.Z))
             {
                 if (Colorscript.uselimitnum[Colorscript.colornum] >= 0)
                 {
-
+                    //美術品か確認
                     Art art = hit2.collider.GetComponent<Art>();
+                    //美術品であれば
                     if (art != null)
                     {
+                        //破壊した数を追加
                         StageManager.AddDestroyArt(art.GetArtType);
+                        //目の前にあるのが絵画だった場合
                         if (art.GetArtType == ArtType.Picture)
                         {
                             hit2.transform.gameObject.SetActive(false);
                         }
+                        //壺だった場合の処理
                         if (art.GetArtType == ArtType.Pot)
                         {
                             Destroy(hit2.transform.gameObject);
@@ -122,6 +124,7 @@ public class PlMoveAction : MonoBehaviour
         }
         else
         {
+            //残り残量がある場合エフェクトを出す
             if (Input.GetKeyDown(KeyCode.Z))
             {
                 if (Colorscript.uselimitnum[Colorscript.colornum] >= 0)
@@ -135,27 +138,50 @@ public class PlMoveAction : MonoBehaviour
             }
 
         }
-        if (Input.GetKey(KeyCode.X))
+        stamina = staminaSlider.value;
+        if (stamina<=StaminaMax)
         {
-            Debug.Log("コルーチンチェック");
-            //StartCoroutine("Action");
+            stamina += Time.deltaTime + staminarecoverynum;
+        }
+        //アクション開始
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            //スタミナ量チェック
+            if (stamina >= 0)
+            {
+                stamina -= 10;
+                Debug.Log("コルーチンチェック");
+                StartCoroutine(Action(direction));
+            }
         }
         //移動
     }
 
-    IEnumerator Action()
+    IEnumerator Action(Vector3 movedirction)
     {
-        bool combo = false;
-        float Rotatenum = 0;
+       
+        //当たり判定を消す
         Collsion.enabled = false;
-        while (Rotatenum<=360)
+        //動く前の位置を取得
+        Vector3 PlmovePos = transform.position;
+        //移動後の位置を取得
+        Vector3 moveend =transform.position +movedirction;
+        //移動量チェック
+        float checkmovedistance = 1;
+        //float debug = 0;
+        //どれだけ移動したかの変数
+        //const float _TIME = 360.0f / 50;
+        while (checkmovedistance >= 0.1f)
         {
-            Rotatenum+=10;
-            transform.eulerAngles += new Vector3(0, 0, Rotatenum);
-            //transform.Rotate(0, 0, 10f);
+            //debug = Input.GetAxisRaw("Vertical");
+            
+            checkmovedistance = Vector3.Distance(transform.position, moveend);
+            transform.position += movedirction * Actionmovenum * Time.deltaTime;
+            yield return 0;
         }
-        //Rotatenum = 0;
-        yield return null; 
+        //当たり判定を戻す
+        Collsion.enabled = true;
+        yield return null;
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -165,7 +191,6 @@ public class PlMoveAction : MonoBehaviour
             StartCoroutine("flash");
 
         }
-
     }
     bool checkfront()
     {
