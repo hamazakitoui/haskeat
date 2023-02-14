@@ -10,7 +10,8 @@ public class StageManager : MonoBehaviour
     private readonly string startAnim = "Start";
     // ミッション表示時間
     private const float MISSION_WAIT = 3.0f;
-    private bool runAway = false; // 逃亡フラグ
+    // 逃亡フラグ、ゲーム開始フラグ
+    private bool runAway = false, gameStart = false;
     // ノルマ
     [SerializeField] int picNolma, potNolma, sculpNolma, mpNolma, msNolma;
     [SerializeField] GameObject MissionText; // ミッション表示オブジェクト
@@ -35,6 +36,7 @@ public class StageManager : MonoBehaviour
         yield return new WaitForSeconds(MISSION_WAIT); // 一定時間表示
         Animator animator = MissionText.GetComponent<Animator>(); // アニメーター取得
         if (animator != null) animator.SetTrigger(startAnim); // アニメ変更
+        gameStart = true; // ゲーム開始
     }
     /// <summary> 芸術品破壊 </summary>
     /// <param name="type">破壊した芸術品のタイプ</param>
@@ -97,4 +99,6 @@ public class StageManager : MonoBehaviour
     }
     /// <summary> 逃亡フラグ </summary>
     public bool IsRunAway { get { return runAway; } }
+    /// <summary> ゲーム開始フラグ </summary>
+    public bool IsGameStart { get { return gameStart; } }
 }
