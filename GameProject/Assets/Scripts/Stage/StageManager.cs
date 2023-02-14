@@ -35,7 +35,6 @@ public class StageManager : MonoBehaviour
         yield return new WaitForSeconds(MISSION_WAIT); // 一定時間表示
         Animator animator = MissionText.GetComponent<Animator>(); // アニメーター取得
         if (animator != null) animator.SetTrigger(startAnim); // アニメ変更
-        MissionText.SetActive(false); // 内容を非表示
     }
     /// <summary> 芸術品破壊 </summary>
     /// <param name="type">破壊した芸術品のタイプ</param>

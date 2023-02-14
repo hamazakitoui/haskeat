@@ -1943,5 +1943,35 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5707825164004050585, guid: f16d1197e951f814fac5e380c670fb8f,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5707825164004050585, guid: f16d1197e951f814fac5e380c670fb8f,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7552530017102071504, guid: f16d1197e951f814fac5e380c670fb8f,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7552530017102071504, guid: f16d1197e951f814fac5e380c670fb8f,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9072157911234647230, guid: f16d1197e951f814fac5e380c670fb8f,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9072157911234647230, guid: f16d1197e951f814fac5e380c670fb8f,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f16d1197e951f814fac5e380c670fb8f, type: 3}
