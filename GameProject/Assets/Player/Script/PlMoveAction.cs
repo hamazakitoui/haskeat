@@ -25,7 +25,8 @@ public class PlMoveAction : MonoBehaviour
     Vector3 direction;
     RaycastHit2D hit2;
     float stamina;
-    const float StaminaMax=100;
+    const float StaminaMax = 100;
+    bool IsAction;
     [SerializeField] float staminarecoverynum;
     [SerializeField] GameObject[] coloreffect = new GameObject[4];
     bool movestart = true;
@@ -72,26 +73,29 @@ public class PlMoveAction : MonoBehaviour
         {
             direction = dirctionkeap;
         }
+        Debug.Log(direction);
+        if (!IsAction)
+        {
 
-        if (InputX == Nowdrection)
-        {
-            speedX = MoveSpeed;
-        }
-        else if (InputX == -Nowdrection)
-        {
-            speedX = -MoveSpeed;
-        }
+            if (InputX == Nowdrection)
+            {
+                speedX = MoveSpeed;
+            }
+            else if (InputX == -Nowdrection)
+            {
+                speedX = -MoveSpeed;
+            }
 
-        if (InputY == Nowdrection)
-        {
-            speedY = MoveSpeed;
+            if (InputY == Nowdrection)
+            {
+                speedY = MoveSpeed;
+            }
+            else if (InputY == -Nowdrection)
+            {
+                speedY = -MoveSpeed;
+            }
+            rigid2D.velocity = new Vector2(speedX, speedY);
         }
-        else if (InputY == -Nowdrection)
-        {
-            speedY = -MoveSpeed;
-        }
-        rigid2D.velocity = new Vector2(speedX, speedY);
-
         if (checkfront())
         {
             Debug.Log(hit2.transform.gameObject);
@@ -139,9 +143,9 @@ public class PlMoveAction : MonoBehaviour
 
         }
         stamina = staminaSlider.value;
-        if (stamina<=StaminaMax)
+        if (stamina <= StaminaMax)
         {
-            stamina += Time.deltaTime + staminarecoverynum;
+            staminaSlider.value += Time.deltaTime + staminarecoverynum;
         }
         //アクション開始
         if (Input.GetKeyDown(KeyCode.X))
@@ -149,7 +153,7 @@ public class PlMoveAction : MonoBehaviour
             //スタミナ量チェック
             if (stamina >= 0)
             {
-                stamina -= 10;
+                staminaSlider.value -= 10;
                 Debug.Log("コルーチンチェック");
                 StartCoroutine(Action(direction));
             }
@@ -159,13 +163,14 @@ public class PlMoveAction : MonoBehaviour
 
     IEnumerator Action(Vector3 movedirction)
     {
-       
+        IsAction = true;
         //当たり判定を消す
         Collsion.enabled = false;
         //動く前の位置を取得
         Vector3 PlmovePos = transform.position;
+        Debug.Log(movedirction);
         //移動後の位置を取得
-        Vector3 moveend =transform.position +movedirction;
+        Vector3 moveend = transform.position + movedirction;
         //移動量チェック
         float checkmovedistance = 1;
         //float debug = 0;
@@ -174,13 +179,14 @@ public class PlMoveAction : MonoBehaviour
         while (checkmovedistance >= 0.1f)
         {
             //debug = Input.GetAxisRaw("Vertical");
-            
+
             checkmovedistance = Vector3.Distance(transform.position, moveend);
             transform.position += movedirction * Actionmovenum * Time.deltaTime;
             yield return 0;
         }
         //当たり判定を戻す
         Collsion.enabled = true;
+        IsAction = false;
         yield return null;
     }
     private void OnTriggerEnter2D(Collider2D collision)
