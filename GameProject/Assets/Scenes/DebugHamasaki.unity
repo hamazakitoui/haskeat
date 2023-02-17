@@ -1195,8 +1195,8 @@ MonoBehaviour:
   StageManager: {fileID: 1019063421}
   HPSlider: {fileID: 1470774787}
   staminaSlider: {fileID: 611157415}
-  Actionmovenum: 0.8
-  staminarecoverynum: 0
+  Actionmovenum: 1
+  staminarecoverynum: 0.02
   coloreffect:
   - {fileID: 4902523543249993835, guid: 61cbbd1c5420fb649b179ad3fddeb5cb, type: 3}
   - {fileID: 4902523543249993835, guid: ccef6ae76afd97741a9b77b43c63409b, type: 3}
@@ -1802,12 +1802,12 @@ PrefabInstance:
     - target: {fileID: 780913649378316794, guid: 3afc9579c83fdf34ead46e9ded57c057,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.82
+      value: -0.78
       objectReference: {fileID: 0}
     - target: {fileID: 780913649378316794, guid: 3afc9579c83fdf34ead46e9ded57c057,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 3.72
       objectReference: {fileID: 0}
     - target: {fileID: 780913649378316794, guid: 3afc9579c83fdf34ead46e9ded57c057,
         type: 3}
