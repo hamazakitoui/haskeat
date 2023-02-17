@@ -1218,9 +1218,9 @@ TextureImporter:
       name: Museum_32
       rect:
         serializedVersion: 2
-        x: 13
+        x: 11
         y: 1184
-        width: 69
+        width: 71
         height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2289,10 +2289,10 @@ TextureImporter:
       name: Museum_111
       rect:
         serializedVersion: 2
-        x: 162
-        y: 1447
-        width: 30
-        height: 70
+        x: 160
+        y: 1485
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4150,6 +4150,48 @@ TextureImporter:
       bones: []
       spriteID: ccd420fad9c1a9d80800000000000000
       internalID: -8243244704376664628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Museum_92
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1447
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 570bf2dd8e89e5e90800000000000000
+      internalID: -7035017441995411339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Museum_93
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1478
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a368c392ddff686f0800000000000000
+      internalID: -682576968155363782
       vertices: []
       indices: 
       edges: []
