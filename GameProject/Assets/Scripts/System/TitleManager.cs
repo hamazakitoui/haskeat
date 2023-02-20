@@ -9,11 +9,14 @@ public class TitleManager : MonoBehaviour
     // キーコード
     [SerializeField] KeyCode startKey;
     [SerializeField] GameObject PaintBall; // ペイントアニメーション
+    [SerializeField] SpriteRenderer Renderer; // 絵
     [SerializeField] SceneObject GameScene; // ゲームシーン
+    [SerializeField] Sprite[] pictures; // 絵の配列
     // Start is called before the first frame update
     void Start()
     {
         PaintBall.SetActive(false); // ペイント非表示
+        Renderer.sprite = pictures[Random.Range(0, pictures.Length)]; // 絵を乱数で設定
     }
 
     // Update is called once per frame
