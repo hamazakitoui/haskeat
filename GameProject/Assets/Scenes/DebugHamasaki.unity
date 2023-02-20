@@ -1188,7 +1188,7 @@ MonoBehaviour:
   RayLength: 1
   hitLayer:
     serializedVersion: 2
-    m_Bits: 7424
+    m_Bits: 15616
   HP: 100
   invinciblenum: 10
   Colorscript: {fileID: 1327290198}
