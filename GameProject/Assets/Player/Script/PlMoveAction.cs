@@ -126,21 +126,30 @@ public class PlMoveAction : MonoBehaviour
             }
 
         }
-            //残り残量がある場合エフェクトを出す
-            if (Input.GetKeyDown(KeyCode.Z))
+        //残り残量がある場合エフェクトを出す
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            if (hit2.transform == null)
             {
-                if (hit2.transform.gameObject.tag != "wall")
+                if (Colorscript.uselimitnum[Colorscript.colornum] >= 0)
                 {
-                    if (Colorscript.uselimitnum[Colorscript.colornum] >= 0)
-                    {
-                        int nowcolor = Colorscript.colornum;
-                        GameObject paintEffect = null;
-                        paintEffect = Instantiate(coloreffect[nowcolor]);
-                        paintEffect.transform.position = transform.position + (direction * 2);
-                        Colorscript.uselimitnum[nowcolor]--;
-                    }
+                    int nowcolor = Colorscript.colornum;
+                    GameObject paintEffect = null;
+                    paintEffect = Instantiate(coloreffect[nowcolor]);
+                    paintEffect.transform.position = transform.position + (direction * 2);
+                    Colorscript.uselimitnum[nowcolor]--;
                 }
+
             }
+             else if (hit2.transform.gameObject.tag != "wall")
+            {
+
+            }
+            else
+            {
+
+            }
+        }
         stamina = staminaSlider.value;
         if (stamina <= StaminaMax)
         {
