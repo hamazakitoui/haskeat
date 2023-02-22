@@ -87,7 +87,14 @@ public class StageManager : MonoBehaviour
                 default:
                     break;
             }
-            if (!runAway && clear) runAway = true; // ノルマを達成したら逃亡する
+            // ノルマを達成したら逃亡する
+            if (!runAway && clear)
+            {
+                runAway = true;
+                GoalGate goal = FindObjectOfType<GoalGate>(); // ゴール取得
+                Collider2D collider2 = goal.GetComponent<Collider2D>(); // コライダー取得
+                collider2.isTrigger = true; // 逃走可能にする
+            }
             Debug.Log(runAway ? "逃げろ!" : "汚せ!");
         }
     }
