@@ -30,9 +30,11 @@ public class PlMoveAction : MonoBehaviour
     [SerializeField] float staminarecoverynum;
     [SerializeField] GameObject[] coloreffect = new GameObject[4];
     bool movestart = true;
+    [SerializeField]Camera main;
     // Start is called before the first frame update
     void Start()
     {
+        main.transform.position = new Vector3(transform.position.x,transform.position.y,-10) ;
         //必要なコンポーネントを取得
         Collsion = GetComponent<BoxCollider2D>();
         rigid2D = GetComponent<Rigidbody2D>();
@@ -43,120 +45,129 @@ public class PlMoveAction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (StageManager.IsGameStart) {
+            //移動を検知
+            InputX = Input.GetAxisRaw("Horizontal");
+            InputY = Input.GetAxisRaw("Vertical");
+            //スピード代入
+            float speedX = 0;
+            float speedY = 0;
 
-        //移動を検知
-        InputX = Input.GetAxisRaw("Horizontal");
-        InputY = Input.GetAxisRaw("Vertical");
-        //スピード代入
-        float speedX = 0;
-        float speedY = 0;
-
-        if (movestart)
-        {
-            direction = Vector3.up;
-            if (InputX != 0 || InputY != 0)
+            if (movestart)
             {
-                movestart = false;
-            }
-        }
-        else
-        {
-            direction = new Vector3((int)InputX, (int)InputY);
-        }
-        //止まる前の向きを取得
-        if (direction != Vector3.zero)
-        {
-            dirctionkeap = direction;
-        }
-        //止まっているときに向きを代入
-        else if (direction == Vector3.zero)
-        {
-            direction = dirctionkeap;
-        }
-        Debug.Log(direction);
-        if (!IsAction)
-        {
-
-            if (InputX == Nowdrection)
-            {
-                speedX = MoveSpeed;
-            }
-            else if (InputX == -Nowdrection)
-            {
-                speedX = -MoveSpeed;
-            }
-
-            if (InputY == Nowdrection)
-            {
-                speedY = MoveSpeed;
-            }
-            else if (InputY == -Nowdrection)
-            {
-                speedY = -MoveSpeed;
-            }
-            rigid2D.velocity = new Vector2(speedX, speedY);
-        }
-        if (checkfront())
-        {
-            Debug.Log(hit2.transform.gameObject);
-            //目の前に美術品があれば美術品を破壊もしくは塗りつぶす
-            if (Input.GetKeyDown(KeyCode.Z))
-            {
-                if (Colorscript.uselimitnum[Colorscript.colornum] >= 0)
+                direction = Vector3.up;
+                if (InputX != 0 || InputY != 0)
                 {
-                    //美術品か確認
-                    Art art = hit2.collider.GetComponent<Art>();
-                    //美術品であれば
-                    if (art != null)
+                    movestart = false;
+                }
+            }
+            else
+            {
+                direction = new Vector3((int)InputX, (int)InputY);
+            }
+            //止まる前の向きを取得
+            if (direction != Vector3.zero)
+            {
+                dirctionkeap = direction;
+            }
+            //止まっているときに向きを代入
+            else if (direction == Vector3.zero)
+            {
+                direction = dirctionkeap;
+            }
+            Debug.Log(direction);
+            if (!IsAction)
+            {
+
+                if (InputX == Nowdrection)
+                {
+                    speedX = MoveSpeed;
+                }
+                else if (InputX == -Nowdrection)
+                {
+                    speedX = -MoveSpeed;
+                }
+
+                if (InputY == Nowdrection)
+                {
+                    speedY = MoveSpeed;
+                }
+                else if (InputY == -Nowdrection)
+                {
+                    speedY = -MoveSpeed;
+                }
+                rigid2D.velocity = new Vector2(speedX, speedY);
+            }
+            if (checkfront())
+            {
+                Debug.Log(hit2.transform.gameObject);
+                //目の前に美術品があれば美術品を破壊もしくは塗りつぶす
+                if (Input.GetKeyDown(KeyCode.Z))
+                {
+                    if (Colorscript.uselimitnum[Colorscript.colornum] >= 0)
                     {
-                        //破壊した数を追加
-                        StageManager.AddDestroyArt(art.GetArtType);
-                        //目の前にあるのが絵画だった場合
-                        if (art.GetArtType == ArtType.Picture)
+                        //美術品か確認
+                        Art art = hit2.collider.GetComponent<Art>();
+                        //美術品であれば
+                        if (art != null)
                         {
-                            hit2.transform.gameObject.SetActive(false);
-                        }
-                        //壺だった場合の処理
-                        if (art.GetArtType == ArtType.Pot)
-                        {
-                            Destroy(hit2.transform.gameObject);
+                            //破壊した数を追加
+                            StageManager.AddDestroyArt(art.GetArtType);
+                            //目の前にあるのが絵画だった場合
+                            if (art.GetArtType == ArtType.Picture)
+                            {
+                                hit2.transform.gameObject.SetActive(false);
+                            }
+                            //壺だった場合の処理
+                            if (art.GetArtType == ArtType.Pot)
+                            {
+                                Destroy(hit2.transform.gameObject);
+                            }
                         }
                     }
                 }
-            }
 
-        }
-        else
-        {
+            }
             //残り残量がある場合エフェクトを出す
             if (Input.GetKeyDown(KeyCode.Z))
             {
-                if (Colorscript.uselimitnum[Colorscript.colornum] >= 0)
+                if (hit2.transform == null)
                 {
-                    int nowcolor = Colorscript.colornum;
-                    GameObject paintEffect = null;
-                    paintEffect = Instantiate(coloreffect[nowcolor]);
-                    paintEffect.transform.position = transform.position + (direction * 2);
-                    Colorscript.uselimitnum[nowcolor]--;
+                    if (Colorscript.uselimitnum[Colorscript.colornum] >= 0)
+                    {
+                        int nowcolor = Colorscript.colornum;
+                        GameObject paintEffect = null;
+                        paintEffect = Instantiate(coloreffect[nowcolor]);
+                        paintEffect.transform.position = transform.position + (direction * 2);
+                        Colorscript.uselimitnum[nowcolor]--;
+                    }
+
+                }
+                else if (hit2.transform.gameObject.tag == "wall")
+                {
+
+                }
+                else
+                {
+
                 }
             }
-
-        }
-        stamina = staminaSlider.value;
-        if (stamina <= StaminaMax)
-        {
-            staminaSlider.value += Time.deltaTime + staminarecoverynum;
-        }
-        //アクション開始
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            //スタミナ量チェック
-            if (stamina >= 0)
+            stamina = staminaSlider.value;
+            if (stamina <= StaminaMax)
             {
-                staminaSlider.value -= 10;
-                Debug.Log("コルーチンチェック");
-                StartCoroutine(Action(direction));
+                staminaSlider.value += Time.deltaTime + staminarecoverynum;
             }
+            //アクション開始
+            if (Input.GetKeyDown(KeyCode.X))
+            {
+                //スタミナ量チェック
+                if (stamina >= 0)
+                {
+                    staminaSlider.value -= 10;
+                    Debug.Log("コルーチンチェック");
+                    StartCoroutine(Action(direction));
+                }
+            } 
         }
         //移動
     }
