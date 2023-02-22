@@ -177,7 +177,7 @@ public class FadeSceneManager : MonoBehaviour
         FadeCanvas.SetActive(true); // フェード用UI表示
         BackGround.transform.SetAsLastSibling(); // フェード用Canvasを最後に表示
         float time = 0; // 遷移用変数
-        AudioManager.Instance.StopBGM(); // BGM停止
+        if (AudioManager.Instance != null) AudioManager.Instance.StopBGM(); // BGM停止
         // 読み込み画面を少しずつ出す
         // 読み込み時間の一定割合の時間で表示
         while (time <= interval * fadeIntervalMul)
