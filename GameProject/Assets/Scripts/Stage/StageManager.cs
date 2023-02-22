@@ -31,7 +31,6 @@ public class StageManager : MonoBehaviour
     /// <returns></returns>
     IEnumerator MissionStart()
     {
-        yield return null;
         MissionText.SetActive(true); // 内容を表示
         yield return new WaitForSeconds(MISSION_WAIT); // 一定時間表示
         Animator animator = MissionText.GetComponent<Animator>(); // アニメーター取得
