@@ -9244,11 +9244,6 @@ PrefabInstance:
       propertyPath: MoveSpeed
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 4597492506861775401, guid: be0aba1f9d03c2142824c61cde1da3d5,
-        type: 3}
-      propertyPath: staminarecoverynum
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 4597492506861775410, guid: be0aba1f9d03c2142824c61cde1da3d5,
         type: 3}
       propertyPath: m_LocalPosition.x
