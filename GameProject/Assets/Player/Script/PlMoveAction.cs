@@ -223,7 +223,7 @@ public class PlMoveAction : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.X))
             {
                 //スタミナ量チェック
-                if (stamina >= 0 && !Ismove)
+                if (stamina >= 25 && !Ismove&&!IsAction)
                 {
                     staminaSlider.value -= 10;
                     //Debug.Log("コルーチンチェック");
