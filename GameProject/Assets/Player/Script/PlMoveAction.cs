@@ -217,15 +217,15 @@ public class PlMoveAction : MonoBehaviour
             stamina = staminaSlider.value;
             if (stamina <= StaminaMax)
             {
-                staminaSlider.value += Time.deltaTime + staminarecoverynum;
+                staminaSlider.value += Time.deltaTime * staminarecoverynum;
             }
             //アクション開始
             if (Input.GetKeyDown(KeyCode.X))
             {
                 //スタミナ量チェック
-                if (stamina >= 0 && !Ismove)
+                if (stamina >= 0 && !Ismove||!IsAction)
                 {
-                    staminaSlider.value -= 10;
+                    staminaSlider.value -= 25;
                     //Debug.Log("コルーチンチェック");
                     StartCoroutine(Action(direction));
                 }
