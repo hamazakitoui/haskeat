@@ -7,6 +7,11 @@ TagManager:
   - redsplay
   - Enemy
   - wall
+  - bruesplay
+  - yellowsplay
+  - purplespray
+  - Picture
+  - Pot
   layers:
   - Default
   - TransparentFX

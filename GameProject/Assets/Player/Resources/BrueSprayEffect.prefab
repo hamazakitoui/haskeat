@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 5877324395471476132}
   - component: {fileID: 5316809789126661512}
   m_Layer: 0
-  m_Name: RedSprayEffect 1
-  m_TagString: redsplay
+  m_Name: BrueSprayEffect
+  m_TagString: bruesplay
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

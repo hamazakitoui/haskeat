@@ -23,21 +23,36 @@ public class PlMoveAction : MonoBehaviour
     float InputY;
     Vector3 dirctionkeap;
     Vector3 direction;
-    RaycastHit2D hit2;
+    RaycastHit2D[] hit2;
     float stamina;
     const float StaminaMax = 100;
     bool IsAction;
+    Animator PlAnim;
     [SerializeField] float staminarecoverynum;
     [SerializeField] GameObject[] coloreffect = new GameObject[4];
     bool movestart = true;
-    [SerializeField]Camera main;
+    string NowAnim = "None";
+    bool Ismove;
+    GameObject art;
+    [SerializeField] Camera main;
+    enum Pldirection
+    {
+        none,
+        Up,
+        Down,
+        Right,
+        Left,
+        Diagonal
+    };
+    Pldirection state = Pldirection.none;
     // Start is called before the first frame update
     void Start()
     {
-        main.transform.position = new Vector3(transform.position.x,transform.position.y,-10) ;
+        main.transform.position = new Vector3(transform.position.x, transform.position.y, -10);
         //必要なコンポーネントを取得
         Collsion = GetComponent<BoxCollider2D>();
         rigid2D = GetComponent<Rigidbody2D>();
+        PlAnim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         //StartCoroutine("flash");
     }
@@ -45,14 +60,14 @@ public class PlMoveAction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (StageManager.IsGameStart) {
+        if (StageManager.IsGameStart)
+        {
             //移動を検知
             InputX = Input.GetAxisRaw("Horizontal");
             InputY = Input.GetAxisRaw("Vertical");
             //スピード代入
             float speedX = 0;
             float speedY = 0;
-
             if (movestart)
             {
                 direction = Vector3.up;
@@ -69,71 +84,113 @@ public class PlMoveAction : MonoBehaviour
             if (direction != Vector3.zero)
             {
                 dirctionkeap = direction;
+                Ismove = true;
             }
+
             //止まっているときに向きを代入
             else if (direction == Vector3.zero)
             {
                 direction = dirctionkeap;
+                Ismove = false;
+                if (direction.y == 1)
+                {
+                    PlAnim.Play("PlUpstay");
+                }
+                else if (direction.y == -1)
+                {
+
+                    PlAnim.Play("Plstay");
+                }
+                else if (direction.x == 1)
+                {
+                    PlAnim.Play("PlRightstay");
+                }
+                else if (direction.x == -1)
+                {
+                    PlAnim.Play("PlLeftstay");
+                }
             }
-            Debug.Log(direction);
+            //Debug.Log(direction);
+
             if (!IsAction)
             {
-
                 if (InputX == Nowdrection)
                 {
                     speedX = MoveSpeed;
+                    if (speedY == 0)
+                    {
+                        PlAnim.Play("PlRight");
+                    }
+
                 }
                 else if (InputX == -Nowdrection)
                 {
                     speedX = -MoveSpeed;
+                    if (speedY == 0)
+                    {
+                        PlAnim.Play("PlLeft");
+                    }
                 }
 
                 if (InputY == Nowdrection)
                 {
                     speedY = MoveSpeed;
+                    if (speedX == 0)
+                    {
+                        PlAnim.Play("PlUp");
+                    }
                 }
                 else if (InputY == -Nowdrection)
                 {
                     speedY = -MoveSpeed;
-                }
-                rigid2D.velocity = new Vector2(speedX, speedY);
-            }
-            if (checkfront())
-            {
-                Debug.Log(hit2.transform.gameObject);
-                //目の前に美術品があれば美術品を破壊もしくは塗りつぶす
-                if (Input.GetKeyDown(KeyCode.Z))
-                {
-                    if (Colorscript.uselimitnum[Colorscript.colornum] >= 0)
+                    if (speedX == 0)
                     {
-                        //美術品か確認
-                        Art art = hit2.collider.GetComponent<Art>();
-                        //美術品であれば
-                        if (art != null)
-                        {
-                            //破壊した数を追加
-                            StageManager.AddDestroyArt(art.GetArtType);
-                            //目の前にあるのが絵画だった場合
-                            if (art.GetArtType == ArtType.Picture)
-                            {
-                                hit2.transform.gameObject.SetActive(false);
-                            }
-                            //壺だった場合の処理
-                            if (art.GetArtType == ArtType.Pot)
-                            {
-                                Destroy(hit2.transform.gameObject);
-                            }
-                        }
+                        Debug.Log("下入力");
+                        PlAnim.Play("PlDown");
                     }
                 }
 
+                rigid2D.velocity = new Vector2(speedX, speedY);
+            }
+            Debug.Log(checkfront());
+            if (checkfront())
+            {
+                Debug.Log(art.gameObject);
+                //目の前に美術品があれば美術品を破壊もしくは塗りつぶす
+                if (Input.GetKeyDown(KeyCode.Z))
+                {
+                    if (Colorscript.uselimitnum[Colorscript.colornum] > 0)
+                    {
+                        //美術品か確認
+                        Art checkart = art.GetComponent<Art>();
+                        //美術品であれば
+                        if (checkart != null)
+                        {
+                            Debug.Log("チェック");
+                            //破壊した数を追加
+                            StageManager.AddDestroyArt(checkart.GetArtType);
+                            //目の前にあるのが絵画だった場合
+                            if (checkart.GetArtType == ArtType.Picture)
+                            {
+                                art.SetActive(false);
+                            }
+                            //壺だった場合の処理
+                            if (checkart.GetArtType == ArtType.Pot)
+                            {
+                                Destroy(art.gameObject);
+                            }
+                            int nowcolor = Colorscript.colornum;
+                            Colorscript.uselimitnum[nowcolor]--;
+                        }
+                    }
+                }
             }
             //残り残量がある場合エフェクトを出す
             if (Input.GetKeyDown(KeyCode.Z))
             {
-                if (hit2.transform == null)
+                if (!checkfront())
                 {
-                    if (Colorscript.uselimitnum[Colorscript.colornum] >= 0)
+                    if (Colorscript.uselimitnum[Colorscript.colornum] > 0)
                     {
                         int nowcolor = Colorscript.colornum;
                         GameObject paintEffect = null;
@@ -141,9 +198,14 @@ public class PlMoveAction : MonoBehaviour
                         paintEffect.transform.position = transform.position + (direction * 2);
                         Colorscript.uselimitnum[nowcolor]--;
                     }
+                    else
+                    {
+                        int nowcolor = Colorscript.colornum;
+                        Colorscript.uselimitnum[nowcolor]=0;
+                    }
 
                 }
-                else if (hit2.transform.gameObject.tag == "wall")
+                else if (art.tag == "wall")
                 {
 
                 }
@@ -161,13 +223,13 @@ public class PlMoveAction : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.X))
             {
                 //スタミナ量チェック
-                if (stamina >= 0)
+                if (stamina >= 0 && !Ismove)
                 {
                     staminaSlider.value -= 10;
-                    Debug.Log("コルーチンチェック");
+                    //Debug.Log("コルーチンチェック");
                     StartCoroutine(Action(direction));
                 }
-            } 
+            }
         }
         //移動
     }
@@ -216,8 +278,25 @@ public class PlMoveAction : MonoBehaviour
         //結果を宣言
         bool result = false;
         //raycastを飛ばす
-        hit2 = Physics2D.Raycast(RaystartPos, direction, RayLength, hitLayer);
-        result |= hit2.collider != null;
+        foreach (RaycastHit2D hit2D in Physics2D.RaycastAll(RaystartPos, direction, RayLength, hitLayer))
+        {
+            art = hit2D.transform.gameObject;
+
+            if (hit2D.transform.gameObject.tag == "Picture" || hit2D.transform.gameObject.tag == "Pot")
+            {
+                //art = hit2D.transform.gameObject;
+
+
+            }
+            else
+            {
+
+            }
+            result |= hit2D.transform.gameObject;
+            //Debug.Log(hit2D.transform.gameObject);
+        }
+
+
         //rayを表示する
         Debug.DrawRay(RaystartPos, direction, Color.red);
         return result;

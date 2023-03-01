@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5316809789126661512}
   m_Layer: 0
   m_Name: YellowSprayEffect
-  m_TagString: redsplay
+  m_TagString: yellowsplay
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
