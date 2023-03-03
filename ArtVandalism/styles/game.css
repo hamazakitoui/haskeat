@@ -1,0 +1,166 @@
+/* CSS Document */
+
+body {
+
+	/* 画像を常に天地左右の中央に配置 */
+	background-position: center top 68px;
+
+	/* 画像をタイル状に繰り返し表示しない */
+	background-repeat: no-repeat;
+
+	/* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+	background-attachment: fixed;
+
+	/* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+	background-size: cover;
+
+	/* 背景画像が読み込まれる前に表示される背景のカラー */
+	
+
+}
+
+.main{
+	margin: 30px 100px 0px 100px;
+	background-color: #181818;
+	font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+	text-decoration: none;
+	/* 全体の文字色はここで変更 */
+	color:#FEFEFE;
+	padding: 40px 30px;
+}
+#domi{
+	opacity: 0;
+	position: absolute;
+	width: 0;
+}
+.main-content{
+	display: flex;
+	justify-content: space-between;	
+}
+#title{
+	font-weight: bold;
+
+}
+
+#main-content-all{
+	width: 74%;
+	
+}
+#slider1{
+	margin-bottom: 50px;
+}
+.content{
+}
+.content-title{
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 16px;
+}
+.content-introduction{
+	font-size: 15px;
+	display:block;
+	opacity: 0.8;
+	
+	margin-bottom: 10px;
+}
+
+.side{
+	position: sticky;
+}
+#side{
+  	width: 22%;
+	text-align:right;
+	
+}
+#sale{
+	font-weight: bold;
+	font-size: 11px;
+	box-sizing    : border-box;           /* 罫線も含む長さ       */
+	display: inline-block;
+	
+	padding       : 10px;                 /* 文字の位置合わせ     */
+	padding-left: 12px;
+	text-align    : center;               /* 文字位置             */
+	color         : #464646;              /* 文字色               */
+	border-radius : 1px;                  /* 角丸の指定           */
+	
+
+	background    : #AFAFAF ;              /* BOXの背景色          */
+	
+	margin-bottom: 10px;
+}
+#before-discount{
+	font-size: 13px;
+	text-decoration: line-through;
+}
+#amount{
+	font-weight: bold;
+	font-size: 32px;	
+}
+#tax{
+	font-size: 11px;
+	opacity: 0.8;
+	margin-bottom: 16px;
+}
+
+.dl-item{
+	text-decoration: none;
+	
+}
+.dl-item:hover{
+	opacity: 0.6;
+}
+
+.dl-button{
+	font-weight: bold;
+	margin        : auto;                 /* サンプル用 中央寄せ  */
+	box-sizing    : border-box;           /* 罫線も含む長さ       */
+	width         : 100%;                 /* BOXの幅              */
+	max-width     : 600px;                /* BOXの最大幅          */
+	padding       : 12px;                 /* 文字の位置合わせ     */
+	text-align    : center;               /* 文字位置             */
+	color         : #2E2E2E;              /* 文字色               */
+	border-radius : 2px;                  /* 角丸の指定           */
+	/* 購入ボタンはここ */
+	background    : #ffe089 ;              /* BOXの背景色          */
+	
+	margin-bottom: 36px;
+}
+.productDetail{
+	width: 100%;
+    margin-top: 36px;
+    text-align: left;
+	padding-top: 0px;
+    border-top: solid 2px;
+	opacity: 0.85;
+}
+.productDetail td {
+    font-size: 15px;
+}
+.productDetail th, .productDetail td{
+	position: relative;
+    padding: 13px 0 11px;
+    /*border-bottom: solid 2px #f0f0f0;*/
+    text-align: left;
+    vertical-align: middle;
+}
+.hp-link{
+	
+	text-decoration: none;
+	font-weight: bold;
+	margin        : auto;                 /* サンプル用 中央寄せ  */
+	box-sizing    : border-box;           /* 罫線も含む長さ       */
+	width         : 100%;                 /* BOXの幅              */
+	max-width     : 600px;                /* BOXの最大幅          */
+	padding       : 12px;                 /* 文字の位置合わせ     */
+	text-align    : center;               /* 文字位置             */
+	color         : #2E2E2E;              /* 文字色               */
+	border-radius : 2px;                  /* 角丸の指定           */
+	background    : #9FFB9A ;              /* BOXの背景色          */
+	}
+.hp-link:hover{
+	opacity: 0.6;
+}
+.copylight{
+	margin-top: 10px;
+}

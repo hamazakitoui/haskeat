@@ -1,0 +1,145 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+
+		<!-- ページタイトル -->
+		<title>ArtVandalism</title>
+
+		<!-- ページアイコン -->
+		<link rel = "icon" type="image/png" href="images/favicon.png">
+
+
+
+		<script>var __adobewebfontsappname__="dreamweaver"</script>
+		<script src="http://use.edgefonts.net/source-sans-pro:n2,n4,n6:default.js" type="text/javascript"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="../styles/slider-pro.min.css">
+		<link href="styles/game.css" rel="stylesheet" type="text/css">
+		<script src="../js/jquery-3.5.1.min.js"></script>
+		<script src="../js/jquery.sliderPro.min.js"></script>
+		<script src="../js/jquery.adaptive-backgrounds.js"></script>
+		<script>
+			$(document).ready(function(){
+				$.adaptiveBackground.run();
+			});
+		</script>
+		<script>
+			$(function() {
+				$("#header").load("header.html");
+			});
+		</script>
+		<script>
+			$( document ).ready(function() {
+				$('#slider1').sliderPro({
+					width: 800,//横幅
+					arrows: true,//左右の矢印
+					buttons: true,//ナビゲーションボタンを出す
+					slideDistance:1,//スライド同士の距離
+					aspectRatio: 1.78,
+					reachVideoAction: 'playVideo',
+					playVideoAction:'stopAutoplay',
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<!-- ヘッダーとりあえず非表示 -->
+		<!--
+		<div id="wrapper">
+			<header class = "page-header" id = "glovalHeader" id="header">
+				<h1><a href="index.html">
+					<img class = "logo" src = "images/logo.png" alt="GT4A">
+				</a>
+				</h1>
+				<nav>
+					<ul class="displayed" id="navlinks">
+						<li><a href="index.html" class="thispage">HOME<span class = "subTitle">ホーム</span></a></li>
+						<li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=eeUPGhB_lUOsHmxSoVCbiNRlVmkIepZBljzX6qkh95xUODVOSlc4TU41NUxBTTI3VFNCVUwzSTE2Ui4u" target="_blank">REVIEW<span class = "subTitle">作品評価</span></a></li>
+						<li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=eeUPGhB_lUOsHmxSoVCbiNRlVmkIepZBljzX6qkh95xUMjZTUThFUDVJSFJYWVo2Nk4ySEU3QkIxUy4u" target="_blank">VOTE<span class = "subTitle">投票</span></a></li>
+					</ul>
+				</nav>
+			</header>
+		</div>
+		-->
+
+		<div class="main" data-ab-css-background="1">
+			<img src="images/screenshot01.png" alt="game01" data-adaptive-background="1" id="domi"/>
+			<div id="title">
+
+				<!-- 作品タイトル -->
+				<h1>ArtVandalism</h1>
+
+			</div>
+			<div class="main-content">
+				<main id="main-content-all" >	
+					
+					<!-- スライダー画像 -->
+					<div class="slider-pro" id="slider1">
+						<div class="sp-slides">
+							<!-- slide 1 -->
+							<div class="sp-slide">
+								<img class="sp-image" src ="images/ScreenShot_1.png" alt="game01"/>
+							</div>	
+							<!-- slide 2 -->
+							<div class="sp-slide">
+								<img class="sp-image" src ="images/ScreenShot_2.png" alt="game02"/>
+							</div>					
+							<!-- slide 3 -->
+							<div class="sp-slide">
+								<img class="sp-image" src ="images/ScreenShot_3.png" alt="game03"/>
+							</div>					
+							<!-- slide 4 -->
+							<div class="sp-slide">
+								<video class="sp-image" src ="images/movie.mp4" controls alt="game04"/>
+							</div>	
+						</div>
+					</div>
+
+					<!-- 変更必要箇所 -->
+					<!-- 作品紹介コメント キャッチコピー -->
+					<div class="content-title">
+						壊せ!汚せ!!穢せ!!!
+					</div>
+					<!-- 作品紹介コメント 内容 -->
+					<div class="content-introduction">
+						※この作品は未完成です。敵やギミックが実装されていません!<br>
+						警備員や監視カメラ等の厳重なセキュリティをかいくぐり美術館を荒らしまくれ!<br>
+						主人公の持つ特殊スプレーを駆使して、堅牢な美術館を突破し、中の美術品を荒せ!!<br>
+					</div>
+					<table class="productDetail">
+						<tr>
+							<th>プレイ人数</th>
+							<td>1人</td>
+						</tr>
+						<tr>
+							<th>対応ハード</th>
+							<td>PC</td>
+						</tr>
+						<tr>
+							<th>制作者</th>
+							<td>濱崎 柊衣　川島 永資　白井 悠斗</td>
+						</tr>
+						<tr>
+							<th>配信日</th>
+							<td>2023年3月13日</td>
+						</tr>
+					</table>
+					<div class="copylight">本作品の無断転載・二次配布・商用利用・複製を行なう事を原則として禁止致します。</div>
+				</main>
+				<div id="side">
+
+					<!-- ダウンロードファイルは以下のファイル名を変更 -->
+					<a href="game.zip" download="" class="dl-item">
+						<div class="dl-button">
+							ダウンロード
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
