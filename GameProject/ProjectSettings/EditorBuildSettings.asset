@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/TitleScene.unity
     guid: d381bb275fcd2014a8c1c85b7ffca400
   - enabled: 1
-    path: Assets/Scenes/DebugHamasaki.unity
-    guid: 3ddce43a805e61e41b5d1ddd91ad98bb
+    path: Assets/Scenes/Stage01.unity
+    guid: a5d40378d1c24044f858743a238f7816
   m_configObjects: {}

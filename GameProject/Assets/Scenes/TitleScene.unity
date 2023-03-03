@@ -233,7 +233,7 @@ MonoBehaviour:
   PaintBall: {fileID: 1750911295}
   Renderer: {fileID: 1553427179}
   GameScene:
-    sceneName: DebugHamasaki
+    sceneName: 
   pictures:
   - {fileID: 21300000, guid: 91fb53a79d54b374da7502eb453e732a, type: 3}
   - {fileID: 21300000, guid: 71691480237858c41885968a2e4d9c86, type: 3}
