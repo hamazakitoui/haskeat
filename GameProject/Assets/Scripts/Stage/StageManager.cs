@@ -16,6 +16,7 @@ public class StageManager : MonoBehaviour
     [SerializeField] int picNolma, potNolma, sculpNolma, mpNolma, msNolma;
     [SerializeField] GameObject MissionText; // ミッション表示オブジェクト
     [SerializeField] ClearCondition Condition; // クリア条件
+    [SerializeField] SceneObject GameScene; // ゲームシーン
     // Start is called before the first frame update
     void Start()
     {
@@ -101,7 +102,7 @@ public class StageManager : MonoBehaviour
     /// <summary> ゲームクリア </summary>
     public void GameClear()
     {
-        Debug.Log("GameClear");
+        FadeSceneManager.Instance.LoadScene(GameScene); // シーン移動
     }
     /// <summary> 逃亡フラグ </summary>
     public bool IsRunAway { get { return runAway; } }
