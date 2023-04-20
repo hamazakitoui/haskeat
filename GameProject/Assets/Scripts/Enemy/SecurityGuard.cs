@@ -81,8 +81,7 @@ public class SecurityGuard : EnemyBase, IEnemy
             if (!isAround)
             {
                 int nextPoint = moveIndex + (returnMove ? -1 : 1); // 移動先
-                agent.SetDestination(movePoints[nextPoint]); // 位置に向かって移動
-                agent.nextPosition = transform.position;
+                agent.destination = movePoints[nextPoint]; // 移動先設定
                 agent.speed = nowMoveSpeed; // 移動速度設定
                 // 移動先まで近づいたら
                 if (Vector2.SqrMagnitude(movePoints[nextPoint] - transform.position) <= 0.1f)
@@ -96,8 +95,7 @@ public class SecurityGuard : EnemyBase, IEnemy
             else
             {
                 int nextPoint = moveIndex < movePoints.Length - 1 ? moveIndex + 1 : 0; // 移動先
-                agent.SetDestination(movePoints[nextPoint]); // 位置に向かって移動
-                agent.nextPosition = transform.position;
+                agent.destination = movePoints[nextPoint]; // 移動先設定
                 agent.speed = nowMoveSpeed; // 移動速度設定
                 // 移動先まで近づいたら
                 if (Vector2.SqrMagnitude(movePoints[nextPoint] - transform.position) <= 0.1f)
