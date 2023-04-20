@@ -70,7 +70,7 @@ public class SecurityGuard : EnemyBase, IEnemy
         // プレイヤーを発見したら
         if (foundPlayer)
         {
-            agent.destination = movePoints[nextPoint]; // 移動先設定
+            agent.destination = playerPos.position; // 移動先設定
             agent.speed = nowMoveSpeed; // 移動速度設定
         }
         // 通常周回
@@ -94,7 +94,7 @@ public class SecurityGuard : EnemyBase, IEnemy
             else
             {
                 int nextPoint = moveIndex < movePoints.Length - 1 ? moveIndex + 1 : 0; // 移動先
-                agent.destination = movePoints[nextPoint]; // 移動先設定
+                               agent.destination = movePoints[nextPoint]; // 移動先設定
                 agent.speed = nowMoveSpeed; // 移動速度設定
                 // 移動先まで近づいたら
                 if (Vector2.SqrMagnitude(movePoints[nextPoint] - transform.position) <= 0.1f)
