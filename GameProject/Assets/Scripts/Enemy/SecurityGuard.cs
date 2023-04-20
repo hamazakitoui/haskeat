@@ -70,8 +70,7 @@ public class SecurityGuard : EnemyBase, IEnemy
         // プレイヤーを発見したら
         if (foundPlayer)
         {
-            agent.SetDestination(playerPos.position); // プレイヤー位置に向かって移動
-            agent.nextPosition = transform.position;
+            agent.destination = movePoints[nextPoint]; // 移動先設定
             agent.speed = nowMoveSpeed; // 移動速度設定
         }
         // 通常周回
