@@ -98,7 +98,7 @@ public struct Library
             {
                 Animator npanim = notcom.GetComponent<Animator>(); // 判別用Animatorクラス
                 // 除外対象だったら
-                if (npanim == pauseAnimators[a])
+                if (npanim != null && npanim == pauseAnimators[a])
                 {
                     pause = false;
                     break;
