@@ -122,6 +122,7 @@ public struct Library
             // 除外対象か判別して停止か判断
             foreach (var notcom in notPauseBehaviour)
             {
+                if (notcom == null || !notcom.gameObject.activeSelf) continue; // 非アクティブならスキップ
                 Rigidbody2D nprb = notcom.GetComponent<Rigidbody2D>(); // 判別用RigidBody2Dクラス
                 if (nprb != null)
                 {
