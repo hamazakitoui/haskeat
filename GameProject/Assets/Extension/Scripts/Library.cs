@@ -96,7 +96,7 @@ public struct Library
             // 除外対象か判別して停止か判断
             foreach (var notcom in notPauseBehaviour)
             {
-                if (!notcom.gameObject.activeSelf) continue; // 非アクティブならスキップ
+                if (notcom == null || !notcom.gameObject.activeSelf) continue; // 非アクティブならスキップ
                 Animator npanim = notcom.GetComponent<Animator>(); // 判別用Animatorクラス
                 // 除外対象だったら
                 if (npanim != null && npanim == pauseAnimators[a])
