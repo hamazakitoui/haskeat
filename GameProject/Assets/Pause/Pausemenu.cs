@@ -13,19 +13,47 @@ public class Pausemenu : AnimationEffect
         Resume,//閉じる
     };
     [SerializeField] Text[] Pausetext;
+    [SerializeField] GameObject[] Pause;
     [SerializeField] Image SelectArrow;
     Vector2 ArrowPos;
     int state = 0;
     const int minstatenum = 0;
     const int Maxstatenum = 2;
     [SerializeField] GameObject Mission;
+    [SerializeField] GameObject MissionCanvas;
+    Animator MissionAnim;
     [SerializeField] string[] Scenename;
     PauseState nowState = PauseState.backStageSelect;
+    [SerializeField] List<MonoBehaviour> NPList;
     // Start is called before the first frame update
     void Start()
     {
         ArrowPos = SelectArrow.GetComponent<RectTransform>().anchoredPosition;
-        Mission.GetComponent<Animator>().Play("CheckMision");
+        gameObject.transform.GetChild(0).GetComponent<Canvas>().enabled = false;
+        MissionAnim = Mission.GetComponent<Animator>();
+        NPList.Add(this);
+        int a = NPList.Count;
+        //foreach(var m in NPList)
+        //{
+        //    a += m.transform.childCount;
+        //}
+        MonoBehaviour[] g = new MonoBehaviour[NPList.Count];
+        for (int i = 0; i < g.Length+1; i++)
+        {
+            g[i] = NPList[i];
+        }
+        //for (int i=0;i<NPList.Count ;i++)
+        //{
+        //    for(int j=0;j<NPList[i].transform.childCount+1; j++)
+        //    {
+        //        g[i + j] = NPList[i].transform.GetChild(j).GetComponent<MonoBehaviour>();
+        //        if (j == NPList[i].transform.childCount) g[i + j] = NPList[i];
+        //    }
+        //}
+        Library.Pause2D(g);
+      
+       
+        //Mission.GetComponent<Animator>().Play("CheckMision");
     }
 
     // Update is called once per frame
@@ -42,7 +70,18 @@ public class Pausemenu : AnimationEffect
                 }
                 else
                 {
-                    Mission.GetComponent<Animator>().Play("MisionNotActive");
+                    Debug.Log(state);
+                    MissionAnim.Play("resumption");
+                    
+                    if (MissionAnim.GetCurrentAnimatorStateInfo(0).normalizedTime>=1)
+                    {
+                        Debug.Log("Pauseend");
+                        IsPause = false;
+                        state = 0;
+                        gameObject.transform.GetChild(0).GetComponent<Canvas>().enabled = false;
+                        Library.Resume2D();
+                    }
+                    
                 }
             }
             else
@@ -85,11 +124,22 @@ public class Pausemenu : AnimationEffect
     {
         if (Input.GetKeyDown(KeyCode.M))
         {
+
+            gameObject.transform.GetChild(0).GetComponent<Canvas>().enabled = true;
+            Mission.gameObject.SetActive(true);
+            
             if (!IsPause)
             {
-                MonoBehaviour[] NotPause = new MonoBehaviour[1];
-                NotPause[0] = this;
+                MonoBehaviour[] NotPause = new MonoBehaviour[Pause.Length + 2];
+                for (int i = 0; i < Pause.Length; i++)
+                {
+                    NotPause[i] = Pause[i].GetComponent<MonoBehaviour>();
+                }
+                NotPause[Pause.Length] = this;
+                NotPause[Pause.Length + 1] = SelectArrow;
+                Mission.GetComponent<Animator>().Play("CheckMision");
                 Library.Pause2D(NotPause);
+
                 IsPause = true;
             }
 

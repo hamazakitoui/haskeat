@@ -75,7 +75,9 @@ public class Colormaneger : MonoBehaviour
         if (checkChengebutton)
         {
             StartCoroutine("MoveColor");
+            Debug.Log(checkChengebutton);
         }
+        
         UesNumtext[colornum].text = "×" + uselimitnum[colornum].ToString();
 
 
@@ -124,15 +126,33 @@ public class Colormaneger : MonoBehaviour
         Vector2 ColorPos = Rect[colornum].anchoredPosition;
         Vector2 beforColorPos = Rect[BeforColor].anchoredPosition;
         float movedistance = -1;
-        while (ColorPos.x<=use)
+        while (checkChengebutton)
         {
             movedistance = ColorPos.x - use;
             Rect[colornum].anchoredPosition += new Vector2(20 * Time.deltaTime, 0);
             Rect[BeforColor].anchoredPosition -= new Vector2(20 * Time.deltaTime, 0);
-            Debug.Log("aaa");
-            yield return 0;
+            //Debug.Log("aaa");
+            if (movedistance < 0)
+            {
+                checkChengebutton = true;
+            }
+            else
+            {
+                checkChengebutton = false;
+            }
+
+            if (checkChengebutton)
+            {
+                yield return 0;
+            }
+            else
+            {
+                break;
+            }
+            
         }
-        checkChengebutton = false;
+        //checkChengebutton = false;
+        //Debug.Log("bbb");
         yield return null;
     }
 

@@ -237,6 +237,7 @@ public class PlMoveAction : MonoBehaviour
     IEnumerator Action(Vector3 movedirction)
     {
         IsAction = true;
+        rigid2D.velocity = new Vector2(0, 0);
         //当たり判定を消す
         Collsion.enabled = false;
         //動く前の位置を取得
