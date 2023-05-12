@@ -12,6 +12,8 @@ public class EnemyBase : MonoBehaviour
     // 現在の移動速度
     protected float nowMoveSpeed;
     protected bool foundPlayer = false; // プレイヤー発見フラグ
+    // アニメ名
+    protected readonly string vxAnim = "X", vyAnim = "Y";
     protected Rigidbody2D rigidbody2; // RigidBody2Dコンポーネント
     protected Animator animator; // アニメーターコンポーネント
     protected Transform playerPos; // プレイヤー位置

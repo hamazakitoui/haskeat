@@ -31,6 +31,7 @@ public class SecurityGuard : EnemyBase, IEnemy
         // 関数登録
         handler += PlayerFound;
         handler += Move;
+        handler += AnimationChange;
     }
 
     // Update is called once per frame
@@ -105,10 +106,40 @@ public class SecurityGuard : EnemyBase, IEnemy
                 }
             }
         }
-        // 右移動時
-        if (agent.velocity.x > 0)
+    }
+    /// <summary> アニメ変更 </summary>
+    void AnimationChange()
+    {
+        // 左右移動時
+        if (agent.velocity.normalized.x > agent.velocity.normalized.y)
         {
-            // 左向きの時
+            // 右移動時
+            if (agent.velocity.x > 0)
+            {
+                // 左向きの時
+                if (transform.localScale.x < 0)
+                {
+                    Vector3 scale = transform.localScale; // 向き
+                    scale.x = -scale.x;
+                    transform.localScale = scale;
+                }
+            }
+            // 左移動時
+            else
+            {
+                // 右向きの時
+                if (transform.localScale.x > 0)
+                {
+                    Vector3 scale = transform.localScale; // 向き
+                    scale.x = -scale.x;
+                    transform.localScale = scale;
+                }
+            }
+        }
+        // 上下移動時
+        else
+        {
+            // 向きが反転していたら
             if (transform.localScale.x < 0)
             {
                 Vector3 scale = transform.localScale; // 向き
@@ -116,17 +147,9 @@ public class SecurityGuard : EnemyBase, IEnemy
                 transform.localScale = scale;
             }
         }
-        // 左移動時
-        else
-        {
-            // 右向きの時
-            if (transform.localScale.x > 0)
-            {
-                Vector3 scale = transform.localScale; // 向き
-                scale.x = -scale.x;
-                transform.localScale = scale;
-            }
-        }
+        //Vector2 velocity = agent.velocity.normalized; // 移動速度
+        //animator.SetBool(vxAnim, Mathf.Abs(velocity.x) > Mathf.Abs(velocity.y)); // 横移動アニメ変更
+        //animator.SetFloat(vyAnim, agent.velocity.y); // 縦移動アニメ変更
     }
     /// <summary> 被弾 </summary>
     /// <param name="power">攻撃力</param>
