@@ -43,9 +43,16 @@ public class SecurityGuard : EnemyBase, IEnemy
     void PlayerFound()
     {
         Vector3 dir = playerPos.position - transform.position; // プレイヤーとの方向
-        // 視認範囲を計算
-        float r = Mathf.Acos(Vector3.Dot
-            (transform.localScale.x > 0 ? Vector3.right : Vector3.left, dir.normalized)) * Mathf.Rad2Deg;
+        Vector3 fd = Vector3.right; // 視認方向
+        if (transform.localScale.x < 0) fd = Vector3.left; // 左向きなら左を向く
+        else
+        {
+            // 移動速度
+            Vector2 vel = new Vector2(Mathf.Abs(agent.velocity.x), Mathf.Abs(agent.velocity.y));
+            // 上下移動時
+            if (vel.y > vel.x) fd = agent.velocity.y > 0 ? Vector3.up : Vector3.down;
+        }
+        float r = Mathf.Acos(Vector3.Dot(fd, dir.normalized)) * Mathf.Rad2Deg; // 視認範囲を計算
         bool temp = foundPlayer; // 一時保存
         foundPlayer = r < foundRad && dir.magnitude < sight; // 発見かどうか更新
         if (temp && !foundPlayer)
