@@ -15,6 +15,7 @@ public class PlMoveAction : MonoBehaviour
     [SerializeField] Slider HPSlider;
     [SerializeField] Slider staminaSlider;
     [SerializeField] float Actionmovenum;
+    [SerializeField] GameObject EffctSpray;
     BoxCollider2D Collsion;　　　　　　　　 //当たり判定の保存用関数
     SpriteRenderer spriteRenderer;　　　　　//画像のコンポーネント取得関数
     Rigidbody2D rigid2D;                    //重力取得
@@ -22,7 +23,7 @@ public class PlMoveAction : MonoBehaviour
     float InputX;
     float InputY;
     Vector3 dirctionkeap;
-    Vector3 direction;
+    public Vector3 direction;
     RaycastHit2D[] hit2;
     float stamina;
     const float StaminaMax = 100;
@@ -34,7 +35,11 @@ public class PlMoveAction : MonoBehaviour
     string NowAnim = "None";
     bool Ismove;
     GameObject art;
+    public bool IsZbuttonCheck;
     [SerializeField] Camera main;
+    const float MOVE_AFTER_CREATE_INSTANCE_SPAN = 0.1f;
+    const float MOVE_AFTER_ACTIVE_TIME = 0.1f;
+    const float MOVE_AFTER_DESTROY_SPAN = 0.01f;
     enum Pldirection
     {
         none,
@@ -55,13 +60,14 @@ public class PlMoveAction : MonoBehaviour
         PlAnim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         //StartCoroutine("flash");
+        EffctSpray.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (StageManager.IsGameStart)
-        {
+        //if (StageManager.IsGameStart)
+        //{
             //移動を検知
             InputX = Input.GetAxisRaw("Horizontal");
             InputY = Input.GetAxisRaw("Vertical");
@@ -145,44 +151,46 @@ public class PlMoveAction : MonoBehaviour
                     speedY = -MoveSpeed;
                     if (speedX == 0)
                     {
-                        Debug.Log("下入力");
+                        //Debug.Log("下入力");
                         PlAnim.Play("PlDown");
                     }
                 }
 
                 rigid2D.velocity = new Vector2(speedX, speedY);
-            }
-            Debug.Log(checkfront());
+            //}
+            //Debug.Log(checkfront());
             if (checkfront())
             {
                 Debug.Log(art.gameObject);
                 //目の前に美術品があれば美術品を破壊もしくは塗りつぶす
                 if (Input.GetKeyDown(KeyCode.Z))
                 {
-                    if (Colorscript.uselimitnum[Colorscript.colornum] > 0)
-                    {
-                        //美術品か確認
-                        Art checkart = art.GetComponent<Art>();
-                        //美術品であれば
-                        if (checkart != null)
-                        {
-                            Debug.Log("チェック");
-                            //破壊した数を追加
-                            StageManager.AddDestroyArt(checkart.GetArtType);
-                            //目の前にあるのが絵画だった場合
-                            if (checkart.GetArtType == ArtType.Picture)
-                            {
-                                art.SetActive(false);
-                            }
-                            //壺だった場合の処理
-                            if (checkart.GetArtType == ArtType.Pot)
-                            {
-                                Destroy(art.gameObject);
-                            }
-                            int nowcolor = Colorscript.colornum;
-                            Colorscript.uselimitnum[nowcolor]--;
-                        }
-                    }
+                    EffctSpray.SetActive(true);
+                    Debug.Log("aaa");
+                    //if (Colorscript.uselimitnum[Colorscript.colornum] > 0)
+                    //{
+                    //    //美術品か確認
+                    //    Art checkart = art.GetComponent<Art>();
+                    //    //美術品であれば
+                    //    if (checkart != null)
+                    //    {
+                    //        Debug.Log("チェック");
+                    //        //破壊した数を追加
+                    //        StageManager.AddDestroyArt(checkart.GetArtType);
+                    //        //目の前にあるのが絵画だった場合
+                    //        if (checkart.GetArtType == ArtType.Picture)
+                    //        {
+                    //            art.SetActive(false);
+                    //        }
+                    //        //壺だった場合の処理
+                    //        if (checkart.GetArtType == ArtType.Pot)
+                    //        {
+                    //            Destroy(art.gameObject);
+                    //        }
+                    //        int nowcolor = Colorscript.colornum;
+                    //        Colorscript.uselimitnum[nowcolor]--;
+                    //    }
+                    //}
                 }
             }
             //残り残量がある場合エフェクトを出す
@@ -190,19 +198,20 @@ public class PlMoveAction : MonoBehaviour
             {
                 if (!checkfront())
                 {
-                    if (Colorscript.uselimitnum[Colorscript.colornum] > 0)
-                    {
-                        int nowcolor = Colorscript.colornum;
-                        GameObject paintEffect = null;
-                        paintEffect = Instantiate(coloreffect[nowcolor]);
-                        paintEffect.transform.position = transform.position + (direction * 2);
-                        Colorscript.uselimitnum[nowcolor]--;
-                    }
-                    else
-                    {
-                        int nowcolor = Colorscript.colornum;
-                        Colorscript.uselimitnum[nowcolor]=0;
-                    }
+                    //if (Colorscript.uselimitnum[Colorscript.colornum] > 0)
+                    //{
+                    //    int nowcolor = Colorscript.colornum;
+                    //    GameObject paintEffect = null;
+                    //    paintEffect = Instantiate(coloreffect[nowcolor]);
+                    //    paintEffect.transform.position = transform.position + (direction * 2);
+                    //    Colorscript.uselimitnum[nowcolor]--;
+                    //}
+                    //else
+                    //{
+                    EffctSpray.SetActive(true);
+                    //    int nowcolor = Colorscript.colornum;
+                    //    Colorscript.uselimitnum[nowcolor]=0;
+                    //}
 
                 }
                 else if (art.tag == "wall")
@@ -228,6 +237,8 @@ public class PlMoveAction : MonoBehaviour
                     staminaSlider.value -= 10;
                     //Debug.Log("コルーチンチェック");
                     StartCoroutine(Action(direction));
+                    StartCoroutine(MoveAfterMotion(transform.position,transform.position+direction));
+                    
                 }
             }
         }
@@ -256,10 +267,12 @@ public class PlMoveAction : MonoBehaviour
 
             checkmovedistance = Vector3.Distance(transform.position, moveend);
             transform.position += movedirction * Actionmovenum * Time.deltaTime;
+            
             yield return 0;
         }
         //当たり判定を戻す
         Collsion.enabled = true;
+        transform.position = moveend;
         IsAction = false;
         yield return null;
     }
@@ -286,8 +299,6 @@ public class PlMoveAction : MonoBehaviour
             if (hit2D.transform.gameObject.tag == "Picture" || hit2D.transform.gameObject.tag == "Pot")
             {
                 //art = hit2D.transform.gameObject;
-
-
             }
             else
             {
@@ -326,6 +337,53 @@ public class PlMoveAction : MonoBehaviour
         //最後に当たり判定を戻す
         Collsion.enabled = true;
     }
+    private IEnumerator MoveAfterMotion(Vector3 startPos, Vector3 endPos)
+    {
+        // 終点と始点との距離、終点と始点との角度
+        float length, dirRad;
+        // 終点と始点の方向関連
+        {
+            Vector3 dir = endPos - startPos; // 終点と始点との方向
+            length = dir.magnitude; // 距離取得
+            dirRad = Mathf.Atan2(dir.y, dir.x); // 角度取得
+        }
+        List<SpriteRenderer> afterMotionList = new List<SpriteRenderer>(); // 残像リスト
+        //AudioSource moveAudio = AudioManager.Instance.PlaySE(moveSe); // 移動音再生
+        yield return null; // 1フレーム待機
+        // 残像生成
+        SpriteRenderer Plsprite = GetComponent<SpriteRenderer>();
+        for (float d = length; d > 0.0f; d -= MOVE_AFTER_CREATE_INSTANCE_SPAN)
+        {
+            GameObject w = new GameObject("fgfh");
+            SpriteRenderer renderer = w.AddComponent<SpriteRenderer>(); // 残像取得
+            renderer.sprite=Plsprite.sprite;
+            // 生成位置
+            Vector3 pos = endPos - new Vector3(Mathf.Cos(dirRad) * d, Mathf.Sin(dirRad) * d);
+            pos.z = Vector3.zero.z; // Z座標を一定値に
+            renderer.transform.position = pos; // 位置設定
+            afterMotionList.Add(renderer); // リストに追加
+        }
+        yield return new WaitForSeconds(MOVE_AFTER_ACTIVE_TIME); // 一定時間表示
+        // 一定時間ごとに残像削除
+        while (afterMotionList.Count > 0)
+        {
+            yield return new WaitForSeconds(MOVE_AFTER_DESTROY_SPAN); // 一定時間待機
+            StartCoroutine(AfterMotionFade(afterMotionList[0])); // 残像透過開始
+            afterMotionList.RemoveAt(0); // 先頭の要素を削除s
+        }
+        // 移動音停止
+        //if (moveAudio != null && moveAudio.isPlaying && moveAudio.clip.name == moveSe) moveAudio.Stop();
+    }
+    IEnumerator AfterMotionFade(SpriteRenderer motion)
+    {
+        //float MotionTime;
+        Color MotionColor=motion.color;
+        motion.color = new Color(MotionColor.r, MotionColor.g, MotionColor.b, 0);
+        yield return new WaitForSeconds(0.01f);
+        motion.color = new Color(MotionColor.r, MotionColor.g, MotionColor.b, 1);
+        Destroy(motion.gameObject);
+        yield return null;
 
+    }
 
 }

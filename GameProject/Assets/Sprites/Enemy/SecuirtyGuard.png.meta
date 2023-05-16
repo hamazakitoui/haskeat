@@ -11,6 +11,15 @@ TextureImporter:
   - first:
       213: -6697444778464969975
     second: SecuirtyGuard_2
+  - first:
+      213: 4198378856317584297
+    second: SecuirtyGuard_0
+  - first:
+      213: 740752737342157123
+    second: SecuirtyGuard_1
+  - first:
+      213: 2431630658444349028
+    second: SecuirtyGuard_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -122,8 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fed4de72523c9b2c0800000000000000
-      internalID: -4415283395308990993
+      spriteID: 9a3025b6353a34a30800000000000000
+      internalID: 4198378856317584297
       vertices: []
       indices: 
       edges: []
@@ -143,8 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2db4ace0788a0a8c0800000000000000
-      internalID: -3990003971828069422
+      spriteID: 3417daf90bea74a00800000000000000
+      internalID: 740752737342157123
       vertices: []
       indices: 
       edges: []
@@ -164,8 +173,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90bfcc46575ed03a0800000000000000
-      internalID: -6697444778464969975
+      spriteID: 46e46855333eeb120800000000000000
+      internalID: 2431630658444349028
       vertices: []
       indices: 
       edges: []
