@@ -154,9 +154,9 @@ public class SecurityGuard : EnemyBase, IEnemy
                 transform.localScale = scale;
             }
         }
-        //Vector2 velocity = agent.velocity.normalized; // 移動速度
-        //animator.SetBool(vxAnim, Mathf.Abs(velocity.x) > Mathf.Abs(velocity.y)); // 横移動アニメ変更
-        //animator.SetFloat(vyAnim, agent.velocity.y); // 縦移動アニメ変更
+        Vector2 velocity = agent.velocity.normalized; // 移動速度
+        animator.SetBool(vxAnim, Mathf.Abs(velocity.x) > Mathf.Abs(velocity.y)); // 横移動アニメ変更
+        animator.SetFloat(vyAnim, agent.velocity.y); // 縦移動アニメ変更
     }
     /// <summary> 被弾 </summary>
     /// <param name="power">攻撃力</param>
