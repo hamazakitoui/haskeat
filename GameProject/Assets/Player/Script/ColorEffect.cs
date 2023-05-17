@@ -49,6 +49,7 @@ public class ColorEffect : MonoBehaviour
                 {
                     gameObject.SetActive(false);
                     IsEffectStart = false;
+
                 }
                 break;
             case Pldirction.Down:
@@ -97,7 +98,6 @@ public class ColorEffect : MonoBehaviour
                     gameObject.SetActive(false);
                     IsEffectStart = false;
                 }
-
                 break;
         }
         transform.RotateAround(Player.transform.position, Vector3.forward, -1);
