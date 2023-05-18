@@ -118,7 +118,7 @@ public class SecurityGuard : EnemyBase, IEnemy
     void AnimationChange()
     {
         // 左右移動時
-        if (agent.velocity.normalized.x > agent.velocity.normalized.y)
+        if (Mathf.Abs(agent.velocity.x) > Mathf.Abs(agent.velocity.normalized.y))
         {
             // 右移動時
             if (agent.velocity.x > 0)
