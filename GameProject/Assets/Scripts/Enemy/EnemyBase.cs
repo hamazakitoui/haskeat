@@ -92,8 +92,7 @@ public class EnemyBase : MonoBehaviour
         if (foundPlayer)
         {
             UnityEngine.AI.NavMeshAgent agent = GetComponent<UnityEngine.AI.NavMeshAgent>(); // ナビ取得
-            agent.SetDestination(playerPos.position); // プレイヤー位置に向かって移動
-            agent.nextPosition = transform.position;
+            agent.destination = playerPos.position; // プレイヤー位置に向かって移動
             agent.speed = nowMoveSpeed; // 移動速度設定
         }
     }
