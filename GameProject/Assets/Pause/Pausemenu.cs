@@ -32,27 +32,23 @@ public class Pausemenu : AnimationEffect
         gameObject.transform.GetChild(0).GetComponent<Canvas>().enabled = false;
         MissionAnim = Mission.GetComponent<Animator>();
         NPList.Add(this);
-        int a = NPList.Count;
-        //foreach(var m in NPList)
-        //{
-        //    a += m.transform.childCount;
-        //}
+
         MonoBehaviour[] g = new MonoBehaviour[NPList.Count];
-        for (int i = 0; i < g.Length+1; i++)
+        for (int i = 0; i < g.Length + 1; i++)
         {
             g[i] = NPList[i];
         }
-        //for (int i=0;i<NPList.Count ;i++)
-        //{
-        //    for(int j=0;j<NPList[i].transform.childCount+1; j++)
-        //    {
-        //        g[i + j] = NPList[i].transform.GetChild(j).GetComponent<MonoBehaviour>();
-        //        if (j == NPList[i].transform.childCount) g[i + j] = NPList[i];
-        //    }
-        //}
+        for (int i = 0; i < NPList.Count; i++)
+        {
+            for (int j = 0; j < NPList[i].transform.childCount ; j++)
+            {
+                g[i + j] = NPList[i].transform.GetChild(j).GetComponent<MonoBehaviour>();
+                if (j == NPList[i].transform.childCount) g[i + j] = NPList[i];
+            }
+        }
         Library.Pause2D(g);
-      
-       
+
+
         //Mission.GetComponent<Animator>().Play("CheckMision");
     }
 

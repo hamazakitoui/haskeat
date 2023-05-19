@@ -75,7 +75,6 @@ public class Colormaneger : MonoBehaviour
         if (checkChengebutton)
         {
             StartCoroutine("MoveColor");
-            Debug.Log(checkChengebutton);
         }
         
         UesNumtext[colornum].text = "×" + uselimitnum[colornum].ToString();

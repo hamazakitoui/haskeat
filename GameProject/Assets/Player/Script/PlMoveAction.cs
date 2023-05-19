@@ -66,8 +66,8 @@ public class PlMoveAction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (StageManager.IsGameStart)
-        //{
+        if (StageManager.IsGameStart)
+        {
             //移動を検知
             InputX = Input.GetAxisRaw("Horizontal");
             InputY = Input.GetAxisRaw("Vertical");
@@ -157,61 +157,62 @@ public class PlMoveAction : MonoBehaviour
                 }
 
                 rigid2D.velocity = new Vector2(speedX, speedY);
-            //}
+            }
             //Debug.Log(checkfront());
             if (checkfront())
             {
-                Debug.Log(art.gameObject);
                 //目の前に美術品があれば美術品を破壊もしくは塗りつぶす
                 if (Input.GetKeyDown(KeyCode.Z))
                 {
-                    EffctSpray.SetActive(true);
+                    
+                    Debug.Log(EffctSpray);
                     Debug.Log("aaa");
-                    //if (Colorscript.uselimitnum[Colorscript.colornum] > 0)
-                    //{
-                    //    //美術品か確認
-                    //    Art checkart = art.GetComponent<Art>();
-                    //    //美術品であれば
-                    //    if (checkart != null)
-                    //    {
-                    //        Debug.Log("チェック");
-                    //        //破壊した数を追加
-                    //        StageManager.AddDestroyArt(checkart.GetArtType);
-                    //        //目の前にあるのが絵画だった場合
-                    //        if (checkart.GetArtType == ArtType.Picture)
-                    //        {
-                    //            art.SetActive(false);
-                    //        }
-                    //        //壺だった場合の処理
-                    //        if (checkart.GetArtType == ArtType.Pot)
-                    //        {
-                    //            Destroy(art.gameObject);
-                    //        }
-                    //        int nowcolor = Colorscript.colornum;
-                    //        Colorscript.uselimitnum[nowcolor]--;
-                    //    }
-                    //}
+                    if (Colorscript.uselimitnum[Colorscript.colornum] > 0)
+                    {
+                        //美術品か確認
+                        Art checkart = art.GetComponent<Art>();
+                        //美術品であれば
+                        if (checkart != null)
+                        {
+                            Debug.Log("チェック");
+                            //破壊した数を追加
+                            StageManager.AddDestroyArt(checkart.GetArtType);
+                            //目の前にあるのが絵画だった場合
+                            if (checkart.GetArtType == ArtType.Picture)
+                            {
+                                art.SetActive(false);
+                            }
+                            //壺だった場合の処理
+                            if (checkart.GetArtType == ArtType.Pot)
+                            {
+                                Destroy(art.gameObject);
+                            }
+                            int nowcolor = Colorscript.colornum;
+                            Colorscript.uselimitnum[nowcolor]--;
+                        }
+                    }
                 }
             }
             //残り残量がある場合エフェクトを出す
             if (Input.GetKeyDown(KeyCode.Z))
             {
+                EffctSpray.SetActive(true);
                 if (!checkfront())
                 {
-                    //if (Colorscript.uselimitnum[Colorscript.colornum] > 0)
-                    //{
-                    //    int nowcolor = Colorscript.colornum;
-                    //    GameObject paintEffect = null;
-                    //    paintEffect = Instantiate(coloreffect[nowcolor]);
-                    //    paintEffect.transform.position = transform.position + (direction * 2);
-                    //    Colorscript.uselimitnum[nowcolor]--;
-                    //}
-                    //else
-                    //{
-                    EffctSpray.SetActive(true);
-                    //    int nowcolor = Colorscript.colornum;
-                    //    Colorscript.uselimitnum[nowcolor]=0;
-                    //}
+                    if (Colorscript.uselimitnum[Colorscript.colornum] > 0)
+                    {
+                        int nowcolor = Colorscript.colornum;
+                        GameObject paintEffect = null;
+                        paintEffect = Instantiate(coloreffect[nowcolor]);
+                        paintEffect.transform.position = transform.position + (direction * 2);
+                        Colorscript.uselimitnum[nowcolor]--;
+                    }
+                    else
+                    {
+                        EffctSpray.SetActive(true);
+                        int nowcolor = Colorscript.colornum;
+                        Colorscript.uselimitnum[nowcolor] = 0;
+                    }
 
                 }
                 else if (art.tag == "wall")
