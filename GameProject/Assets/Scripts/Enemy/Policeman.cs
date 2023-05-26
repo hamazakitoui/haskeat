@@ -5,7 +5,8 @@ using UnityEngine;
 /// <summary> 警官 </summary>
 public class Policeman : EnemyBase, IEnemy
 {
-    float foundDelta = 0.0f, shotDelta = 0.0f;
+    int oldState = 0; // 前の状態
+    float foundDelta = 0.0f, shotDelta = 0.0f, animDelta = 0.0f;
     // 見失いフラグ
     bool lostFlag = false;
     // アニメーションステート
@@ -13,6 +14,7 @@ public class Policeman : EnemyBase, IEnemy
     Vector3 shotDirection; // 発射方向
     // 発見角度、見失う時間、発射間隔
     [SerializeField] float foundRad = 30.0f, lostSpan = 3.0f, shotSpan = 3.0f;
+    [SerializeField] float rotSpan = 5.0f; // 回転間隔
     // 発射速度
     [SerializeField] float shotPower = 5.0f;
     [SerializeField] GameObject bullet; // 弾
@@ -22,6 +24,7 @@ public class Policeman : EnemyBase, IEnemy
         StartSet(); // 初期処理
         // 関数登録
         handler += PlayerFound;
+        handler += AnimationRotate;
     }
 
     // Update is called once per frame
@@ -85,6 +88,51 @@ public class Policeman : EnemyBase, IEnemy
                 GetComponent<Rigidbody2D>();
             rb.AddForce(shotDirection * shotPower, ForceMode2D.Impulse); // 発射
             shotDelta = 0.0f;
+        }
+    }
+    /// <summary> 回転アニメーション </summary>
+    void AnimationRotate()
+    {
+        if (foundPlayer) return; // プレイヤーを見つけてたら無視
+        animDelta += Time.deltaTime;
+        if (animDelta > rotSpan)
+        {
+            int state = animator.GetInteger(stateAnim); // アニメ状態
+            // 次の状態に変更
+            if (state != 0)
+            {
+                oldState = state;
+                state = 0;
+                // 左向きなら
+                if (oldState == 1)
+                {
+                    Vector3 scale = transform.localScale; // 向き
+                    scale.x = -scale.x;
+                    transform.localScale = scale;
+                }
+            }
+            else
+            {
+                switch (oldState)
+                {
+                    case 1:
+                        // 向きを反対に
+                        {
+                            Vector3 scale = transform.localScale; // 向き
+                            scale.x = -scale.x;
+                            transform.localScale = scale;
+                        }
+                        state = 2;
+                        break;
+                    case 2:
+                        state = 1;
+                        break;
+                    default:
+                        break;
+                }
+            }
+            animator.SetInteger(stateAnim, state); // アニメ変更
+            animDelta = 0;
         }
     }
     /// <summary> 被弾 </summary>
