@@ -11,6 +11,8 @@ public struct Dictionary
     public const string ENEMY_TAG = "Enemy";
     /// <summary> 赤スプレー </summary>
     public const string RS_TAG = "redsplay";
+    /// <summary> 壁 </summary>
+    public const string WALL_TAG = "wall";
 }
 /// <summary> クリア条件 </summary>
 public enum ClearCondition
