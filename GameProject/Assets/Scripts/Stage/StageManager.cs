@@ -104,6 +104,11 @@ public class StageManager : MonoBehaviour
     {
         FadeSceneManager.Instance.LoadScene(GameScene); // シーン移動
     }
+    // <summary> ゲームクリア </summary>
+    public void GameClear(KeyCode key)
+    {
+        if (Input.GetKeyDown(key)) FadeSceneManager.Instance.LoadScene(GameScene); // シーン移動
+    }
     /// <summary> 逃亡フラグ </summary>
     public bool IsRunAway { get { return runAway; } }
     /// <summary> ゲーム開始フラグ </summary>

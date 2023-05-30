@@ -14,4 +14,12 @@ public class GoalGate : MonoBehaviour
             if (stage.IsRunAway) stage.GameClear(); // 逃亡状態ならゲームクリア
         }
     }
+    void OnTriggerStay2D(Collider2D collision)
+    {
+        // プレイヤーに当たったら
+        if (collision.tag == Dictionary.PLAYER_TAG)
+        {
+            if (stage.IsRunAway) stage.GameClear(); // 逃亡状態ならゲームクリア
+        }
+    }
 }

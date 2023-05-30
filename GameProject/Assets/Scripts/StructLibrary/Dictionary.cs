@@ -11,6 +11,8 @@ public struct Dictionary
     public const string ENEMY_TAG = "Enemy";
     /// <summary> 赤スプレー </summary>
     public const string RS_TAG = "redsplay";
+    /// <summary> 壁 </summary>
+    public const string WALL_TAG = "wall";
 }
 /// <summary> クリア条件 </summary>
 public enum ClearCondition
@@ -38,7 +40,9 @@ public enum ClearCondition
     /// <summary> 付喪神だけ破壊 </summary>
     OnlyMonster,
     /// <summary> 全ての美術品を破壊 </summary>
-    AllArts
+    AllArts,
+    /// <summary> 練習 </summary>
+    Practice
 }
 /// <summary> 美術品の種類 </summary>
 public enum ArtType
