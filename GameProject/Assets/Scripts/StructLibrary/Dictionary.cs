@@ -40,7 +40,9 @@ public enum ClearCondition
     /// <summary> 付喪神だけ破壊 </summary>
     OnlyMonster,
     /// <summary> 全ての美術品を破壊 </summary>
-    AllArts
+    AllArts,
+    /// <summary> 練習 </summary>
+    Practice
 }
 /// <summary> 美術品の種類 </summary>
 public enum ArtType
