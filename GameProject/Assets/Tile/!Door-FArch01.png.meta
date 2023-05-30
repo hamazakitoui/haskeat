@@ -1,0 +1,2888 @@
+fileFormatVersion: 2
+guid: 5a2b783fe29e92a49a123922bcb13e28
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4109338904422043989
+    second: '!Door-FArch01_0'
+  - first:
+      213: 4101587458550538200
+    second: '!Door-FArch01_1'
+  - first:
+      213: 6654315272875967840
+    second: '!Door-FArch01_2'
+  - first:
+      213: -682374055668302100
+    second: '!Door-FArch01_3'
+  - first:
+      213: -6820138777650972273
+    second: '!Door-FArch01_4'
+  - first:
+      213: 3173395357537257979
+    second: '!Door-FArch01_5'
+  - first:
+      213: 2219667584992540498
+    second: '!Door-FArch01_6'
+  - first:
+      213: 7747839468730876970
+    second: '!Door-FArch01_7'
+  - first:
+      213: 2765449856298739628
+    second: '!Door-FArch01_8'
+  - first:
+      213: 7764248541177284137
+    second: '!Door-FArch01_9'
+  - first:
+      213: 6847953621980969627
+    second: '!Door-FArch01_10'
+  - first:
+      213: -5869428291179642519
+    second: '!Door-FArch01_11'
+  - first:
+      213: 6825040028176407050
+    second: '!Door-FArch01_12'
+  - first:
+      213: -6118671089906132975
+    second: '!Door-FArch01_13'
+  - first:
+      213: 7120836275438925288
+    second: '!Door-FArch01_14'
+  - first:
+      213: 7995157574623183157
+    second: '!Door-FArch01_15'
+  - first:
+      213: 2088560329054298774
+    second: '!Door-FArch01_16'
+  - first:
+      213: -1863400633535780158
+    second: '!Door-FArch01_17'
+  - first:
+      213: -1284870780002817671
+    second: '!Door-FArch01_18'
+  - first:
+      213: 5095375561045400407
+    second: '!Door-FArch01_19'
+  - first:
+      213: 6191095343513358097
+    second: '!Door-FArch01_20'
+  - first:
+      213: 3543266673698245495
+    second: '!Door-FArch01_21'
+  - first:
+      213: -7714990689034145046
+    second: '!Door-FArch01_22'
+  - first:
+      213: -2631670287909280159
+    second: '!Door-FArch01_23'
+  - first:
+      213: -6171804115734917080
+    second: '!Door-FArch01_24'
+  - first:
+      213: -3491064276258348835
+    second: '!Door-FArch01_25'
+  - first:
+      213: 3810358222328935196
+    second: '!Door-FArch01_26'
+  - first:
+      213: 6616240532007814516
+    second: '!Door-FArch01_27'
+  - first:
+      213: -5633675638594529534
+    second: '!Door-FArch01_28'
+  - first:
+      213: 4273499479621421466
+    second: '!Door-FArch01_29'
+  - first:
+      213: -332077286713236193
+    second: '!Door-FArch01_30'
+  - first:
+      213: 8228423840570989953
+    second: '!Door-FArch01_31'
+  - first:
+      213: -2330783053201796240
+    second: '!Door-FArch01_32'
+  - first:
+      213: -5931877203515668883
+    second: '!Door-FArch01_33'
+  - first:
+      213: -4372778568669376117
+    second: '!Door-FArch01_34'
+  - first:
+      213: -3963945771752007982
+    second: '!Door-FArch01_35'
+  - first:
+      213: -4127859223061244535
+    second: '!Door-FArch01_36'
+  - first:
+      213: -7838659102525658071
+    second: '!Door-FArch01_37'
+  - first:
+      213: 3173068025514447725
+    second: '!Door-FArch01_38'
+  - first:
+      213: -300404273381173803
+    second: '!Door-FArch01_39'
+  - first:
+      213: -2851002676754994309
+    second: '!Door-FArch01_40'
+  - first:
+      213: 3946338884636643356
+    second: '!Door-FArch01_41'
+  - first:
+      213: 5906168228612761514
+    second: '!Door-FArch01_42'
+  - first:
+      213: -2958036074828863357
+    second: '!Door-FArch01_43'
+  - first:
+      213: -3150459979677654960
+    second: '!Door-FArch01_44'
+  - first:
+      213: -4873431973337098927
+    second: '!Door-FArch01_45'
+  - first:
+      213: 2167148860492039129
+    second: '!Door-FArch01_46'
+  - first:
+      213: -3785768371622961161
+    second: '!Door-FArch01_47'
+  - first:
+      213: 7973377371023167649
+    second: '!Door-FArch01_48'
+  - first:
+      213: 8345299392825233306
+    second: '!Door-FArch01_49'
+  - first:
+      213: -9176817159335884222
+    second: '!Door-FArch01_50'
+  - first:
+      213: 1828217301343572656
+    second: '!Door-FArch01_51'
+  - first:
+      213: 6610695508621271070
+    second: '!Door-FArch01_52'
+  - first:
+      213: -5131261696006087600
+    second: '!Door-FArch01_53'
+  - first:
+      213: 2432918103544969743
+    second: '!Door-FArch01_54'
+  - first:
+      213: 6267834145095441287
+    second: '!Door-FArch01_55'
+  - first:
+      213: 7984457100303549913
+    second: '!Door-FArch01_56'
+  - first:
+      213: -7323971210883921272
+    second: '!Door-FArch01_57'
+  - first:
+      213: 6240272327319336856
+    second: '!Door-FArch01_58'
+  - first:
+      213: 1863172140125152612
+    second: '!Door-FArch01_59'
+  - first:
+      213: 6826361417224177350
+    second: '!Door-FArch01_60'
+  - first:
+      213: -8822282070097505311
+    second: '!Door-FArch01_61'
+  - first:
+      213: -3328441160648816799
+    second: '!Door-FArch01_62'
+  - first:
+      213: 534938768581726303
+    second: '!Door-FArch01_63'
+  - first:
+      213: -4238654098258345754
+    second: '!Door-FArch01_64'
+  - first:
+      213: -5584326562451754047
+    second: '!Door-FArch01_65'
+  - first:
+      213: 2781437185295164355
+    second: '!Door-FArch01_66'
+  - first:
+      213: 1907541146437878065
+    second: '!Door-FArch01_67'
+  - first:
+      213: -7945335195957702735
+    second: '!Door-FArch01_68'
+  - first:
+      213: 6845361863234097756
+    second: '!Door-FArch01_69'
+  - first:
+      213: 7664802548038219168
+    second: '!Door-FArch01_70'
+  - first:
+      213: -1743126917810033271
+    second: '!Door-FArch01_71'
+  - first:
+      213: -5420261987160307018
+    second: '!Door-FArch01_72'
+  - first:
+      213: 5692681268777808502
+    second: '!Door-FArch01_73'
+  - first:
+      213: -2298544192299428836
+    second: '!Door-FArch01_74'
+  - first:
+      213: 4097077507406822151
+    second: '!Door-FArch01_75'
+  - first:
+      213: 4403887350004807019
+    second: '!Door-FArch01_76'
+  - first:
+      213: 5653182723806239026
+    second: '!Door-FArch01_77'
+  - first:
+      213: -3715318906008432640
+    second: '!Door-FArch01_78'
+  - first:
+      213: -1549802426438425444
+    second: '!Door-FArch01_79'
+  - first:
+      213: 5013329292685696459
+    second: '!Door-FArch01_80'
+  - first:
+      213: -3119042416006101942
+    second: '!Door-FArch01_81'
+  - first:
+      213: 4364738808162172868
+    second: '!Door-FArch01_82'
+  - first:
+      213: 6714937823288573308
+    second: '!Door-FArch01_83'
+  - first:
+      213: -3226503667570824473
+    second: '!Door-FArch01_84'
+  - first:
+      213: -2640708943325293829
+    second: '!Door-FArch01_85'
+  - first:
+      213: 1491290903367946658
+    second: '!Door-FArch01_86'
+  - first:
+      213: 7065848978298730450
+    second: '!Door-FArch01_87'
+  - first:
+      213: -6914550629986406077
+    second: '!Door-FArch01_88'
+  - first:
+      213: 3842011039791219725
+    second: '!Door-FArch01_89'
+  - first:
+      213: 2497633078665294837
+    second: '!Door-FArch01_90'
+  - first:
+      213: 5615962028802155018
+    second: '!Door-FArch01_91'
+  - first:
+      213: -4984837841255303962
+    second: '!Door-FArch01_92'
+  - first:
+      213: 7803570801330057237
+    second: '!Door-FArch01_93'
+  - first:
+      213: 2790223802668058647
+    second: '!Door-FArch01_94'
+  - first:
+      213: -6221946246815302024
+    second: '!Door-FArch01_95'
+  - first:
+      213: -4078544552759004064
+    second: '!Door-FArch01_96'
+  - first:
+      213: 307918242127382501
+    second: '!Door-FArch01_97'
+  - first:
+      213: -1497275942658635021
+    second: '!Door-FArch01_98'
+  - first:
+      213: 7409142122543753574
+    second: '!Door-FArch01_99'
+  - first:
+      213: 5588901443718632916
+    second: '!Door-FArch01_100'
+  - first:
+      213: -8982235952566187397
+    second: '!Door-FArch01_101'
+  - first:
+      213: 5045182949206895664
+    second: '!Door-FArch01_102'
+  - first:
+      213: 399995149260007742
+    second: '!Door-FArch01_103'
+  - first:
+      213: 5752318067175399930
+    second: '!Door-FArch01_104'
+  - first:
+      213: -3213993117479359048
+    second: '!Door-FArch01_105'
+  - first:
+      213: -6548179581015268504
+    second: '!Door-FArch01_106'
+  - first:
+      213: 6412439886768687213
+    second: '!Door-FArch01_107'
+  - first:
+      213: -2054436207981366977
+    second: '!Door-FArch01_108'
+  - first:
+      213: -5912676266152350333
+    second: '!Door-FArch01_109'
+  - first:
+      213: 6571488710351749559
+    second: '!Door-FArch01_110'
+  - first:
+      213: 5766302395666775163
+    second: '!Door-FArch01_111'
+  - first:
+      213: 5655490765484284946
+    second: '!Door-FArch01_112'
+  - first:
+      213: 7792083389220190621
+    second: '!Door-FArch01_113'
+  - first:
+      213: -7484787799948639882
+    second: '!Door-FArch01_114'
+  - first:
+      213: 6836458168020975763
+    second: '!Door-FArch01_115'
+  - first:
+      213: 1577462271030568488
+    second: '!Door-FArch01_116'
+  - first:
+      213: 4036029795770573333
+    second: '!Door-FArch01_117'
+  - first:
+      213: 2775101822039627052
+    second: '!Door-FArch01_118'
+  - first:
+      213: 7169364801714160298
+    second: '!Door-FArch01_119'
+  - first:
+      213: -3717152453102245266
+    second: '!Door-FArch01_120'
+  - first:
+      213: -1966985540709705414
+    second: '!Door-FArch01_121'
+  - first:
+      213: 6444817371264187303
+    second: '!Door-FArch01_122'
+  - first:
+      213: 1486285784525327040
+    second: '!Door-FArch01_123'
+  - first:
+      213: -5342508148131180983
+    second: '!Door-FArch01_124'
+  - first:
+      213: 3757197745513134073
+    second: '!Door-FArch01_125'
+  - first:
+      213: -221553772360711077
+    second: '!Door-FArch01_126'
+  - first:
+      213: 6414480483934486800
+    second: '!Door-FArch01_127'
+  - first:
+      213: -914144461942489810
+    second: '!Door-FArch01_128'
+  - first:
+      213: 8428270845387351543
+    second: '!Door-FArch01_129'
+  - first:
+      213: 4688328323406436212
+    second: '!Door-FArch01_130'
+  - first:
+      213: 2124177508388895307
+    second: '!Door-FArch01_131'
+  - first:
+      213: 7257796019377580176
+    second: '!Door-FArch01_132'
+  - first:
+      213: 3872597203833081975
+    second: '!Door-FArch01_133'
+  - first:
+      213: -2723023591982217934
+    second: '!Door-FArch01_134'
+  - first:
+      213: 5877289150745293351
+    second: '!Door-FArch01_135'
+  - first:
+      213: 4493921958223712849
+    second: '!Door-FArch01_136'
+  - first:
+      213: -1491957403924393870
+    second: '!Door-FArch01_137'
+  - first:
+      213: 8929393947015746285
+    second: '!Door-FArch01_138'
+  - first:
+      213: 9006195325873110642
+    second: '!Door-FArch01_139'
+  - first:
+      213: 4530444121302918167
+    second: '!Door-FArch01_140'
+  - first:
+      213: -4377523813256071228
+    second: '!Door-FArch01_141'
+  - first:
+      213: 9129981720441993963
+    second: '!Door-FArch01_142'
+  - first:
+      213: -191133258728161834
+    second: '!Door-FArch01_143'
+  - first:
+      213: 6956151499484160250
+    second: '!Door-FArch01_144'
+  - first:
+      213: -1520350062508297736
+    second: '!Door-FArch01_145'
+  - first:
+      213: -3317565299948696790
+    second: '!Door-FArch01_146'
+  - first:
+      213: -3269851185055993436
+    second: '!Door-FArch01_147'
+  - first:
+      213: 5295070236614355087
+    second: '!Door-FArch01_148'
+  - first:
+      213: 9076196446802683921
+    second: '!Door-FArch01_149'
+  - first:
+      213: 646893364475333268
+    second: '!Door-FArch01_150'
+  - first:
+      213: -2076033315702236800
+    second: '!Door-FArch01_151'
+  - first:
+      213: 9065861281691248930
+    second: '!Door-FArch01_152'
+  - first:
+      213: -1159835764948155189
+    second: '!Door-FArch01_153'
+  - first:
+      213: 710655176089614895
+    second: '!Door-FArch01_154'
+  - first:
+      213: -3664836726924683809
+    second: '!Door-FArch01_155'
+  - first:
+      213: 7038327929569869492
+    second: '!Door-FArch01_156'
+  - first:
+      213: -941902163454179970
+    second: '!Door-FArch01_157'
+  - first:
+      213: -4927468633952526287
+    second: '!Door-FArch01_158'
+  - first:
+      213: 5984996111344369699
+    second: '!Door-FArch01_159'
+  - first:
+      213: 5609431330255000719
+    second: '!Door-FArch01_160'
+  - first:
+      213: -1718577231891850610
+    second: '!Door-FArch01_161'
+  - first:
+      213: -1543567028011669503
+    second: '!Door-FArch01_162'
+  - first:
+      213: -5325682418991735264
+    second: '!Door-FArch01_163'
+  - first:
+      213: 8178590596511384135
+    second: '!Door-FArch01_164'
+  - first:
+      213: 959128170687104958
+    second: '!Door-FArch01_165'
+  - first:
+      213: -137861983302080193
+    second: '!Door-FArch01_166'
+  - first:
+      213: 8757753470329261906
+    second: '!Door-FArch01_167'
+  - first:
+      213: -4396803271956185914
+    second: '!Door-FArch01_168'
+  - first:
+      213: 2948056073228445315
+    second: '!Door-FArch01_169'
+  - first:
+      213: -2846500019389544964
+    second: '!Door-FArch01_170'
+  - first:
+      213: -6082974646757779332
+    second: '!Door-FArch01_171'
+  - first:
+      213: 8451451987135242755
+    second: '!Door-FArch01_172'
+  - first:
+      213: 4865551715087105477
+    second: '!Door-FArch01_173'
+  - first:
+      213: 6441772507982369888
+    second: '!Door-FArch01_174'
+  - first:
+      213: -6932663856909991906
+    second: '!Door-FArch01_175'
+  - first:
+      213: -5859145389198597302
+    second: '!Door-FArch01_176'
+  - first:
+      213: -5970575384324938661
+    second: '!Door-FArch01_177'
+  - first:
+      213: 7295160074712154259
+    second: '!Door-FArch01_178'
+  - first:
+      213: -6710519417142884137
+    second: '!Door-FArch01_179'
+  - first:
+      213: -4084907257258529643
+    second: '!Door-FArch01_180'
+  - first:
+      213: 240214206362573091
+    second: '!Door-FArch01_181'
+  - first:
+      213: 8312480590913570745
+    second: '!Door-FArch01_182'
+  - first:
+      213: -1262113721883133543
+    second: '!Door-FArch01_183'
+  - first:
+      213: 3034448844580493116
+    second: '!Door-FArch01_184'
+  - first:
+      213: -3297579588611262953
+    second: '!Door-FArch01_185'
+  - first:
+      213: 4128009528895302971
+    second: '!Door-FArch01_186'
+  - first:
+      213: -3635588902841075255
+    second: '!Door-FArch01_187'
+  - first:
+      213: 2429566433401846811
+    second: '!Door-FArch01_188'
+  - first:
+      213: -8262698038468303752
+    second: '!Door-FArch01_189'
+  - first:
+      213: 4879770907950638130
+    second: '!Door-FArch01_190'
+  - first:
+      213: 4269277755789637858
+    second: '!Door-FArch01_191'
+  - first:
+      213: -7845330603378078936
+    second: '!Door-FArch01_192'
+  - first:
+      213: 7178747057800123283
+    second: '!Door-FArch01_193'
+  - first:
+      213: -2319169692851204926
+    second: '!Door-FArch01_194'
+  - first:
+      213: 4721950581868928574
+    second: '!Door-FArch01_195'
+  - first:
+      213: 7973465253896199551
+    second: '!Door-FArch01_196'
+  - first:
+      213: -2178145292325131227
+    second: '!Door-FArch01_197'
+  - first:
+      213: -6069145104091347557
+    second: '!Door-FArch01_198'
+  - first:
+      213: 6289343241401807919
+    second: '!Door-FArch01_199'
+  - first:
+      213: 317753458524503511
+    second: '!Door-FArch01_200'
+  - first:
+      213: 7126818052653367967
+    second: '!Door-FArch01_201'
+  - first:
+      213: 8426443228937108914
+    second: '!Door-FArch01_202'
+  - first:
+      213: -2850426540433517801
+    second: '!Door-FArch01_203'
+  - first:
+      213: 8912757109098888677
+    second: '!Door-FArch01_204'
+  - first:
+      213: 437733158350686307
+    second: '!Door-FArch01_205'
+  - first:
+      213: 820302412773891218
+    second: '!Door-FArch01_206'
+  - first:
+      213: 3883455944870958033
+    second: '!Door-FArch01_207'
+  - first:
+      213: -3304807356274211431
+    second: '!Door-FArch01_208'
+  - first:
+      213: 8767430023930098314
+    second: '!Door-FArch01_209'
+  - first:
+      213: 7890147513423577658
+    second: '!Door-FArch01_210'
+  - first:
+      213: 2292844633566080687
+    second: '!Door-FArch01_211'
+  - first:
+      213: -4781006217670577308
+    second: '!Door-FArch01_212'
+  - first:
+      213: -4945349483267188813
+    second: '!Door-FArch01_213'
+  - first:
+      213: -3125539817961735682
+    second: '!Door-FArch01_214'
+  - first:
+      213: -6787160469807920315
+    second: '!Door-FArch01_215'
+  - first:
+      213: 3750114305628816349
+    second: '!Door-FArch01_216'
+  - first:
+      213: 8289578608767354593
+    second: '!Door-FArch01_217'
+  - first:
+      213: -6282616703215825477
+    second: '!Door-FArch01_218'
+  - first:
+      213: 3202528022219794496
+    second: '!Door-FArch01_219'
+  - first:
+      213: 5767441882243044972
+    second: '!Door-FArch01_220'
+  - first:
+      213: 7856108429867018976
+    second: '!Door-FArch01_221'
+  - first:
+      213: 4800510134214813110
+    second: '!Door-FArch01_222'
+  - first:
+      213: 6461215429102292162
+    second: '!Door-FArch01_223'
+  - first:
+      213: -7732905734796777512
+    second: '!Door-FArch01_224'
+  - first:
+      213: 3918064678806036849
+    second: '!Door-FArch01_225'
+  - first:
+      213: 4503043159304692408
+    second: '!Door-FArch01_226'
+  - first:
+      213: -8752728621790888395
+    second: '!Door-FArch01_227'
+  - first:
+      213: 1637602538845223893
+    second: '!Door-FArch01_228'
+  - first:
+      213: -6756615221943989754
+    second: '!Door-FArch01_229'
+  - first:
+      213: -5055510892850015602
+    second: '!Door-FArch01_230'
+  - first:
+      213: 5870727288306744676
+    second: '!Door-FArch01_231'
+  - first:
+      213: 4290875940403911263
+    second: '!Door-FArch01_232'
+  - first:
+      213: 2609560455912727860
+    second: '!Door-FArch01_233'
+  - first:
+      213: -7247739876308202726
+    second: '!Door-FArch01_234'
+  - first:
+      213: 1586399148501399611
+    second: '!Door-FArch01_235'
+  - first:
+      213: 6284097670903894193
+    second: '!Door-FArch01_236'
+  - first:
+      213: -6063606545880400349
+    second: '!Door-FArch01_237'
+  - first:
+      213: 6518165067199767992
+    second: '!Door-FArch01_238'
+  - first:
+      213: -480842202289478985
+    second: '!Door-FArch01_239'
+  - first:
+      213: 2541255650150275178
+    second: '!Door-FArch01_240'
+  - first:
+      213: -6876372237110514320
+    second: '!Door-FArch01_241'
+  - first:
+      213: 271754550589217252
+    second: '!Door-FArch01_242'
+  - first:
+      213: -7533488649567231510
+    second: '!Door-FArch01_243'
+  - first:
+      213: 984981468186863553
+    second: '!Door-FArch01_244'
+  - first:
+      213: 4304096205101789808
+    second: '!Door-FArch01_245'
+  - first:
+      213: -5414969980952179661
+    second: '!Door-FArch01_246'
+  - first:
+      213: -5642934408892473814
+    second: '!Door-FArch01_247'
+  - first:
+      213: 1719416483163579397
+    second: '!Door-FArch01_248'
+  - first:
+      213: 3252215840573578940
+    second: '!Door-FArch01_249'
+  - first:
+      213: 1331687897760134207
+    second: '!Door-FArch01_250'
+  - first:
+      213: -2065189452051209043
+    second: '!Door-FArch01_251'
+  - first:
+      213: -8827266317201837751
+    second: '!Door-FArch01_252'
+  - first:
+      213: 7994698324788515370
+    second: '!Door-FArch01_253'
+  - first:
+      213: 2800644962726755505
+    second: '!Door-FArch01_254'
+  - first:
+      213: 7020322390063992657
+    second: '!Door-FArch01_255'
+  - first:
+      213: -8684555550629461949
+    second: '!Door-FArch01_256'
+  - first:
+      213: 8413302879400619644
+    second: '!Door-FArch01_257'
+  - first:
+      213: 917846467142809858
+    second: '!Door-FArch01_258'
+  - first:
+      213: 2246233632337940961
+    second: '!Door-FArch01_259'
+  - first:
+      213: 6803100153518825156
+    second: '!Door-FArch01_260'
+  - first:
+      213: -4531096415362570492
+    second: '!Door-FArch01_261'
+  - first:
+      213: 7683516674048388575
+    second: '!Door-FArch01_262'
+  - first:
+      213: -363975611909891318
+    second: '!Door-FArch01_263'
+  - first:
+      213: -6734800139649433669
+    second: '!Door-FArch01_264'
+  - first:
+      213: -5276836830174686843
+    second: '!Door-FArch01_265'
+  - first:
+      213: 5196165121688203478
+    second: '!Door-FArch01_266'
+  - first:
+      213: -1807770390581232814
+    second: '!Door-FArch01_267'
+  - first:
+      213: 5308941087814677461
+    second: '!Door-FArch01_268'
+  - first:
+      213: -4553528845436000208
+    second: '!Door-FArch01_269'
+  - first:
+      213: 4782261949101603478
+    second: '!Door-FArch01_270'
+  - first:
+      213: -472639449758234149
+    second: '!Door-FArch01_271'
+  - first:
+      213: -3198189349845883953
+    second: '!Door-FArch01_272'
+  - first:
+      213: 3483334569696952402
+    second: '!Door-FArch01_273'
+  - first:
+      213: 4370698203391044890
+    second: '!Door-FArch01_274'
+  - first:
+      213: -3769000952465510771
+    second: '!Door-FArch01_275'
+  - first:
+      213: 2234098102317176528
+    second: '!Door-FArch01_276'
+  - first:
+      213: 4787370262707863044
+    second: '!Door-FArch01_277'
+  - first:
+      213: 5656610145027421546
+    second: '!Door-FArch01_278'
+  - first:
+      213: -2154042677455187218
+    second: '!Door-FArch01_279'
+  - first:
+      213: 8997210172502158769
+    second: '!Door-FArch01_280'
+  - first:
+      213: 6014547243976441845
+    second: '!Door-FArch01_281'
+  - first:
+      213: 3378819496317503281
+    second: '!Door-FArch01_282'
+  - first:
+      213: -3634762795647609210
+    second: '!Door-FArch01_283'
+  - first:
+      213: 1761835082366779934
+    second: '!Door-FArch01_284'
+  - first:
+      213: 5050336701451582435
+    second: '!Door-FArch01_285'
+  - first:
+      213: -7918530184077508023
+    second: '!Door-FArch01_286'
+  - first:
+      213: -2212229210862598190
+    second: '!Door-FArch01_287'
+  - first:
+      213: 3171496019346395950
+    second: '!Door-FArch01_288'
+  - first:
+      213: 1542940201825167047
+    second: '!Door-FArch01_289'
+  - first:
+      213: -9038437094905716841
+    second: '!Door-FArch01_290'
+  - first:
+      213: 4177331638591131185
+    second: '!Door-FArch01_291'
+  - first:
+      213: 6806375275754405741
+    second: '!Door-FArch01_292'
+  - first:
+      213: 3765517806753212051
+    second: '!Door-FArch01_293'
+  - first:
+      213: -1625996137134683820
+    second: '!Door-FArch01_294'
+  - first:
+      213: -876720396656228866
+    second: '!Door-FArch01_295'
+  - first:
+      213: 4183312792458201137
+    second: '!Door-FArch01_296'
+  - first:
+      213: 1222187331656240949
+    second: '!Door-FArch01_297'
+  - first:
+      213: 4087189820393157393
+    second: '!Door-FArch01_298'
+  - first:
+      213: -3886354282683030398
+    second: '!Door-FArch01_299'
+  - first:
+      213: 576455976686382373
+    second: '!Door-FArch01_300'
+  - first:
+      213: 1850425895625255107
+    second: '!Door-FArch01_301'
+  - first:
+      213: 5783193802940652962
+    second: '!Door-FArch01_302'
+  - first:
+      213: -6065159971939619480
+    second: '!Door-FArch01_303'
+  - first:
+      213: -8833010288593592928
+    second: '!Door-FArch01_304'
+  - first:
+      213: -5408040149487857437
+    second: '!Door-FArch01_305'
+  - first:
+      213: -7838414618244511763
+    second: '!Door-FArch01_306'
+  - first:
+      213: 1650067812364564001
+    second: '!Door-FArch01_307'
+  - first:
+      213: -8775112629418625548
+    second: '!Door-FArch01_308'
+  - first:
+      213: 7824948713956583415
+    second: '!Door-FArch01_309'
+  - first:
+      213: 6097981272219311065
+    second: '!Door-FArch01_310'
+  - first:
+      213: -5441158581221969720
+    second: '!Door-FArch01_311'
+  - first:
+      213: 5355806137355063784
+    second: '!Door-FArch01_312'
+  - first:
+      213: -8227649710844740198
+    second: '!Door-FArch01_313'
+  - first:
+      213: -6277555602554893821
+    second: '!Door-FArch01_314'
+  - first:
+      213: 4394733404539377527
+    second: '!Door-FArch01_315'
+  - first:
+      213: -3216973797191515769
+    second: '!Door-FArch01_316'
+  - first:
+      213: -4984516963100679077
+    second: '!Door-FArch01_317'
+  - first:
+      213: 2276738103779570645
+    second: '!Door-FArch01_318'
+  - first:
+      213: 3689573934759083538
+    second: '!Door-FArch01_319'
+  - first:
+      213: -8347426537664162051
+    second: '!Door-FArch01_320'
+  - first:
+      213: 8133056622722531359
+    second: '!Door-FArch01_321'
+  - first:
+      213: -6494305259288038442
+    second: '!Door-FArch01_322'
+  - first:
+      213: 683484585800908704
+    second: '!Door-FArch01_323'
+  - first:
+      213: 3421774612261138463
+    second: '!Door-FArch01_324'
+  - first:
+      213: -6241651022792765622
+    second: '!Door-FArch01_325'
+  - first:
+      213: 8111745790555718531
+    second: '!Door-FArch01_326'
+  - first:
+      213: 7948437625336764916
+    second: '!Door-FArch01_327'
+  - first:
+      213: -8010276087367527326
+    second: '!Door-FArch01_328'
+  - first:
+      213: 6248824865088480620
+    second: '!Door-FArch01_329'
+  - first:
+      213: 3588188576824933125
+    second: '!Door-FArch01_330'
+  - first:
+      213: -3957976801394746496
+    second: '!Door-FArch01_331'
+  - first:
+      213: 7630816832065091654
+    second: '!Door-FArch01_332'
+  - first:
+      213: 9074187076411842196
+    second: '!Door-FArch01_333'
+  - first:
+      213: -886221378283030155
+    second: '!Door-FArch01_334'
+  - first:
+      213: -7140565017327805684
+    second: '!Door-FArch01_335'
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: '!Door-FArch01_0'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bae2b34e902b8f6c0800000000000000
+      internalID: -4109338904422043989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_1'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8df1a1aff04cbe830800000000000000
+      internalID: 4101587458550538200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_2'
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0658a3f0c70e85c50800000000000000
+      internalID: 6654315272875967840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_3'
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceeb2f76968b786f0800000000000000
+      internalID: -682374055668302100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_4'
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f893f379aeff951a0800000000000000
+      internalID: -6820138777650972273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_5'
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf9c1e9a34a2a0c20800000000000000
+      internalID: 3173395357537257979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_6'
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 257fde288e7ddce10800000000000000
+      internalID: 2219667584992540498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_7'
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a24847e62fad58b60800000000000000
+      internalID: 7747839468730876970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_8'
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca767d80ef9d06620800000000000000
+      internalID: 2765449856298739628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_9'
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92687b459e620cb60800000000000000
+      internalID: 7764248541177284137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_10'
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9a76848981d80f50800000000000000
+      internalID: 6847953621980969627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_11'
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9610c95111a9b8ea0800000000000000
+      internalID: -5869428291179642519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_12'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0ad649beb967be50800000000000000
+      internalID: 6825040028176407050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_13'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11851b4df0d161ba0800000000000000
+      internalID: -6118671089906132975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_14'
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5b04d5dda42d260800000000000000
+      internalID: 7120836275438925288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_15'
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53140b6347184fe60800000000000000
+      internalID: 7995157574623183157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_16'
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6922149bd8e0cfc10800000000000000
+      internalID: 2088560329054298774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_17'
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2caacdb1ffed326e0800000000000000
+      internalID: -1863400633535780158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_18'
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97927a745d83b2ee0800000000000000
+      internalID: -1284870780002817671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_19'
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75b5159831966b640800000000000000
+      internalID: 5095375561045400407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_20'
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11f40b0c9603be550800000000000000
+      internalID: 6191095343513358097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_21'
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b834644463c2130800000000000000
+      internalID: 3543266673698245495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_22'
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae27ca618d8dee490800000000000000
+      internalID: -7714990689034145046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_23'
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 166a73bf0dd6a7bd0800000000000000
+      internalID: -2631670287909280159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_24'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 820935a3bd8595aa0800000000000000
+      internalID: -6171804115734917080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_25'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd0a095898f3d8fc0800000000000000
+      internalID: -3491064276258348835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_26'
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c13b7e47d9c11e430800000000000000
+      internalID: 3810358222328935196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_27'
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4750ed2a5bb91db50800000000000000
+      internalID: 6616240532007814516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_28'
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2071dcdead921d1b0800000000000000
+      internalID: -5633675638594529534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_29'
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a99c6ae72258e4b30800000000000000
+      internalID: 4273499479621421466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_30'
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f156b779779346bf0800000000000000
+      internalID: -332077286713236193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_31'
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18dd69e03eb313270800000000000000
+      internalID: 8228423840570989953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_32'
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0731861892567afd0800000000000000
+      internalID: -2330783053201796240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_33'
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d660631ac1dbdada0800000000000000
+      internalID: -5931877203515668883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_34'
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b81550d4f05c053c0800000000000000
+      internalID: -4372778568669376117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_35'
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d65fcd825c3df8c0800000000000000
+      internalID: -3963945771752007982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_36'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9855d9e28e5e6b6c0800000000000000
+      internalID: -4127859223061244535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_37'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92c6396c31d773390800000000000000
+      internalID: -7838659102525658071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_38'
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6350fcbe80090c20800000000000000
+      internalID: 3173068025514447725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_39'
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d51b1ca7efb4dbf0800000000000000
+      internalID: -300404273381173803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_40'
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7ba456bb243f68d0800000000000000
+      internalID: -2851002676754994309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_41'
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1014169e4634c630800000000000000
+      internalID: 3946338884636643356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_42'
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa7692236bce6f150800000000000000
+      internalID: 5906168228612761514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_43'
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 388e80fbcd1f2f6d0800000000000000
+      internalID: -2958036074828863357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_44'
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 050aa3027515744d0800000000000000
+      internalID: -3150459979677654960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_45'
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1551638d0771e5cb0800000000000000
+      internalID: -4873431973337098927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_46'
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d345051862431e10800000000000000
+      internalID: 2167148860492039129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_47'
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ff118f49bf367bc0800000000000000
+      internalID: -3785768371622961161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_48'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a059f3697027ae60800000000000000
+      internalID: 7973377371023167649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_49'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f81ad159570d370800000000000000
+      internalID: 8345299392825233306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_50'
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24a43191a6565a080800000000000000
+      internalID: -9176817159335884222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_51'
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b29ec203f12f5910800000000000000
+      internalID: 1828217301343572656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_52'
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1024a54a88edbb50800000000000000
+      internalID: 6610695508621271070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_53'
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05c1dff8ca81ac8b0800000000000000
+      internalID: -5131261696006087600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_54'
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0a3a61002673c120800000000000000
+      internalID: 2432918103544969743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_55'
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78b5a7152f1dbf650800000000000000
+      internalID: 6267834145095441287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_56'
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d540f3ed6d7ece60800000000000000
+      internalID: 7984457100303549913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_57'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88a831edcf60c5a90800000000000000
+      internalID: -7323971210883921272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_58'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 897b19b8e96e99650800000000000000
+      internalID: 6240272327319336856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_59'
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 465609f90315bd910800000000000000
+      internalID: 1863172140125152612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_60'
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c644169a8b1cbe50800000000000000
+      internalID: 6826361417224177350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_61'
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e35a8f1335f09580800000000000000
+      internalID: -8822282070097505311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_62'
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1670db336600fc1d0800000000000000
+      internalID: -3328441160648816799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_63'
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5016edc9fb7c6700800000000000000
+      internalID: 534938768581726303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_64'
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e0ce831e864d25c0800000000000000
+      internalID: -4238654098258345754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_65'
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c3f847149c7082b0800000000000000
+      internalID: -5584326562451754047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_66'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c3a4922266a99620800000000000000
+      internalID: 2781437185295164355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_67'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1310fdbe092f87a10800000000000000
+      internalID: 1907541146437878065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_68'
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf48874cbf7cb190800000000000000
+      internalID: -7945335195957702735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_69'
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c521319a85c9ffe50800000000000000
+      internalID: 6845361863234097756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_70'
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a5b35dbe49de5a60800000000000000
+      internalID: 7664802548038219168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_71'
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98de281cd4b2fc7e0800000000000000
+      internalID: -1743126917810033271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_72'
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bac1c1c07c57c4b0800000000000000
+      internalID: -5420261987160307018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_73'
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 672750de377700f40800000000000000
+      internalID: 5692681268777808502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_74'
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c14947d3c3ee910e0800000000000000
+      internalID: -2298544192299428836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_75'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70bf936294ebbd830800000000000000
+      internalID: 4097077507406822151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_76'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b657fd74630cd1d30800000000000000
+      internalID: 4403887350004807019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_77'
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23998d64cb3247e40800000000000000
+      internalID: 5653182723806239026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_78'
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 000131cb329807cc0800000000000000
+      internalID: -3715318906008432640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_79'
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c94691487eefd7ae0800000000000000
+      internalID: -1549802426438425444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_80'
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcd57901e6ce29540800000000000000
+      internalID: 5013329292685696459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_81'
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a448492b27fe6b4d0800000000000000
+      internalID: -3119042416006101942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_82'
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cf3ed512daa29c30800000000000000
+      internalID: 4364738808162172868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door-FArch01_83'
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d33fd7f50403d50800000000000000
+      internalID: 6714937823288573308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

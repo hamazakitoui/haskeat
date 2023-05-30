@@ -16,6 +16,7 @@ public class PlMoveAction : MonoBehaviour
     [SerializeField] Slider staminaSlider;
     [SerializeField] float Actionmovenum;
     [SerializeField] GameObject EffctSpray;
+    [SerializeField] float MaxDestroyTime;
     BoxCollider2D Collsion;　　　　　　　　 //当たり判定の保存用関数
     SpriteRenderer spriteRenderer;　　　　　//画像のコンポーネント取得関数
     Rigidbody2D rigid2D;                    //重力取得
@@ -32,14 +33,16 @@ public class PlMoveAction : MonoBehaviour
     [SerializeField] float staminarecoverynum;
     [SerializeField] GameObject[] coloreffect = new GameObject[4];
     bool movestart = true;
-    string NowAnim = "None";
     bool Ismove;
     GameObject art;
     public bool IsZbuttonCheck;
     [SerializeField] Camera main;
+    public List<GameObject> paintEffect = new List<GameObject>();
+    [SerializeField] float ColorDestroytime = 5;
     const float MOVE_AFTER_CREATE_INSTANCE_SPAN = 0.1f;
     const float MOVE_AFTER_ACTIVE_TIME = 0.1f;
     const float MOVE_AFTER_DESTROY_SPAN = 0.01f;
+    [SerializeField] AudioClip SpraySE;
     enum Pldirection
     {
         none,
@@ -66,8 +69,9 @@ public class PlMoveAction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (StageManager.IsGameStart)
-        {
+        //if (StageManager.IsGameStart)
+        //{
+
             //移動を検知
             InputX = Input.GetAxisRaw("Horizontal");
             InputY = Input.GetAxisRaw("Vertical");
@@ -164,64 +168,95 @@ public class PlMoveAction : MonoBehaviour
                 //目の前に美術品があれば美術品を破壊もしくは塗りつぶす
                 if (Input.GetKeyDown(KeyCode.Z))
                 {
-                    
-                    Debug.Log(EffctSpray);
                     Debug.Log("aaa");
+                    int nowcolor = Colorscript.colornum;
                     if (Colorscript.uselimitnum[Colorscript.colornum] > 0)
                     {
-                        //美術品か確認
-                        Art checkart = art.GetComponent<Art>();
-                        //美術品であれば
-                        if (checkart != null)
+                        if (nowcolor == 0)
                         {
-                            Debug.Log("チェック");
-                            //破壊した数を追加
-                            StageManager.AddDestroyArt(checkart.GetArtType);
-                            //目の前にあるのが絵画だった場合
-                            if (checkart.GetArtType == ArtType.Picture)
+                            //美術品か確認
+                            Art checkart = art.GetComponent<Art>();
+                            //美術品であれば
+                            if (checkart != null)
                             {
-                                art.SetActive(false);
+                                Debug.Log("チェック");
+                                //破壊した数を追加
+                                StageManager.AddDestroyArt(checkart.GetArtType);
+                                //目の前にあるのが絵画だった場合
+                                if (checkart.GetArtType == ArtType.Picture)
+                                {
+                                    art.SetActive(false);
+                                }
+                                //壺だった場合の処理
+                                if (checkart.GetArtType == ArtType.Pot)
+                                {
+                                    Destroy(art.gameObject);
+                                }
+                                nowcolor = Colorscript.colornum;
+                                Colorscript.uselimitnum[nowcolor]--;
                             }
-                            //壺だった場合の処理
-                            if (checkart.GetArtType == ArtType.Pot)
-                            {
-                                Destroy(art.gameObject);
-                            }
-                            int nowcolor = Colorscript.colornum;
-                            Colorscript.uselimitnum[nowcolor]--;
                         }
                     }
+
                 }
-            }
-            //残り残量がある場合エフェクトを出す
-            if (Input.GetKeyDown(KeyCode.Z))
-            {
-                EffctSpray.SetActive(true);
-                if (!checkfront())
+                //残り残量がある場合エフェクトを出す
+                if (Input.GetKeyDown(KeyCode.Z))
                 {
-                    if (Colorscript.uselimitnum[Colorscript.colornum] > 0)
+                    int nowcolor = Colorscript.colornum;
+                    if (nowcolor != 0)
                     {
-                        int nowcolor = Colorscript.colornum;
-                        GameObject paintEffect = null;
-                        paintEffect = Instantiate(coloreffect[nowcolor]);
-                        paintEffect.transform.position = transform.position + (direction * 2);
-                        Colorscript.uselimitnum[nowcolor]--;
+                        IsZbuttonCheck = true;
+                        if (!checkfront())
+                        {
+                            if (Colorscript.uselimitnum[Colorscript.colornum] > 0)
+                            {
+
+                                if (nowcolor != 0)
+                                {
+                                    EffctSpray.SetActive(true);
+                                    GameObject Effect = null;
+                                    AudioManager.Instance.PlaySE(SpraySE.name, false);
+                                    Effect = Instantiate(coloreffect[nowcolor]);
+                                    Effect.AddComponent<decoy>();
+                                    Effect.transform.position = transform.position + (direction * 2);
+                                    paintEffect.Add(Effect);
+                                    if (nowcolor == 1)
+                                    {
+                                        Effect.GetComponent<decoy>().state = decoy.Colorkind.brue;
+                                    }
+                                    else if (nowcolor == 2)
+                                    {
+                                        Effect.GetComponent<decoy>().state = decoy.Colorkind.yellow;
+                                    }
+                                    else if (nowcolor == 3)
+                                    {
+
+                                        {
+                                            EnemyBase[] enemies = FindObjectsOfType<EnemyBase>();
+                                            foreach (var e in enemies)
+                                            {
+                                                e.SetPlayer = paintEffect[paintEffect.Count - 1].transform;
+                                            }
+                                        }
+
+                                    }
+                                    Colorscript.uselimitnum[nowcolor]--;
+                                }
+                                else
+                                {
+                                    Colorscript.uselimitnum[nowcolor] = 0;
+                                }
+                            }
+                            else if (art.tag == "wall")
+                            {
+
+                            }
+                            else
+                            {
+
+                            }
+                        }
                     }
-                    else
-                    {
-                        EffctSpray.SetActive(true);
-                        int nowcolor = Colorscript.colornum;
-                        Colorscript.uselimitnum[nowcolor] = 0;
-                    }
-
-                }
-                else if (art.tag == "wall")
-                {
-
-                }
-                else
-                {
-
                 }
             }
             stamina = staminaSlider.value;
@@ -233,17 +268,16 @@ public class PlMoveAction : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.X))
             {
                 //スタミナ量チェック
-                if (stamina >= 25 && !IsAction&&!checkfront())
+                if (stamina >= 25 && !IsAction && !checkfront())
                 {
                     staminaSlider.value -= 10;
                     //Debug.Log("コルーチンチェック");
                     StartCoroutine(Action(direction));
-                    StartCoroutine(MoveAfterMotion(transform.position,transform.position+direction));
-                    
+                    StartCoroutine(MoveAfterMotion(transform.position, transform.position + direction));
+
                 }
             }
-        }
-        //移動
+        //}
     }
 
     IEnumerator Action(Vector3 movedirction)
@@ -268,7 +302,7 @@ public class PlMoveAction : MonoBehaviour
 
             checkmovedistance = Vector3.Distance(transform.position, moveend);
             transform.position += movedirction * Actionmovenum * Time.deltaTime;
-            
+
             yield return 0;
         }
         //当たり判定を戻す
@@ -353,11 +387,12 @@ public class PlMoveAction : MonoBehaviour
         yield return null; // 1フレーム待機
         // 残像生成
         SpriteRenderer Plsprite = GetComponent<SpriteRenderer>();
-        for (float d = length; d > 0.0f; d -= MOVE_AFTER_CREATE_INSTANCE_SPAN)
+        for (float d = length; d > 0.0f; d -= MOVE_AFTER_CREATE_INSTANCE_SPAN)
         {
             GameObject w = new GameObject("fgfh");
             SpriteRenderer renderer = w.AddComponent<SpriteRenderer>(); // 残像取得
-            renderer.sprite=Plsprite.sprite;
+            renderer.sprite = Plsprite.sprite;
+            renderer.sortingOrder = Plsprite.sortingOrder - 1;
             // 生成位置
             Vector3 pos = endPos - new Vector3(Mathf.Cos(dirRad) * d, Mathf.Sin(dirRad) * d);
             pos.z = Vector3.zero.z; // Z座標を一定値に
@@ -378,7 +413,7 @@ public class PlMoveAction : MonoBehaviour
     IEnumerator AfterMotionFade(SpriteRenderer motion)
     {
         //float MotionTime;
-        Color MotionColor=motion.color;
+        Color MotionColor = motion.color;
         motion.color = new Color(MotionColor.r, MotionColor.g, MotionColor.b, 0);
         yield return new WaitForSeconds(0.01f);
         motion.color = new Color(MotionColor.r, MotionColor.g, MotionColor.b, 1);
