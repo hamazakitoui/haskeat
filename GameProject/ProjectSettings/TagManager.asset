@@ -12,6 +12,7 @@ TagManager:
   - purplespray
   - Picture
   - Pot
+  - tutorial
   layers:
   - Default
   - TransparentFX

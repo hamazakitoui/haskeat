@@ -162,6 +162,19 @@ public class PlMoveAction : MonoBehaviour
 
                 rigid2D.velocity = new Vector2(speedX, speedY);
             }
+        if (checkfront())
+        {
+            if (art.tag == "tutorial")
+            {
+                Debug.Log("aaa");
+                if (Input.GetKeyDown(KeyCode.Z))
+                {
+                    FadeSceneManager.Instance.LoadScene("TitleScene");
+
+                }
+
+            }
+        }
             //Debug.Log(checkfront());
             if (checkfront())
             {
