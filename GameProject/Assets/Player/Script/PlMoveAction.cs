@@ -69,8 +69,8 @@ public class PlMoveAction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (StageManager.IsGameStart)
-        //{
+        if (StageManager.IsGameStart)
+        {
 
             //移動を検知
             InputX = Input.GetAxisRaw("Horizontal");
@@ -162,27 +162,30 @@ public class PlMoveAction : MonoBehaviour
 
                 rigid2D.velocity = new Vector2(speedX, speedY);
             }
-        if (checkfront())
-        {
-            if (art.tag == "tutorial")
-            {
-                Debug.Log("aaa");
-                if (Input.GetKeyDown(KeyCode.Z))
-                {
-                    FadeSceneManager.Instance.LoadScene("TitleScene");
-
-                }
-
-            }
-        }
-            //Debug.Log(checkfront());
             if (checkfront())
             {
+                if (art.tag == "tutorial")
+                {
+                    Debug.Log("aaa");
+                    if (Input.GetKeyDown(KeyCode.Z))
+                    {
+                        FadeSceneManager.Instance.LoadScene("TitleScene");
+
+                    }
+
+                }
+            }
+            Debug.Log(checkfront());
+            if (checkfront())
+            {
+
                 //目の前に美術品があれば美術品を破壊もしくは塗りつぶす
                 if (Input.GetKeyDown(KeyCode.Z))
                 {
                     Debug.Log("aaa");
+
                     int nowcolor = Colorscript.colornum;
+                    Debug.Log(Colorscript.uselimitnum[Colorscript.colornum]);
                     if (Colorscript.uselimitnum[Colorscript.colornum] > 0)
                     {
                         if (nowcolor == 0)
@@ -210,68 +213,65 @@ public class PlMoveAction : MonoBehaviour
                             }
                         }
                     }
-
                 }
+            }
+            else if (!checkfront())
+            {
                 //残り残量がある場合エフェクトを出す
                 if (Input.GetKeyDown(KeyCode.Z))
                 {
+                    IsZbuttonCheck = true;
                     int nowcolor = Colorscript.colornum;
-                    if (nowcolor != 0)
+                    Debug.Log("bbb");
+                    if (Colorscript.uselimitnum[Colorscript.colornum] > 0)
                     {
-                        IsZbuttonCheck = true;
-                        if (!checkfront())
+                        if (nowcolor != 0)
                         {
-                            if (Colorscript.uselimitnum[Colorscript.colornum] > 0)
+                            EffctSpray.SetActive(true);
+                            GameObject Effect = null;
+                            AudioManager.Instance.PlaySE(SpraySE.name, false);
+                            Effect = Instantiate(coloreffect[nowcolor]);
+                            Effect.AddComponent<decoy>();
+                            Effect.transform.position = transform.position + (direction * 2);
+                            paintEffect.Add(Effect);
+                            if (nowcolor == 1)
                             {
-
-                                if (nowcolor != 0)
+                                Effect.GetComponent<decoy>().state = decoy.Colorkind.brue;
+                            }
+                            else if (nowcolor == 2)
+                            {
+                                Effect.GetComponent<decoy>().state = decoy.Colorkind.yellow;
+                            }
+                            else if (nowcolor == 3)
+                            {
                                 {
-                                    EffctSpray.SetActive(true);
-                                    GameObject Effect = null;
-                                    AudioManager.Instance.PlaySE(SpraySE.name, false);
-                                    Effect = Instantiate(coloreffect[nowcolor]);
-                                    Effect.AddComponent<decoy>();
-                                    Effect.transform.position = transform.position + (direction * 2);
-                                    paintEffect.Add(Effect);
-                                    if (nowcolor == 1)
+                                    EnemyBase[] enemies = FindObjectsOfType<EnemyBase>();
+                                    foreach (var e in enemies)
                                     {
-                                        Effect.GetComponent<decoy>().state = decoy.Colorkind.brue;
+                                        e.SetPlayer = paintEffect[paintEffect.Count - 1].transform;
                                     }
-                                    else if (nowcolor == 2)
-                                    {
-                                        Effect.GetComponent<decoy>().state = decoy.Colorkind.yellow;
-                                    }
-                                    else if (nowcolor == 3)
-                                    {
-
-                                        {
-                                            EnemyBase[] enemies = FindObjectsOfType<EnemyBase>();
-                                            foreach (var e in enemies)
-                                            {
-                                                e.SetPlayer = paintEffect[paintEffect.Count - 1].transform;
-                                            }
-                                        }
-
-                                    }
-                                    Colorscript.uselimitnum[nowcolor]--;
-                                }
-                                else
-                                {
-                                    Colorscript.uselimitnum[nowcolor] = 0;
                                 }
                             }
-                            else if (art.tag == "wall")
-                            {
-
-                            }
-                            else
-                            {
-
-                            }
+                            
+                            Colorscript.uselimitnum[nowcolor]--;
+                            Debug.Log(Colorscript.uselimitnum[nowcolor]);
                         }
+                        //else
+                        //{
+                        //    Colorscript.uselimitnum[nowcolor] = 0;
+                        //}
                     }
+                    else if (art.tag == "wall")
+                    {
+                        Debug.Log("wall");
+                    }
+                    else
+                    {
+                    }
+
                 }
             }
+
             stamina = staminaSlider.value;
             if (stamina <= StaminaMax)
             {
@@ -290,7 +290,7 @@ public class PlMoveAction : MonoBehaviour
 
                 }
             }
-        //}
+        }
     }
 
     IEnumerator Action(Vector3 movedirction)
