@@ -175,7 +175,7 @@ public class PlMoveAction : MonoBehaviour
 
                 }
             }
-            Debug.Log(checkfront());
+            //Debug.Log(checkfront());
             if (checkfront())
             {
 
