@@ -162,6 +162,7 @@ public class PlMoveAction : MonoBehaviour
 
                 rigid2D.velocity = new Vector2(speedX, speedY);
             }
+            //Debug.Log(checkfront());
             if (checkfront())
             {
                 if (art.tag == "tutorial")
@@ -170,14 +171,8 @@ public class PlMoveAction : MonoBehaviour
                     if (Input.GetKeyDown(KeyCode.Z))
                     {
                         FadeSceneManager.Instance.LoadScene("TitleScene");
-
                     }
-
                 }
-            }
-            //Debug.Log(checkfront());
-            if (checkfront())
-            {
 
                 //目の前に美術品があれば美術品を破壊もしくは塗りつぶす
                 if (Input.GetKeyDown(KeyCode.Z))
@@ -252,7 +247,7 @@ public class PlMoveAction : MonoBehaviour
                                     }
                                 }
                             }
-                            
+
                             Colorscript.uselimitnum[nowcolor]--;
                             Debug.Log(Colorscript.uselimitnum[nowcolor]);
                         }
@@ -301,20 +296,40 @@ public class PlMoveAction : MonoBehaviour
         Collsion.enabled = false;
         //動く前の位置を取得
         Vector3 PlmovePos = transform.position;
-        Debug.Log(movedirction);
+        //Debug.Log(movedirction);
         //移動後の位置を取得
         Vector3 moveend = transform.position + movedirction;
         //移動量チェック
         float checkmovedistance = 1;
         //float debug = 0;
         //どれだけ移動したかの変数
-        //const float _TIME = 360.0f / 50;
-        while (checkmovedistance >= 0.1f)
-        {
-            //debug = Input.GetAxisRaw("Vertical");
+        float _TIME = movedirction.magnitude / MoveSpeed;
+        float nowtime = 0;
 
+        while (_TIME < nowtime)
+        {
+
+            //debug = Input.GetAxisRaw("Vertical");
             checkmovedistance = Vector3.Distance(transform.position, moveend);
-            transform.position += movedirction * Actionmovenum * Time.deltaTime;
+            Debug.Log(checkmovedistance);
+            nowtime++;
+            if (checkmovedistance >= 0.1)
+            {
+                if (_TIME < nowtime)
+                {
+                    transform.position += movedirction * Actionmovenum * Time.deltaTime;
+
+                }
+                else
+                {
+                    yield return 0;
+                    //transform.position = PlmovePos+moveend;
+                }
+
+
+            }
+
+
 
             yield return 0;
         }
