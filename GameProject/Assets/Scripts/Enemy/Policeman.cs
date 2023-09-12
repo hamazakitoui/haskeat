@@ -56,6 +56,7 @@ public class Policeman : EnemyBase, IEnemy
         // 視認範囲を計算
         float r = Mathf.Acos(Vector3.Dot(fd, dir.normalized)) * Mathf.Rad2Deg;
         bool temp = foundPlayer; // 一時保存
+        shotDirection = fd; // 発射方向セット
         foundPlayer = r < foundRad && dir.magnitude < sight; // 発見かどうか更新
         if (temp && !foundPlayer)
         {
@@ -65,7 +66,6 @@ public class Policeman : EnemyBase, IEnemy
         // 見失い中なら
         if (lostFlag)
         {
-            shotDirection = fd; // 発射方向セット
             foundDelta += Time.deltaTime;
             if (foundDelta >= lostSpan)
             {
