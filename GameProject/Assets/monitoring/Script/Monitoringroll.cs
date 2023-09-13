@@ -4,16 +4,24 @@ using UnityEngine;
 
 public class Monitoringroll : MonoBehaviour
 {
-    float Waiktime;
+    float Waittime;
+    [SerializeField] float MaxWaik;
     [SerializeField] float maxroll;
     [SerializeField] float rollspeed;
     bool fast = true;
     int rollnum;
-    [SerializeField]bool wait;
+    float scale;
+    const int startmax = 90;
+    [SerializeField] bool Wait;
+    [SerializeField] bool rightroll;
     // Start is called before the first frame update
     void Start()
     {
-
+        scale = transform.localScale.x;
+        if (rightroll)
+        {
+            rollspeed *= -1;
+        }
     }
 
     // Update is called once per frame
@@ -27,29 +35,28 @@ public class Monitoringroll : MonoBehaviour
 
         if (fast)
         {
-            if (nowroll.z > maxroll / 2)
-            {
-                fast = false;
-                //Debug.Log("aaa");
-                rollnum = 0;
-                rollspeed *= -1;
-                wait = true;
-            }
-            else
-            {
-                rollnum += (int)rollspeed;
-                
-                transform.Rotate(0, 0, rollspeed);
+                if (rollnum > startmax)
+                {
+                    fast = false;
+                    //Debug.Log("aaa");
+                    rollnum = 0;
+                    rollspeed *= -1;
+                    Wait = true;
+                }
+                else
+                {
+                    rollnum += Mathf.Abs((int)rollspeed);
 
-            }
+                    transform.Rotate(0, 0, rollspeed);
 
+                }
         }
         else
         {
 
             //Debug.Log(i);
 
-            if (rollnum < maxroll)
+            if (rollnum < maxroll && !Wait)
             {
                 rollnum += Mathf.Abs((int)rollspeed);
                 if (rollnum >= maxroll)
@@ -57,8 +64,19 @@ public class Monitoringroll : MonoBehaviour
                     Debug.Log("aa");
                     rollnum = 0;
                     rollspeed *= -1;
+                    Wait = true;
                 }
-                transform.Rotate(0, 0, rollspeed);
+                    transform.Rotate(0, 0, rollspeed);
+            }
+            else if (Wait)
+            {
+                Waittime += Time.deltaTime;
+                if (Waittime >= MaxWaik)
+                {
+                    Debug.Log("bbb");
+                    Waittime = 0;
+                    Wait = false;
+                }
             }
 
         }

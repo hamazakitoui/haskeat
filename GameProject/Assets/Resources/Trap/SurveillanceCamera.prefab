@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9102838641772531937}
   - component: {fileID: 4644354950070291246}
   - component: {fileID: 1535730528943954960}
+  - component: {fileID: 253447908}
   m_Layer: 10
   m_Name: SurveillanceCamera
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 2224564479297624797}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 9090152302506788535}
   m_Father: {fileID: 0}
@@ -123,6 +124,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3, y: 0.25}
   m_EdgeRadius: 0
+--- !u!114 &253447908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2224564479297624797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdec7e01030fcf94f9646db41d0568bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxWaik: 3
+  maxroll: 180
+  rollspeed: 1
+  Wait: 0
+  rightroll: 0
 --- !u!1 &7795342901083454490
 GameObject:
   m_ObjectHideFlags: 0
