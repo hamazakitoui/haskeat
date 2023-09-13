@@ -130,6 +130,8 @@ public class SecurityGuard : EnemyBase, IEnemy
                     scale.x = -scale.x;
                     transform.localScale = scale;
                 }
+                // 視界の角度設定
+                sightRenderer.rectTransform.rotation = Quaternion.Euler(0, 0, foundRad / 2);
             }
             // 左移動時
             else
@@ -141,6 +143,9 @@ public class SecurityGuard : EnemyBase, IEnemy
                     scale.x = -scale.x;
                     transform.localScale = scale;
                 }
+                // 視界の角度設定
+                sightRenderer.rectTransform.rotation = Quaternion.Euler
+                    (0, 0, Dictionary.DEG_MAX / 2 + foundRad / 2);
             }
         }
         // 上下移動時
@@ -153,6 +158,13 @@ public class SecurityGuard : EnemyBase, IEnemy
                 scale.x = -scale.x;
                 transform.localScale = scale;
             }
+            // 視界の角度設定
+            // 上移動時
+            if (agent.velocity.y > 0) sightRenderer.rectTransform.rotation = Quaternion.Euler
+                    (0, 0, Dictionary.DEG_MAX / 4 + foundRad / 2);
+            // 下移動時
+            else sightRenderer.rectTransform.rotation = Quaternion.Euler
+                    (0, 0, Dictionary.DEG_MAX * 3 / 4 + foundRad / 2);
         }
         Vector2 velocity = agent.velocity.normalized; // 移動速度
         animator.SetBool(vxAnim, Mathf.Abs(velocity.x) > Mathf.Abs(velocity.y)); // 横移動アニメ変更

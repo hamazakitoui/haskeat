@@ -1,6 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.UI;
 
 /// <summary> 敵基本クラス </summary>
 public class EnemyBase : MonoBehaviour
@@ -23,6 +22,7 @@ public class EnemyBase : MonoBehaviour
     [SerializeField] private int maxHP = 1;
     // 移動速度、視野
     [SerializeField] protected float moveSpeed = 3.0f, sight = 5.0f;
+    [Header("視界画像")] [SerializeField] protected Image sightRenderer;
     /// <summary> 鈍足関数 </summary>
     private void Slow()
     {
