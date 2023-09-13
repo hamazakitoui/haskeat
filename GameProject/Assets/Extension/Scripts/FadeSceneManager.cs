@@ -176,6 +176,7 @@ public class FadeSceneManager : MonoBehaviour
         isFade = true; // 読み込み開始
         FadeCanvas.SetActive(true); // フェード用UI表示
         BackGround.transform.SetAsLastSibling(); // フェード用Canvasを最後に表示
+        float orgCmrFov = Camera.main.fieldOfView; // 元の画角
         float time = 0; // 遷移用変数
         //AudioManager.Instance.StopBGM(); // BGM停止
         // 読み込み画面を少しずつ出す
@@ -187,6 +188,8 @@ public class FadeSceneManager : MonoBehaviour
             Color color = BackGround.color; // フェード用背景UIの色
             color.a = fadeAlpha; // アルファ値変更
             BackGround.color = color; // 背景自体の色に反映
+            // 画角を小さくする
+            Camera.main.fieldOfView -= orgCmrFov / (interval * fadeIntervalMul) * Time.deltaTime;
             time += Time.deltaTime;
             yield return 0;
         }
