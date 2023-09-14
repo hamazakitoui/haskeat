@@ -130,8 +130,6 @@ public class SecurityGuard : EnemyBase, IEnemy
                     scale.x = -scale.x;
                     transform.localScale = scale;
                 }
-                // 視界の角度設定
-                sightRenderer.rectTransform.rotation = Quaternion.Euler(0, 0, foundRad / 2);
             }
             // 左移動時
             else
@@ -143,10 +141,9 @@ public class SecurityGuard : EnemyBase, IEnemy
                     scale.x = -scale.x;
                     transform.localScale = scale;
                 }
-                // 視界の角度設定
-                sightRenderer.rectTransform.rotation = Quaternion.Euler
-                    (0, 0, Dictionary.DEG_MAX / 2 + foundRad / 2);
             }
+            // 視界の角度設定
+            sightRenderer.rectTransform.rotation = Quaternion.Euler(0, 0, foundRad / 2);
         }
         // 上下移動時
         else
