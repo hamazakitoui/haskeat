@@ -5,6 +5,8 @@ using UnityEngine;
 /// <summary> 辞書 </summary>
 public struct Dictionary
 {
+    /// <summary> 最大角度 </summary>
+    public const float DEG_MAX = 360.0f;
     /// <summary> プレイヤータグ </summary>
     public const string PLAYER_TAG = "Player";
     /// <summary> エネミータグ </summary>

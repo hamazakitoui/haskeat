@@ -15679,65 +15679,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8918558471871344932, guid: fdde33507a843164b84362233b3fc4bd,
-        type: 3}
-      propertyPath: movePoints.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8918558471871344932, guid: fdde33507a843164b84362233b3fc4bd,
-        type: 3}
-      propertyPath: movePoints.Array.data[0].x
-      value: -42.24
-      objectReference: {fileID: 0}
-    - target: {fileID: 8918558471871344932, guid: fdde33507a843164b84362233b3fc4bd,
-        type: 3}
-      propertyPath: movePoints.Array.data[1].x
-      value: -19.76
-      objectReference: {fileID: 0}
-    - target: {fileID: 8918558471871344932, guid: fdde33507a843164b84362233b3fc4bd,
-        type: 3}
-      propertyPath: movePoints.Array.data[0].y
-      value: 2.11
-      objectReference: {fileID: 0}
-    - target: {fileID: 8918558471871344932, guid: fdde33507a843164b84362233b3fc4bd,
-        type: 3}
-      propertyPath: movePoints.Array.data[1].y
-      value: 2.11
-      objectReference: {fileID: 0}
-    - target: {fileID: 8918558471871344932, guid: fdde33507a843164b84362233b3fc4bd,
-        type: 3}
-      propertyPath: movePoints.Array.data[2].x
-      value: -19.76
-      objectReference: {fileID: 0}
-    - target: {fileID: 8918558471871344932, guid: fdde33507a843164b84362233b3fc4bd,
-        type: 3}
-      propertyPath: movePoints.Array.data[2].y
-      value: 11.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 8918558471871344932, guid: fdde33507a843164b84362233b3fc4bd,
-        type: 3}
-      propertyPath: movePoints.Array.data[3].x
-      value: -41.72
-      objectReference: {fileID: 0}
-    - target: {fileID: 8918558471871344932, guid: fdde33507a843164b84362233b3fc4bd,
-        type: 3}
-      propertyPath: movePoints.Array.data[3].y
-      value: 11.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 8918558471871344932, guid: fdde33507a843164b84362233b3fc4bd,
-        type: 3}
-      propertyPath: isAround
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8918558471871344936, guid: fdde33507a843164b84362233b3fc4bd,
         type: 3}
       propertyPath: m_Name
       value: SecuirtyGuard
-      objectReference: {fileID: 0}
-    - target: {fileID: 8918558471871344939, guid: fdde33507a843164b84362233b3fc4bd,
-        type: 3}
-      propertyPath: m_Radius
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdde33507a843164b84362233b3fc4bd, type: 3}
