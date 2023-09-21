@@ -18964,6 +18964,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4902523543249993835, guid: 6d870a24d95f2e3429278e4f5bad4db8,
         type: 3}
+    - target: {fileID: 4597492506861775401, guid: be0aba1f9d03c2142824c61cde1da3d5,
+        type: 3}
+      propertyPath: Gameover.sceneName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597492506861775401, guid: be0aba1f9d03c2142824c61cde1da3d5,
+        type: 3}
+      propertyPath: gameover.sceneName
+      value: gameover
+      objectReference: {fileID: 0}
     - target: {fileID: 4597492506861775410, guid: be0aba1f9d03c2142824c61cde1da3d5,
         type: 3}
       propertyPath: m_LocalPosition.x
