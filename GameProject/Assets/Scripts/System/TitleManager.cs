@@ -12,17 +12,33 @@ public class TitleManager : MonoBehaviour
     [SerializeField] SpriteRenderer Renderer; // 絵
     [SerializeField] SceneObject GameScene; // ゲームシーン
     [SerializeField] Sprite[] pictures; // 絵の配列
+    [SerializeField] bool IsTitle;
+    public bool Effectend;
     // Start is called before the first frame update
     void Start()
     {
-        PaintBall.SetActive(false); // ペイント非表示
-        Renderer.sprite = pictures[Random.Range(0, pictures.Length)]; // 絵を乱数で設定
+        if (IsTitle)
+        {
+            PaintBall.SetActive(false); // ペイント非表示
+            Renderer.sprite = pictures[Random.Range(0, pictures.Length)]; // 絵を乱数で設定
+
+        }
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        GameStart(); // ゲーム開始
+        if (IsTitle)
+        {
+            GameStart(); // ゲーム開始
+
+        }
+        else
+        {
+            SceneLoad();
+        }
+
     }
     /// <summary> ゲーム開始 </summary>
     void GameStart()
@@ -32,6 +48,15 @@ public class TitleManager : MonoBehaviour
         if (Input.GetKeyDown(startKey))
         {
             PaintBall.SetActive(true); // ペイント表示
+            FadeSceneManager.Instance.LoadScene(GameScene); // シーン移動
+            isLoad = true;
+        }
+    }
+    void SceneLoad()
+    {
+        if (isLoad) return;
+        if (Input.GetKeyDown(startKey) && Effectend)
+        {
             FadeSceneManager.Instance.LoadScene(GameScene); // シーン移動
             isLoad = true;
         }

@@ -43,6 +43,8 @@ public class PlMoveAction : MonoBehaviour
     const float MOVE_AFTER_ACTIVE_TIME = 0.1f;
     const float MOVE_AFTER_DESTROY_SPAN = 0.01f;
     [SerializeField] AudioClip SpraySE;
+    [SerializeField] SceneObject gameover;
+    bool isLoad;
     enum Pldirection
     {
         none,
@@ -69,9 +71,19 @@ public class PlMoveAction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isLoad)
+        {
+            return;
+        }
+        if (HPSlider.value <= 0)
+            {
+                FadeSceneManager.Instance.LoadScene(gameover);
+                isLoad = true;
+            }
         if (StageManager.IsGameStart)
         {
 
+            
             //移動を検知
             InputX = Input.GetAxisRaw("Horizontal");
             InputY = Input.GetAxisRaw("Vertical");
