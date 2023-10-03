@@ -59,4 +59,8 @@ public class tutorial : MonoBehaviour
         }
         return false;
     }
+    IEnumerator StartDlay()
+    {
+        yield return null;
+    }
 }

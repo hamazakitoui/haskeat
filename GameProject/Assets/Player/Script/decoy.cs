@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class decoy : MonoBehaviour
 {
-    float Maxtime = 50;
+    float Maxtime = 10;
 
     public enum Colorkind
     {
@@ -54,14 +54,19 @@ public class decoy : MonoBehaviour
 
                     break;
                 case Colorkind.brue:
+                    if (collision.gameObject.GetComponent<EnemyBase>()!=null)
+                    {
+                        collision.gameObject.GetComponent<EnemyBase>().SetMoveSpeed(1f, Maxtime);
 
-                    collision.gameObject.GetComponent<EnemyBase>().SetMoveSpeed(1f, Maxtime);
+                    }
+                    
 
                     break;
                 case Colorkind.yellow:
-
-                    collision.gameObject.GetComponent<EnemyBase>().MoveStop(Maxtime);
-
+                    if (collision.gameObject.GetComponent<EnemyBase>() != null)
+                    {
+                        collision.gameObject.GetComponent<EnemyBase>().MoveStop(Maxtime);
+                    }
                     break;
                 case Colorkind.purple:
                     break;

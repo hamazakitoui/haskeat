@@ -178,7 +178,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 6d6634688608f9440a0ad29f0cc6f5d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -267,12 +267,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startKey: 122
+  tutorialKey: 0
   PaintBall: {fileID: 0}
   Renderer: {fileID: 0}
   GameScene:
     sceneName: TitleScene
+  tutorialScene:
+    sceneName: 
   pictures: []
   IsTitle: 0
+  SelectArrow: {fileID: 0}
   Effectend: 0
 --- !u!4 &497007206
 Transform:
@@ -629,8 +633,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 31.2, y: 682.8}
-  m_SizeDelta: {x: 672.9, y: 144.4}
+  m_AnchoredPosition: {x: 15.8, y: 682.8}
+  m_SizeDelta: {x: 502.7, y: 144.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1339692404
 MonoBehaviour:
@@ -651,7 +655,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 8a94d8a35c5dba8408406f46785319a0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -720,7 +724,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1529194630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -835,7 +839,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -234.09998, y: 16.73999}
+  m_AnchoredPosition: {x: -142.9, y: 16.73999}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1659237529
@@ -851,14 +855,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 05c9c0743731bc144bbef957c5a53c34, type: 3}
     m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
@@ -870,7 +874,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Z\u30AD\u30FC\u3067\u30BF\u30A4\u30C8\u30EB\u306B\u623B\u308B"
+  m_Text: press Z key
 --- !u!222 &1659237530
 CanvasRenderer:
   m_ObjectHideFlags: 0
