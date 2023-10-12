@@ -293,7 +293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHP: 1
-  moveSpeed: 3
+  moveSpeed: 4
   sight: 5
   sightRenderer: {fileID: 1619599578}
   foundRad: 25

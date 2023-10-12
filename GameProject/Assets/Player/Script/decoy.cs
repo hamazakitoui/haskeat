@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class decoy : MonoBehaviour
 {
-    float Maxtime = 10;
+    float Maxtime = 3.5f;
 
     public enum Colorkind
     {
@@ -32,7 +32,7 @@ public class decoy : MonoBehaviour
             return;
         }
         GameObject Player = GameObject.Find("Player");
-
+        Debug.Log(Player);
         EnemyBase[] enemies = FindObjectsOfType<EnemyBase>();
         foreach (var e in enemies)
         {
@@ -46,8 +46,6 @@ public class decoy : MonoBehaviour
         //EnemyBase[] enemies = FindObjectsOfType<EnemyBase>();
         if (collision.tag != "Player")
         {
-
-
             switch (state)
             {
                 case Colorkind.red:
@@ -59,8 +57,6 @@ public class decoy : MonoBehaviour
                         collision.gameObject.GetComponent<EnemyBase>().SetMoveSpeed(1f, Maxtime);
 
                     }
-                    
-
                     break;
                 case Colorkind.yellow:
                     if (collision.gameObject.GetComponent<EnemyBase>() != null)

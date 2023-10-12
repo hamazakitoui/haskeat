@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StageManager : MonoBehaviour
 {
@@ -17,10 +18,14 @@ public class StageManager : MonoBehaviour
     [SerializeField] GameObject MissionText; // ミッション表示オブジェクト
     [SerializeField] ClearCondition Condition; // クリア条件
     [SerializeField] SceneObject GameScene; // ゲームシーン
+    int num;
+    [SerializeField] Text nownolma;
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(MissionStart()); // ミッション開始
+        num = picNolma;
+        nownolma.text = num.ToString();
     }
 
     // Update is called once per frame
@@ -76,6 +81,8 @@ public class StageManager : MonoBehaviour
                 // 絵画を破壊
                 case ClearCondition.Picture:
                     if (pictureSum >= picNolma) clear = true;
+                    picNolma--;
+                    nownolma.text =  picNolma.ToString();
                     break;
                 // 壺を破壊
                 case ClearCondition.Pot:

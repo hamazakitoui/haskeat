@@ -44,7 +44,8 @@ public class PlMoveAction : MonoBehaviour
     const float MOVE_AFTER_DESTROY_SPAN = 0.01f;
     [SerializeField] AudioClip SpraySE;
     [SerializeField] SceneObject gameover;
-    bool isLoad;
+    public bool isLoad;
+    bool damege=false;
     enum Pldirection
     {
         none,
@@ -76,14 +77,12 @@ public class PlMoveAction : MonoBehaviour
             return;
         }
         if (HPSlider.value <= 0)
-            {
-                FadeSceneManager.Instance.LoadScene(gameover);
-                isLoad = true;
-            }
+        {
+            FadeSceneManager.Instance.LoadScene(gameover);
+            isLoad = true;
+        }
         if (StageManager.IsGameStart)
         {
-
-            
             //移動を検知
             InputX = Input.GetAxisRaw("Horizontal");
             InputY = Input.GetAxisRaw("Vertical");
@@ -234,12 +233,18 @@ public class PlMoveAction : MonoBehaviour
                     {
                         if (nowcolor != 0)
                         {
+                            //スプレーのエフェクトを表示
                             EffctSpray.SetActive(true);
                             GameObject Effect = null;
+                            //SEを開始
                             AudioManager.Instance.PlaySE(SpraySE.name, false);
+                            //罠を生成
                             Effect = Instantiate(coloreffect[nowcolor]);
+                            //罠にスクリプトをアタッチ
                             Effect.AddComponent<decoy>();
+                            //罠の位置を調整
                             Effect.transform.position = transform.position + (direction * 2);
+                            //出したエフェクトを追加
                             paintEffect.Add(Effect);
                             if (nowcolor == 1)
                             {
@@ -251,13 +256,13 @@ public class PlMoveAction : MonoBehaviour
                             }
                             else if (nowcolor == 3)
                             {
+                                Effect.GetComponent<decoy>().state = decoy.Colorkind.purple;
+                                EnemyBase[] enemies = FindObjectsOfType<EnemyBase>();
+                                foreach (var e in enemies)
                                 {
-                                    EnemyBase[] enemies = FindObjectsOfType<EnemyBase>();
-                                    foreach (var e in enemies)
-                                    {
-                                        e.SetPlayer = paintEffect[paintEffect.Count - 1].transform;
-                                    }
+                                    e.SetPlayer = paintEffect[paintEffect.Count - 1].transform;
                                 }
+
                             }
 
                             Colorscript.uselimitnum[nowcolor]--;
@@ -356,6 +361,10 @@ public class PlMoveAction : MonoBehaviour
         //敵に当たった時に点滅開始
         if (collision.tag == "Enemy")
         {
+            if (damege)
+            {
+                return;
+            }
             StartCoroutine("flash");
 
         }
@@ -394,7 +403,8 @@ public class PlMoveAction : MonoBehaviour
     {
         //色を取得
         Color co = spriteRenderer.color;
-        HPSlider.value -= 10;
+        damege = true;
+        HPSlider.value -= 25;
         //点滅回数の宣言
         int count = 0;
         //当たり判定を消す
@@ -411,6 +421,7 @@ public class PlMoveAction : MonoBehaviour
         }
         //最後に当たり判定を戻す
         Collsion.enabled = true;
+        damege = false;
     }
     private IEnumerator MoveAfterMotion(Vector3 startPos, Vector3 endPos)
     {

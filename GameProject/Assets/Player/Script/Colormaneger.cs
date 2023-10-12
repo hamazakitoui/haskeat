@@ -37,6 +37,7 @@ public class Colormaneger : MonoBehaviour
     [SerializeField] Text[] UesNumtext;
     const float hide = -931.5f;
     const float use = -764.4f;
+    float StartYPos;
     int BeforColor = 0;
     bool checkChengebutton;
     RectTransform[] Rect = new RectTransform[4];
@@ -51,6 +52,7 @@ public class Colormaneger : MonoBehaviour
                 Rect[i].anchoredPosition = new Vector2(hide, Rect[i].anchoredPosition.y);
             }
         }
+        StartYPos = Rect[1].anchoredPosition.y;
     }
 
     // Update is called once per frame
@@ -98,6 +100,10 @@ public class Colormaneger : MonoBehaviour
     //色の切替処理
     void colorchenge()
     {
+        if (checkChengebutton)
+        {
+            return;
+        }
         //1のキーが押された場合
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
@@ -181,7 +187,7 @@ public class Colormaneger : MonoBehaviour
             }
 
         }
-        //checkChengebutton = false;
+        checkChengebutton = false;
         //Debug.Log("bbb");
         yield return null;
     }

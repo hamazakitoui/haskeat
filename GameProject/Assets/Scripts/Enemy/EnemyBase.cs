@@ -98,4 +98,5 @@ public class EnemyBase : MonoBehaviour
     }
     /// <summary> プレイヤーセッター </summary>
     public Transform SetPlayer { set { playerPos = value; } }
+    public bool Getfound { get { return foundPlayer; } }
 }

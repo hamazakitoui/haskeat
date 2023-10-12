@@ -21,7 +21,8 @@ public class TitleManager : MonoBehaviour
     const int maxselect = 2;
     int nowselect = 0;
     Vector3 Arrowstart;
-    int[] textpos = new int[3] { -223, -296, -382 };
+    [SerializeField]Wordfade textfade;
+    int[] textpos = new int[3] { -111, -150, -200 };
     enum selectname
     {
         start,
@@ -37,9 +38,9 @@ public class TitleManager : MonoBehaviour
         {
             PaintBall.SetActive(false); // ペイント非表示
             Renderer.sprite = pictures[Random.Range(0, pictures.Length)]; // 絵を乱数で設定
-
+            Arrowstart = SelectArrow.GetComponent<RectTransform>().anchoredPosition;
         }
-        Arrowstart = SelectArrow.GetComponent<RectTransform>().anchoredPosition;
+        SelectArrow.GetComponent<RectTransform>().anchoredPosition = new Vector3(Arrowstart.x, textpos[(int)selectnum]);
 
         Debug.Log(textpos[0]);
 
@@ -48,9 +49,14 @@ public class TitleManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gameselect();
+
+        if (!textfade.ISSelectFadeIn)
+        {
+            return;
+        }
         if (IsTitle)
         {
+            gameselect();
             GameStart(); // ゲーム開始
 
         }
@@ -92,7 +98,7 @@ public class TitleManager : MonoBehaviour
     void SceneLoad()
     {
         if (isLoad) return;
-        if (Input.GetKeyDown(startKey) && Effectend)
+        if (Input.GetKeyDown(startKey) )
         {
             FadeSceneManager.Instance.LoadScene(GameScene); // シーン移動
             isLoad = true;
@@ -107,14 +113,14 @@ public class TitleManager : MonoBehaviour
                 selectnum--;
 
             }
-                
+
         }
-        else if(Input.GetKeyDown(KeyCode.DownArrow))
+        else if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             if ((int)selectnum < maxselect)
                 selectnum++;
         }
-        SelectArrow.GetComponent<RectTransform>().anchoredPosition = new Vector3(Arrowstart.x,textpos[(int)selectnum]);
+        SelectArrow.GetComponent<RectTransform>().anchoredPosition = new Vector3(Arrowstart.x, textpos[(int)selectnum]);
         Debug.Log((int)selectnum);
     }
 }
