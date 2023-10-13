@@ -9,12 +9,11 @@ public class StageManager : MonoBehaviour
     private int pictureSum = 0, potSum = 0, sculpSum = 0, mpSum = 0, msSum = 0;
     // アニメ名
     private readonly string startAnim = "Start";
-    // ミッション表示時間
-    private const float MISSION_WAIT = 3.0f;
     // 逃亡フラグ、ゲーム開始フラグ
     private bool runAway = false, gameStart = false;
     // ノルマ
     [SerializeField] int picNolma, potNolma, sculpNolma, mpNolma, msNolma;
+    [SerializeField] float missonWait = 3.0f; // ミッション表示時間
     [SerializeField] GameObject MissionText; // ミッション表示オブジェクト
     [SerializeField] ClearCondition Condition; // クリア条件
     [SerializeField] SceneObject GameScene; // ゲームシーン
@@ -38,7 +37,7 @@ public class StageManager : MonoBehaviour
     IEnumerator MissionStart()
     {
         MissionText.SetActive(true); // 内容を表示
-        yield return new WaitForSeconds(MISSION_WAIT); // 一定時間表示
+        yield return new WaitForSeconds(missonWait); // 一定時間表示
         Animator animator = MissionText.GetComponent<Animator>(); // アニメーター取得
         if (animator != null) animator.SetTrigger(startAnim); // アニメ変更
         gameStart = true; // ゲーム開始
