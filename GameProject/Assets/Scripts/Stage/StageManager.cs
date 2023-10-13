@@ -80,8 +80,7 @@ public class StageManager : MonoBehaviour
                 // 絵画を破壊
                 case ClearCondition.Picture:
                     if (pictureSum >= picNolma) clear = true;
-                    picNolma--;
-                    nownolma.text =  picNolma.ToString();
+                    nownolma.text = (potNolma - pictureSum).ToString();
                     break;
                 // 壺を破壊
                 case ClearCondition.Pot:
