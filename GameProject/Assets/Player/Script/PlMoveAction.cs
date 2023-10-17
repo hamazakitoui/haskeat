@@ -67,6 +67,7 @@ public class PlMoveAction : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         //StartCoroutine("flash");
         EffctSpray.SetActive(false);
+        bool a=GetComponent<EnemyBase>().Getfound;
     }
 
     // Update is called once per frame

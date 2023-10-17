@@ -37,7 +37,7 @@ public class Colormaneger : MonoBehaviour
     [SerializeField] Text[] UesNumtext;
     const float hide = -931.5f;
     const float use = -764.4f;
-    float StartYPos;
+    Vector2 StartPos;
     int BeforColor = 0;
     bool checkChengebutton;
     RectTransform[] Rect = new RectTransform[4];
@@ -52,7 +52,8 @@ public class Colormaneger : MonoBehaviour
                 Rect[i].anchoredPosition = new Vector2(hide, Rect[i].anchoredPosition.y);
             }
         }
-        StartYPos = Rect[1].anchoredPosition.y;
+        StartPos.y = Rect[0].anchoredPosition.y;
+        StartPos.x = Rect[1].anchoredPosition.x;
     }
 
     // Update is called once per frame
@@ -105,45 +106,22 @@ public class Colormaneger : MonoBehaviour
             return;
         }
         //1のキーが押された場合
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.C))
         {
             if (BeforColor != colornum)
             {
                 BeforColor = colornum;
             }
             checkChengebutton = true;
-            colornum = 0;
-
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            if (BeforColor != colornum)
+            if (colornum<(int)Colorchenge.purple)
             {
-                BeforColor = colornum;
+                colornum++;
             }
-            checkChengebutton = true;
-            colornum = 1;
-
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            if (BeforColor != colornum)
+            else
             {
-                BeforColor = colornum;
+                colornum = 0;
             }
-            checkChengebutton = true;
-            colornum = 2;
-
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            if (BeforColor != colornum)
-            {
-                BeforColor = colornum;
-            }
-            checkChengebutton = true;
-            colornum = 3;
-
+            
         }
         //先に前に出ていた色を取得
         //if (BeforColor != colornum)
@@ -156,21 +134,21 @@ public class Colormaneger : MonoBehaviour
         //押された数字の色UIの位置を取得
         Vector2 ColorPos = Rect[colornum].anchoredPosition;
         //数字が押される前の色UIの位置を取得
-        Vector2 beforColorPos = Rect[BeforColor].anchoredPosition;
-
+        Vector2 BeforPos = Rect[BeforColor].anchoredPosition;
         float movedistance = -1;
         while (checkChengebutton)
         {
             //現在の位置から色UIが隠れるまでの距離を求める
             movedistance = ColorPos.x - use;
             //色UIの移動開始
-            Rect[colornum].anchoredPosition += new Vector2(20 * Time.deltaTime, 0);
-            Rect[BeforColor].anchoredPosition -= new Vector2(20 * Time.deltaTime, 0);
+            Rect[colornum].anchoredPosition += new Vector2(30 * Time.deltaTime, 0);
+            Rect[BeforColor].anchoredPosition -= new Vector2(30 * Time.deltaTime, 0);
             //Debug.Log("aaa");
             //移動完了の処理
             if (movedistance < 0)
             {
                 checkChengebutton = true;
+                Rect[BeforColor].anchoredPosition = StartPos;
             }
             else
             {

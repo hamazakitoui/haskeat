@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 6445864715368275706}
   - component: {fileID: 6445864715368275705}
   m_Layer: 5
-  m_Name: Image (3)
+  m_Name: brack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -114,7 +114,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -764.4, y: -40}
+  m_AnchoredPosition: {x: -764.4, y: 260.5}
   m_SizeDelta: {x: 200, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6445864715368275706
@@ -362,7 +362,7 @@ GameObject:
   - component: {fileID: 6445864715888718887}
   - component: {fileID: 6445864715888718886}
   m_Layer: 5
-  m_Name: Image
+  m_Name: red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -512,7 +512,7 @@ GameObject:
   - component: {fileID: 6445864715986023911}
   - component: {fileID: 6445864715986023910}
   m_Layer: 5
-  m_Name: Image (2)
+  m_Name: yellow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -536,7 +536,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -764.4, y: 60}
+  m_AnchoredPosition: {x: -764.4, y: 260.5}
   m_SizeDelta: {x: 200, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6445864715986023911
@@ -736,7 +736,7 @@ GameObject:
   - component: {fileID: 6445864716446799614}
   - component: {fileID: 6445864716446799613}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: brue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -760,7 +760,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -764.4, y: 160}
+  m_AnchoredPosition: {x: -764.4, y: 260.5}
   m_SizeDelta: {x: 200, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6445864716446799614
