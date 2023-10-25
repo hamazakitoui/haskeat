@@ -46,6 +46,7 @@ public class PlMoveAction : MonoBehaviour
     [SerializeField] SceneObject gameover;
     public bool isLoad;
     bool damege=false;
+    EnemyBase Base;
     enum Pldirection
     {
         none,
@@ -67,7 +68,8 @@ public class PlMoveAction : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         //StartCoroutine("flash");
         EffctSpray.SetActive(false);
-        bool a=GetComponent<EnemyBase>().Getfound;
+        Base=GetComponent<EnemyBase>();
+
     }
 
     // Update is called once per frame
