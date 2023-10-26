@@ -6,6 +6,8 @@ using UnityEngine.UI;
 /// <summary> メソッドライブラリ </summary>
 public struct Library
 {
+    // 非表示文字
+    private const string TRIM_START = "<", TRIM_END = ">";
     // 一時停止対象物理演算回転速度、一時停止対象アニメーション速度
     private static float[] pause_rb2Aglvels = null, pauseAnimationTimes = null;
     // 一時停止対象の物理演算速度
@@ -27,8 +29,28 @@ public struct Library
         // 1文字ずつ表示
         while (count < message.Length)
         {
-            string msg = message.Substring(0, count++); // 表示する文章
+            // 最終文字は無視する
+            if (count < message.Length - 1)
+            {
+                // < から >まで表示しない
+                if (string.Compare(TRIM_START, message[count].ToString(), ignoreCase: true) == 0)
+                {
+                    // >が来るまで繰り返し
+                    while (string.Compare(TRIM_END, message[count].ToString(), ignoreCase: true) != 0)
+                    {
+                        count++;
+                    }
+                    count++;
+                    // >がもう一回来るまで繰り返し
+                    while (string.Compare(TRIM_END, message[count].ToString(), ignoreCase: true) != 0)
+                    {
+                        count++;
+                    }
+                }
+            }
+            string msg = message.Substring(0, count + 1); // 表示する文章
             text.text = msg;
+            count++;
             yield return new WaitForSeconds(span); // 一定時間待機
         }
         IsPrintMessage = false;
