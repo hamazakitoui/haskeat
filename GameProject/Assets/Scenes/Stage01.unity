@@ -17970,7 +17970,7 @@ RectTransform:
   m_Children:
   - {fileID: 911188713}
   m_Father: {fileID: 0}
-  m_RootOrder: 40
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -26884,7 +26884,7 @@ PrefabInstance:
     - target: {fileID: 4200459142292216613, guid: 7901a4f5e680d7a4096afa89ad9fa7a3,
         type: 3}
       propertyPath: m_MaxValue
-      value: 1000
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4200459142292216613, guid: 7901a4f5e680d7a4096afa89ad9fa7a3,
         type: 3}
