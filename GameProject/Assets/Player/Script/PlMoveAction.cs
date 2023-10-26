@@ -300,8 +300,9 @@ public class PlMoveAction : MonoBehaviour
                 {
                     staminaSlider.value -= 10;
                     //Debug.Log("コルーチンチェック");
-                    StartCoroutine(Action(direction));
+                    
                     StartCoroutine(MoveAfterMotion(transform.position, transform.position + direction));
+                    StartCoroutine(Action(direction));
 
                 }
             }
@@ -314,9 +315,6 @@ public class PlMoveAction : MonoBehaviour
         rigid2D.velocity = new Vector2(0, 0);
         //当たり判定を消す
         Collsion.enabled = false;
-        //動く前の位置を取得
-        Vector3 PlmovePos = transform.position;
-        //Debug.Log(movedirction);
         //移動後の位置を取得
         Vector3 moveend = transform.position + movedirction;
         //移動量チェック
@@ -345,12 +343,7 @@ public class PlMoveAction : MonoBehaviour
                     yield return 0;
                     //transform.position = PlmovePos+moveend;
                 }
-
-
             }
-
-
-
             yield return 0;
         }
         //当たり判定を戻す
