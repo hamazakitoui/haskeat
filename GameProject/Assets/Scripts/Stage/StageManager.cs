@@ -23,6 +23,7 @@ public class StageManager : MonoBehaviour
     void Start()
     {
         StartCoroutine(MissionStart()); // ミッション開始
+        if (Condition == ClearCondition.Practice) RunAway(); // クリア条件が練習なら初めから逃亡させる
         num = picNolma;
         nownolma.text = num.ToString();
     }
@@ -31,6 +32,14 @@ public class StageManager : MonoBehaviour
     void Update()
     {
         
+    }
+    /// <summary> 逃亡開始 </summary>
+    private void RunAway()
+    {
+        runAway = true;
+        GoalGate goal = FindObjectOfType<GoalGate>(); // ゴール取得
+        Collider2D collider2 = goal.GetComponent<Collider2D>(); // コライダー取得
+        collider2.isTrigger = true; // 逃走可能にする
     }
     /// <summary> 開始時イベント </summary>
     /// <returns></returns>
@@ -93,14 +102,7 @@ public class StageManager : MonoBehaviour
                 default:
                     break;
             }
-            // ノルマを達成したら逃亡する
-            if (!runAway && clear)
-            {
-                runAway = true;
-                GoalGate goal = FindObjectOfType<GoalGate>(); // ゴール取得
-                Collider2D collider2 = goal.GetComponent<Collider2D>(); // コライダー取得
-                collider2.isTrigger = true; // 逃走可能にする
-            }
+            if (!runAway && clear) RunAway(); // ノルマを達成したら逃亡する
             Debug.Log(runAway ? "逃げろ!" : "汚せ!");
         }
     }
