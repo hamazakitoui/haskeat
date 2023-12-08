@@ -13,6 +13,7 @@ TagManager:
   - Picture
   - Pot
   - tutorial
+  - Key
   layers:
   - Default
   - TransparentFX

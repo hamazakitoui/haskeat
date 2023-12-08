@@ -44,9 +44,12 @@ public class PlMoveAction : MonoBehaviour
     const float MOVE_AFTER_DESTROY_SPAN = 0.01f;
     [SerializeField] AudioClip SpraySE;
     [SerializeField] SceneObject gameover;
-    public bool isLoad;
+    public bool IsStop;
     bool damege=false;
     EnemyBase Base;
+    bool Ishavekey;
+    bool Ischecklettor;
+    [SerializeField] bool IsTutorial;
     enum Pldirection
     {
         none,
@@ -60,7 +63,7 @@ public class PlMoveAction : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        main.transform.position = new Vector3(transform.position.x, transform.position.y, -10);
+        //main.transform.position = new Vector3(transform.position.x, transform.position.y, -10);
         //必要なコンポーネントを取得
         Collsion = GetComponent<BoxCollider2D>();
         rigid2D = GetComponent<Rigidbody2D>();
@@ -75,16 +78,25 @@ public class PlMoveAction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isLoad)
+        if (IsStop)
         {
             return;
         }
+        if (IsTutorial)
+        {
+           Ischecklettor = true;
+        }
+        else
+        { Ischecklettor = StageManager.IsGameStart;
+            
+        }
+        
         if (HPSlider.value <= 0)
         {
             FadeSceneManager.Instance.LoadScene(gameover);
-            isLoad = true;
+            IsStop = true;
         }
-        if (StageManager.IsGameStart)
+        if (Ischecklettor)
         {
             //移動を検知
             InputX = Input.GetAxisRaw("Horizontal");
@@ -363,6 +375,13 @@ public class PlMoveAction : MonoBehaviour
             }
             StartCoroutine("flash");
 
+        }
+        else if(collision.tag=="Key")
+        {
+            Ishavekey = true;
+            //AudioSource moveAudio = AudioManager.Instance.PlaySE();
+
+            Destroy(collision.gameObject);
         }
     }
     bool checkfront()

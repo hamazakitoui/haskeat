@@ -6,6 +6,7 @@ public class AnimationEffect : MonoBehaviour
 {
     [SerializeField] GameObject Target;
     [SerializeField] GameObject ZText;
+    [SerializeField] Key key;
     /// <summary> オブジェクト非表示 </summary>
     public void SetActive()
     {
@@ -18,5 +19,9 @@ public class AnimationEffect : MonoBehaviour
     public void cageend()
     {
         ZText.SetActive(true);
+    }
+    public void Open()
+    {
+        key.GetComponent<Key>().KeyAnimend = true ;
     }
 }

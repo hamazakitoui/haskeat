@@ -1,22 +1,28 @@
 fileFormatVersion: 2
-guid: 888db50b792013b4b98dfcd1ce5f18f2
+guid: 8d17f6498b421aa41bfc3f9c1ce0187f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7420640100034923312
-    second: aaa_0
+      213: 230698489824136631
+    second: Inside-Town-A5_0
   - first:
-      213: -2697574445156055643
-    second: aaa_1
+      213: 1089316201986109152
+    second: Inside-Town-A5_1
   - first:
-      213: -4157164317620906626
-    second: aaa_2
+      213: 7974594588048082873
+    second: Inside-Town-A5_2
   - first:
-      213: 452074802207166922
-    second: aaa_3
+      213: -8966768573250128508
+    second: Inside-Town-A5_3
   - first:
-      213: -7376592324281015333
-    second: aaa_4
+      213: -3534869240062712802
+    second: Inside-Town-A5_4
+  - first:
+      213: -8485639013426496250
+    second: Inside-Town-A5_5
+  - first:
+      213: 8515825271341821675
+    second: Inside-Town-A5_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -114,76 +120,76 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: aaa_0
+      name: Inside-Town-A5_0
       rect:
         serializedVersion: 2
-        x: 10
+        x: 16
         y: 0
-        width: 45
-        height: 64
+        width: 33
+        height: 12
       alignment: 9
-      pivot: {x: 0.39905268, y: 0.49419782}
+      pivot: {x: 0.49999952, y: -0.005269854}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03bc990dad86bf660800000000000000
-      internalID: 7420640100034923312
+      spriteID: 7bdcf20ed0b933300800000000000000
+      internalID: 230698489824136631
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: aaa_1
+      name: Inside-Town-A5_1
       rect:
         serializedVersion: 2
-        x: 55
-        y: 1
-        width: 9
-        height: 63
+        x: 16
+        y: 40
+        width: 33
+        height: 21
       alignment: 9
-      pivot: {x: 0.25244182, y: 0.5501013}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a54d41a55a409ad0800000000000000
-      internalID: -2697574445156055643
+      spriteID: 0eea57370570e1f00800000000000000
+      internalID: 1089316201986109152
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: aaa_2
+      name: Inside-Town-A5_2
       rect:
         serializedVersion: 2
-        x: 55
-        y: 1
-        width: 9
-        height: 63
+        x: 0
+        y: 33
+        width: 25
+        height: 28
       alignment: 9
-      pivot: {x: 1.0835298, y: 1.1071076}
+      pivot: {x: 0.5551202, y: 0.51968426}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e75d6472419ce46c0800000000000000
-      internalID: -4157164317620906626
+      spriteID: 9b7cb50d6837bae60800000000000000
+      internalID: 7974594588048082873
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: aaa_3
+      name: Inside-Town-A5_3
       rect:
         serializedVersion: 2
         x: 32
-        y: 0
+        y: 40
         width: 32
-        height: 32
+        height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,29 +197,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac1967d23a7164600800000000000000
-      internalID: 452074802207166922
+      spriteID: 4853a489d73af8380800000000000000
+      internalID: -8966768573250128508
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: aaa_4
+      name: Inside-Town-A5_4
       rect:
         serializedVersion: 2
-        x: 55
+        x: 16
         y: 32
-        width: 9
-        height: 27
+        width: 33
+        height: 29
       alignment: 9
-      pivot: {x: 0.58251953, y: 0.48624703}
+      pivot: {x: 0.24945231, y: 0.7090767}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd36b5a2d5411a990800000000000000
-      internalID: -7376592324281015333
+      spriteID: e146b9a972f91fec0800000000000000
+      internalID: -3534869240062712802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inside-Town-A5_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 38
+        width: 21
+        height: 23
+      alignment: 9
+      pivot: {x: 0.576118, y: 0.60766566}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d7480b644fc3a80800000000000000
+      internalID: -8485639013426496250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inside-Town-A5_6
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 0
+        width: 21
+        height: 24
+      alignment: 9
+      pivot: {x: 0.4207297, y: 0.14688775}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beeaf9b27f94e2670800000000000000
+      internalID: 8515825271341821675
       vertices: []
       indices: 
       edges: []
