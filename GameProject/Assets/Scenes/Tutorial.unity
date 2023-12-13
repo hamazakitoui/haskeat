@@ -1627,6 +1627,71 @@ PrefabInstance:
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef456a95d27d2e44791dbdd2aed9b223, type: 3}
+--- !u!1 &587844620
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 587844622}
+  - component: {fileID: 587844621}
+  m_Layer: 0
+  m_Name: NavMesh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &587844621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587844620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 148387606d0ccd84fa326ca211f274ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_OverrideByGrid: 0
+  m_UseMeshPrefab: {fileID: 0}
+  m_CompressBounds: 0
+  m_OverrideVector: {x: 1, y: 1, z: 1}
+  m_DefaultArea: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.033333335
+  m_BuildHeightMesh: 0
+  m_HideEditorLogs: 0
+  m_NavMeshData: {fileID: 23800000, guid: d84c7f9a93756154ab79894bb60579f0, type: 2}
+--- !u!4 &587844622
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587844620}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!4 &621082725 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6274959317930509006, guid: ef456a95d27d2e44791dbdd2aed9b223,
@@ -2304,7 +2369,7 @@ PrefabInstance:
         type: 3}
       propertyPath: StageManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 848074092}
     - target: {fileID: 4597492506861775401, guid: be0aba1f9d03c2142824c61cde1da3d5,
         type: 3}
       propertyPath: main
@@ -4995,7 +5060,9 @@ MonoBehaviour:
   messageImage: {fileID: 654060104}
   letter: {fileID: 383388386}
   Player: {fileID: 899586169}
-  Stagemaneger: {fileID: 0}
+  hollowImage:
+  - {fileID: 250006376}
+  - {fileID: 1260061956}
   message:
   - "\u660E\u65E5\u306F\u8972\u6483\u5F53\u65E5\u3060\u3002\n\u660E\u65E5\u306E\u305F\u3081\u306B\u4E88\u7FD2\u3057\u3066\u304A\u3053\u3046"
   - "\u3088\u3057\u3001\u6700\u521D\u306F\u9375\u3092\u3042\u305D\u3053\u306B\u3042\u308B\n\u9375\u3092\u53D6\u308A\u306B\u884C\u3053\u3046"
@@ -5016,10 +5083,6 @@ MonoBehaviour:
   - "\u6700\u5F8C\u3060\u3057\u3001\u3042\u306E\u6249\u307E\u3067\u8D70\u308A\u629C\u3051\u3088\u3046\uFF01"
   - "\u203B X\u30AD\u30FC\u3067\u56DE\u907F\u3001\u30C0\u30C3\u30B7\u30E5\u304C\u3067\u304D\u307E\u3059\u3002\n\u3000\u51FA\u53E3\u307E\u3067\u8D70\u308A\u629C\u3051\u307E\u3057\u3087\u3046\uFF01"
   messagetext: {fileID: 1518756158}
-  textback: {fileID: 654060106}
-  CameraMovespeedX: 0.05
-  CameraMovespeedY: 0.02
-  ChengeSizeSpeed: 0.03
   stopnum: 03000000070000000b00000000000000
   Raystart:
   - {x: 7, y: -0.1, z: 0}
@@ -5031,6 +5094,7 @@ MonoBehaviour:
   hitLayer:
     serializedVersion: 2
     m_Bits: 512
+  attentionnum: 01000000050000000a000000
 --- !u!4 &1612078992
 Transform:
   m_ObjectHideFlags: 0
@@ -25986,7 +26050,7 @@ PrefabInstance:
     - target: {fileID: 3108984649147648963, guid: 8f85daa0f0c0a5645889d11415c36297,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.69
+      value: 0.63
       objectReference: {fileID: 0}
     - target: {fileID: 3108984649147648963, guid: 8f85daa0f0c0a5645889d11415c36297,
         type: 3}
@@ -26345,7 +26409,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2118525922
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -61,7 +61,6 @@ public class Monitoringroll : MonoBehaviour
                 rollnum += Mathf.Abs((int)rollspeed);
                 if (rollnum >= maxroll)
                 {
-                    Debug.Log("aa");
                     rollnum = 0;
                     rollspeed *= -1;
                     Wait = true;
@@ -73,7 +72,6 @@ public class Monitoringroll : MonoBehaviour
                 Waittime += Time.deltaTime;
                 if (Waittime >= MaxWaik)
                 {
-                    Debug.Log("bbb");
                     Waittime = 0;
                     Wait = false;
                 }

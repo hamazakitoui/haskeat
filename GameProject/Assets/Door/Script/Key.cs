@@ -21,8 +21,9 @@ public class Key : MonoBehaviour
         {
             Door.transform.GetComponent<Animator>().Play("doorAnimation");
             Door2.transform.GetComponent<Animator>().Play("doorAnimation");
-            Destroy(LookObject);
+            
             Destroy(gameObject);
+            Destroy(LookObject);
             return;
 
         }
@@ -32,7 +33,7 @@ public class Key : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            gameObject.SetActive(false);
+            //gameObject.SetActive(false);
             Destroy(GetComponent<BoxCollider2D>());
             Lookanim.Play("Lookanim");
         }

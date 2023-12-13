@@ -19,7 +19,7 @@ public class PlMoveAction : MonoBehaviour
     [SerializeField] float MaxDestroyTime;
     BoxCollider2D Collsion;　　　　　　　　 //当たり判定の保存用関数
     SpriteRenderer spriteRenderer;　　　　　//画像のコンポーネント取得関数
-    Rigidbody2D rigid2D;                    //重力取得
+    public Rigidbody2D rigid2D;                    //重力取得
     const int Nowdrection = 1;                  //
     float InputX;
     float InputY;
@@ -29,7 +29,7 @@ public class PlMoveAction : MonoBehaviour
     float stamina;
     const float StaminaMax = 100;
     bool IsAction;
-    Animator PlAnim;
+    public Animator PlAnim;
     [SerializeField] float staminarecoverynum;
     [SerializeField] GameObject[] coloreffect = new GameObject[4];
     bool movestart = true;
@@ -45,9 +45,8 @@ public class PlMoveAction : MonoBehaviour
     [SerializeField] AudioClip SpraySE;
     [SerializeField] SceneObject gameover;
     public bool IsStop;
-    bool damege=false;
+    bool damege = false;
     EnemyBase Base;
-    bool Ishavekey;
     bool Ischecklettor;
     [SerializeField] bool IsTutorial;
     enum Pldirection
@@ -64,6 +63,7 @@ public class PlMoveAction : MonoBehaviour
     void Start()
     {
         //main.transform.position = new Vector3(transform.position.x, transform.position.y, -10);
+        IsStop = false;
         //必要なコンポーネントを取得
         Collsion = GetComponent<BoxCollider2D>();
         rigid2D = GetComponent<Rigidbody2D>();
@@ -71,7 +71,7 @@ public class PlMoveAction : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         //StartCoroutine("flash");
         EffctSpray.SetActive(false);
-        Base=GetComponent<EnemyBase>();
+        Base = GetComponent<EnemyBase>();
 
     }
 
@@ -82,15 +82,10 @@ public class PlMoveAction : MonoBehaviour
         {
             return;
         }
-        if (IsTutorial)
+        else if(!IsTutorial)
         {
-           Ischecklettor = true;
+            Ischecklettor = StageManager.IsGameStart;
         }
-        else
-        { Ischecklettor = StageManager.IsGameStart;
-            
-        }
-        
         if (HPSlider.value <= 0)
         {
             FadeSceneManager.Instance.LoadScene(gameover);
@@ -122,7 +117,6 @@ public class PlMoveAction : MonoBehaviour
                 dirctionkeap = direction;
                 Ismove = true;
             }
-
             //止まっているときに向きを代入
             else if (direction == Vector3.zero)
             {
@@ -203,10 +197,8 @@ public class PlMoveAction : MonoBehaviour
                 //目の前に美術品があれば美術品を破壊もしくは塗りつぶす
                 if (Input.GetKeyDown(KeyCode.Z))
                 {
-                    Debug.Log("aaa");
 
                     int nowcolor = Colorscript.colornum;
-                    Debug.Log(Colorscript.uselimitnum[Colorscript.colornum]);
                     if (Colorscript.uselimitnum[Colorscript.colornum] > 0)
                     {
                         if (nowcolor == 0)
@@ -216,7 +208,6 @@ public class PlMoveAction : MonoBehaviour
                             //美術品であれば
                             if (checkart != null)
                             {
-                                Debug.Log("チェック");
                                 //破壊した数を追加
                                 StageManager.AddDestroyArt(checkart.GetArtType);
                                 //目の前にあるのが絵画だった場合
@@ -243,7 +234,7 @@ public class PlMoveAction : MonoBehaviour
                 {
                     IsZbuttonCheck = true;
                     int nowcolor = Colorscript.colornum;
-                    Debug.Log("bbb");
+                    //Debug.Log("bbb");
                     if (Colorscript.uselimitnum[Colorscript.colornum] > 0)
                     {
                         if (nowcolor != 0)
@@ -312,7 +303,7 @@ public class PlMoveAction : MonoBehaviour
                 {
                     staminaSlider.value -= 10;
                     //Debug.Log("コルーチンチェック");
-                    
+
                     StartCoroutine(MoveAfterMotion(transform.position, transform.position + direction));
                     StartCoroutine(Action(direction));
 
@@ -375,13 +366,6 @@ public class PlMoveAction : MonoBehaviour
             }
             StartCoroutine("flash");
 
-        }
-        else if(collision.tag=="Key")
-        {
-            Ishavekey = true;
-            //AudioSource moveAudio = AudioManager.Instance.PlaySE();
-
-            Destroy(collision.gameObject);
         }
     }
     bool checkfront()
