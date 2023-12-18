@@ -17,8 +17,9 @@ public class tutorial : MonoBehaviour
     int textnum = 0;
     bool textend;
     bool nowtutorial;
-    int nownum = 4;
+    int nownum = 5;
     int faze;
+    bool kind;
     PlMoveAction Plscript;
     [SerializeField] int[] stopnum = new int[4];
     [SerializeField] Vector3[] Raystart;
@@ -32,6 +33,7 @@ public class tutorial : MonoBehaviour
         destroy,//美術品の削除
         trap,　 //罠の配置と切替
         avoid,　//回避
+        end,
         speak,
     }
     tutorialfall nowfaze = tutorialfall.speak;
@@ -40,10 +42,9 @@ public class tutorial : MonoBehaviour
     void Start()
     {
         Plscript = Player.GetComponent<PlMoveAction>();
-        //Player.GetComponent<PlMoveAction>().IsStop = true;
+        Player.GetComponent<PlMoveAction>().IsStop = true;
         Library.PrintMessage(message[textnum], messagetext, this);
         textnum++;
-        //nowmessage = Library.IsPrintMessage;
     }
 
     // Update is called once per frame
@@ -52,8 +53,6 @@ public class tutorial : MonoBehaviour
         //Debug.Log(Camera.main.transform.position);
         tutorialFaze();
         nowmessage = Library.IsPrintMessage;
-        Debug.Log(nowmessage);
-
     }
     bool keycheck()
     {
@@ -65,31 +64,47 @@ public class tutorial : MonoBehaviour
     }
     void textdisplay()
     {
+        if (textnum == message.Length)
+        {
+            messageImage.SetActive(false);
+            nownum = 4;
+            return;
+        }
+        if (textnum >= 11 && textnum < 12)
+            {
+                tutorialImage[faze].SetActive(true);
+            }
         //テキストが一定値に達した場合
         if (textnum >= stopnum[faze] && textnum < stopnum[faze] + 1)
         {
+
             //Playerが行動可能か
-            nowtutorial = true;
-            //チュートリアルの画像を見せる
-            tutorialImage[faze].SetActive(true);
+            if (textnum >= 12 && textnum < 13)
+            {
+                tutorialImage[faze].SetActive(false);
+                trapkind.SetActive(true);
+                nowtutorial = true;
+                kind = true;
+            }
+            else
+            {
+                nowtutorial = true;
+                //チュートリアルの画像を見せる
+                tutorialImage[faze].SetActive(true);
+            }
         }
-
-        if (textnum >= 12 && textnum < 13)
+        if (!kind)
         {
-            tutorialImage[faze].SetActive(false);
-            trapkind.SetActive(true);
-        }
+            if (textnum >= attentionnum[faze] && textnum < attentionnum[faze] + 1)
+            {
+                hollowImage[faze].SetActive(true);
+            }
+            else if (textnum > attentionnum[faze])
+            {
+                hollowImage[faze].SetActive(false);
+            }
 
-        if (textnum >= attentionnum[faze] && textnum < attentionnum[faze] + 1)
-        {
-            hollowImage[faze].SetActive(true);
         }
-        else if (textnum > attentionnum[faze])
-        {
-            hollowImage[faze].SetActive(false);
-        }
-
-        //メッセージがすべて終わっているか？
         if (textnum <= message.Length)
         {
             Library.PrintMessage(message[textnum], messagetext, this);
@@ -103,10 +118,11 @@ public class tutorial : MonoBehaviour
             faze++;
             Plscript.IsStop = true;
             Pldirction();
+            Library.PrintMessage(message[textnum], messagetext, this);
+            textnum++;
             messageImage.SetActive(true);
             nowtutorial = false;
-            Library.PrintMessage(message[textnum], messagetext, this);
-            nownum = 4;
+            nownum = 5;
             Player.GetComponent<PlMoveAction>().rigid2D.velocity = new Vector2(0, 0);
             Debug.Log(faze);
         }
@@ -128,6 +144,13 @@ public class tutorial : MonoBehaviour
             case (int)tutorialfall.avoid:
                 TutorialStart();
                 break;
+            case (int)tutorialfall.end:
+                if (!nowmessage)
+                {
+                    Plscript.IsStop = false;
+                    messageImage.SetActive(false);
+                }
+                break;
             case (int)tutorialfall.speak:
 
                 //テキストを進める
@@ -140,7 +163,7 @@ public class tutorial : MonoBehaviour
                     }
                     else
                     {
-                        if (!nowmessage)
+                        if (!nowmessage && !textend)
                         {
                             textdisplay();
                         }
@@ -163,18 +186,20 @@ public class tutorial : MonoBehaviour
 
     void TutorialStart()
     {
-        if (keycheck())
+        if (!nowmessage)
         {
-            //Debug.Log(faze);
-            //faze++;
-            if (!nowmessage)
+            Plscript.IsStop = false;
+            tutorialImage[faze].SetActive(false);
+            messageImage.SetActive(false);
+            if (kind)
             {
-                Plscript.IsStop = false;
-                tutorialImage[faze].SetActive(false);
-                messageImage.SetActive(false);
-
+                trapkind.SetActive(false);
             }
-
+        }
+        else if (textnum == message.Length)
+        {
+            messageImage.SetActive(false);
+            textend = true;
         }
     }
     void Pldirction()
