@@ -27,7 +27,7 @@ public class decoy : MonoBehaviour
     }
     private void OnDestroy()
     {
-        if ((int)state != 3)
+        if ((int)state != 3&&(int)state !=0)
         {
             return;
         }
@@ -49,13 +49,11 @@ public class decoy : MonoBehaviour
             switch (state)
             {
                 case Colorkind.red:
-
                     break;
                 case Colorkind.brue:
                     if (collision.gameObject.GetComponent<EnemyBase>()!=null)
                     {
                         collision.gameObject.GetComponent<EnemyBase>().SetMoveSpeed(1f, Maxtime);
-
                     }
                     break;
                 case Colorkind.yellow:

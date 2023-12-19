@@ -48,6 +48,7 @@ public class PlMoveAction : MonoBehaviour
     bool damege = false;
     EnemyBase Base;
     bool Ischecklettor;
+    public bool notfound=false;
     [SerializeField] bool IsTutorial;
     enum Pldirection
     {
@@ -82,7 +83,7 @@ public class PlMoveAction : MonoBehaviour
         {
             return;
         }
-        else if(!IsTutorial)
+        else if (!IsTutorial)
         {
             Ischecklettor = StageManager.IsGameStart;
         }
@@ -212,8 +213,10 @@ public class PlMoveAction : MonoBehaviour
                                 StageManager.AddDestroyArt(checkart.GetArtType);
                                 //目の前にあるのが絵画だった場合
                                 if (checkart.GetArtType == ArtType.Picture)
-                                {
-                                    art.SetActive(false);
+                                {                                 
+                                    GameObject Spray=Instantiate(coloreffect[nowcolor]);
+                                    art.GetComponent<BoxCollider2D>().enabled = false;
+                                    Spray.transform.position = art.transform.position;
                                 }
                                 //壺だった場合の処理
                                 if (checkart.GetArtType == ArtType.Pot)
@@ -237,43 +240,43 @@ public class PlMoveAction : MonoBehaviour
                     //Debug.Log("bbb");
                     if (Colorscript.uselimitnum[Colorscript.colornum] > 0)
                     {
-                        if (nowcolor != 0)
+                        //スプレーのエフェクトを表示
+                        EffctSpray.SetActive(true);
+                        GameObject Effect = null;
+                        //SEを開始
+                        AudioManager.Instance.PlaySE(SpraySE.name, false);
+                        //罠を生成
+                        Effect = Instantiate(coloreffect[nowcolor]);
+                        //罠にスクリプトをアタッチ
+                        Effect.AddComponent<decoy>();
+                        //罠の位置を調整
+                        Effect.transform.position = transform.position + (direction * 2);
+                        //出したエフェクトを追加
+                        paintEffect.Add(Effect);
+                        if (nowcolor == 0)
                         {
-                            //スプレーのエフェクトを表示
-                            EffctSpray.SetActive(true);
-                            GameObject Effect = null;
-                            //SEを開始
-                            AudioManager.Instance.PlaySE(SpraySE.name, false);
-                            //罠を生成
-                            Effect = Instantiate(coloreffect[nowcolor]);
-                            //罠にスクリプトをアタッチ
-                            Effect.AddComponent<decoy>();
-                            //罠の位置を調整
-                            Effect.transform.position = transform.position + (direction * 2);
-                            //出したエフェクトを追加
-                            paintEffect.Add(Effect);
-                            if (nowcolor == 1)
-                            {
-                                Effect.GetComponent<decoy>().state = decoy.Colorkind.brue;
-                            }
-                            else if (nowcolor == 2)
-                            {
-                                Effect.GetComponent<decoy>().state = decoy.Colorkind.yellow;
-                            }
-                            else if (nowcolor == 3)
-                            {
-                                Effect.GetComponent<decoy>().state = decoy.Colorkind.purple;
-                                EnemyBase[] enemies = FindObjectsOfType<EnemyBase>();
-                                foreach (var e in enemies)
-                                {
-                                    e.SetPlayer = paintEffect[paintEffect.Count - 1].transform;
-                                }
-
-                            }
-
-                            Colorscript.uselimitnum[nowcolor]--;
-                            Debug.Log(Colorscript.uselimitnum[nowcolor]);
+                            Effect.GetComponent<decoy>().state = decoy.Colorkind.red;
                         }
+                        else if (nowcolor == 1)
+                        {
+                            Effect.GetComponent<decoy>().state = decoy.Colorkind.brue;
+                        }
+                        else if (nowcolor == 2)
+                        {
+                            Effect.GetComponent<decoy>().state = decoy.Colorkind.yellow;
+                        }
+                        else if (nowcolor == 3)
+                        {
+                            Effect.GetComponent<decoy>().state = decoy.Colorkind.purple;
+                            EnemyBase[] enemies = FindObjectsOfType<EnemyBase>();
+                            foreach (var e in enemies)
+                            {
+                                e.SetPlayer = paintEffect[paintEffect.Count - 1].transform;
+                            }
+
+                        }
+                        Colorscript.uselimitnum[nowcolor]--;
+                        Debug.Log(Colorscript.uselimitnum[nowcolor]);
                         //else
                         //{
                         //    Colorscript.uselimitnum[nowcolor] = 0;
@@ -283,10 +286,6 @@ public class PlMoveAction : MonoBehaviour
                     {
                         Debug.Log("wall");
                     }
-                    else
-                    {
-                    }
-
                 }
             }
 
@@ -303,7 +302,6 @@ public class PlMoveAction : MonoBehaviour
                 {
                     staminaSlider.value -= 10;
                     //Debug.Log("コルーチンチェック");
-
                     StartCoroutine(MoveAfterMotion(transform.position, transform.position + direction));
                     StartCoroutine(Action(direction));
 
@@ -366,6 +364,17 @@ public class PlMoveAction : MonoBehaviour
             }
             StartCoroutine("flash");
 
+        }
+        if (collision.tag == "invisible")
+        {
+            collision.enabled = false;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "invisible")
+        {
+            collision.enabled = true;
         }
     }
     bool checkfront()
