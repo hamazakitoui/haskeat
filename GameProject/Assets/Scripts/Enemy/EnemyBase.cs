@@ -10,11 +10,13 @@ public class EnemyBase : MonoBehaviour
     protected int nowHP;
     // 現在の移動速度
     protected float nowMoveSpeed;
-    protected bool foundPlayer = false; // プレイヤー発見フラグ
+    // プレイヤー発見フラグ、囮フラグ
+    protected bool foundPlayer = false, decoyFlag = false;
     // アニメ名
     protected readonly string vxAnim = "X", vyAnim = "Y";
     protected Rigidbody2D rigidbody2; // RigidBody2Dコンポーネント
     protected Animator animator; // アニメーターコンポーネント
+    protected Transform Decoy; // 囮
     protected PlMoveAction player; // プレイヤー
     protected ActionHandler handler; // 行動変数
     protected delegate void ActionHandler(); // 行動関数
@@ -93,9 +95,19 @@ public class EnemyBase : MonoBehaviour
         if (foundPlayer)
         {
             UnityEngine.AI.NavMeshAgent agent = GetComponent<UnityEngine.AI.NavMeshAgent>(); // ナビ取得
-            agent.destination = player.transform.position; // プレイヤー位置に向かって移動
-            agent.speed = nowMoveSpeed; // 移動速度設定
+            if (agent != null)
+            {
+                agent.destination = player.transform.position; // プレイヤー位置に向かって移動
+                agent.speed = nowMoveSpeed; // 移動速度設定
+            }
         }
+    }
+    /// <summary> 囮設定 </summary>
+    /// <param name="decoy">設定する囮</param>
+    public void SetDecoy(Transform decoy)
+    {
+        Decoy = decoy; // 囮セット
+        decoyFlag = decoy != null; // 囮フラグ変更
     }
     /// <summary> プレイヤーセッター </summary>
     public PlMoveAction SetPlayer { set { player = value; } }

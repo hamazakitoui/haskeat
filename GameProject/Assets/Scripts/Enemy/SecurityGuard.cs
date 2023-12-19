@@ -46,7 +46,8 @@ public class SecurityGuard : EnemyBase, IEnemy
         // 発見可能なら
         if (!player.notfound)
         {
-            Vector3 dir = player.transform.position - transform.position; // プレイヤーとの方向
+            Transform player = !decoyFlag ? this.player.transform : Decoy; // 標的
+            Vector3 dir = player.position - transform.position; // プレイヤーとの方向
             Vector3 fd = Vector3.right; // 視認方向
             if (transform.localScale.x < 0) fd = Vector3.left; // 左向きなら左を向く
             else
@@ -88,7 +89,8 @@ public class SecurityGuard : EnemyBase, IEnemy
         // プレイヤーを発見したら
         if (foundPlayer)
         {
-            agent.destination = player.transform.position; // 移動先設定
+            Transform player = !decoyFlag ? this.player.transform : Decoy; // 標的
+            agent.destination = player.position; // 移動先設定
             agent.speed = nowMoveSpeed; // 移動速度設定
         }
         // 通常周回

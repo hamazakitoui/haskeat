@@ -38,7 +38,8 @@ public class Policeman : EnemyBase, IEnemy
         // 発見可能なら
         if (!player.notfound)
         {
-            Vector3 dir = player.transform.position - transform.position; // プレイヤーとの方向
+            Transform player = !decoyFlag ? this.player.transform : Decoy;
+            Vector3 dir = player.position - transform.position; // プレイヤーとの方向
             Vector3 fd = Vector3.right; // 視認方向
             if (transform.localScale.x < 0) fd = Vector3.left; // 左向きなら左を向く
             else
