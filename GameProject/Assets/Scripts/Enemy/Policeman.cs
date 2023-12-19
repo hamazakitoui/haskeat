@@ -35,33 +35,42 @@ public class Policeman : EnemyBase, IEnemy
     /// <summary> プレイヤー発見 </summary>
     void PlayerFound()
     {
-        Vector3 dir = playerPos.position - transform.position; // プレイヤーとの方向
-        Vector3 fd = Vector3.right; // 視認方向
-        if (transform.localScale.x < 0) fd = Vector3.left; // 左向きなら左を向く
-        else
+        // 発見可能なら
+        if (!player.notfound)
         {
-            // 索敵方向設定
-            switch (animator.GetInteger(stateAnim))
+            Vector3 dir = player.transform.position - transform.position; // プレイヤーとの方向
+            Vector3 fd = Vector3.right; // 視認方向
+            if (transform.localScale.x < 0) fd = Vector3.left; // 左向きなら左を向く
+            else
             {
-                case 1:
-                    fd = Vector3.down;
-                    break;
-                case 2:
-                    fd = Vector3.up;
-                    break;
-                default:
-                    break;
+                // 索敵方向設定
+                switch (animator.GetInteger(stateAnim))
+                {
+                    case 1:
+                        fd = Vector3.down;
+                        break;
+                    case 2:
+                        fd = Vector3.up;
+                        break;
+                    default:
+                        break;
+                }
+            }
+            // 視認範囲を計算
+            float r = Mathf.Acos(Vector3.Dot(fd, dir.normalized)) * Mathf.Rad2Deg;
+            bool temp = foundPlayer; // 一時保存
+            shotDirection = fd; // 発射方向セット
+            foundPlayer = r < foundRad && dir.magnitude < sight; // 発見かどうか更新
+            if (temp && !foundPlayer)
+            {
+                foundPlayer = true;
+                lostFlag = true;
             }
         }
-        // 視認範囲を計算
-        float r = Mathf.Acos(Vector3.Dot(fd, dir.normalized)) * Mathf.Rad2Deg;
-        bool temp = foundPlayer; // 一時保存
-        shotDirection = fd; // 発射方向セット
-        foundPlayer = r < foundRad && dir.magnitude < sight; // 発見かどうか更新
-        if (temp && !foundPlayer)
+        // 発見不可なら
+        else
         {
-            foundPlayer = true;
-            lostFlag = true;
+            if (foundPlayer) lostFlag = true; // 発見状態なら見失う
         }
         // 見失い中なら
         if (lostFlag)

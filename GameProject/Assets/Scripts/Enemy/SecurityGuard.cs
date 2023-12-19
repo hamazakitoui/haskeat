@@ -27,7 +27,8 @@ public class SecurityGuard : EnemyBase, IEnemy
             agent.updateUpAxis = false;
         }
         // デバッグ用ビルド時削除してください
-        playerPos = GameObject.FindGameObjectWithTag(Dictionary.PLAYER_TAG).transform;
+        // プレイヤー検索
+        player = GameObject.FindGameObjectWithTag(Dictionary.PLAYER_TAG).GetComponent<PlMoveAction>();
         // 関数登録
         handler += PlayerFound;
         handler += Move;
@@ -42,23 +43,32 @@ public class SecurityGuard : EnemyBase, IEnemy
     /// <summary> プレイヤー発見 </summary>
     void PlayerFound()
     {
-        Vector3 dir = playerPos.position - transform.position; // プレイヤーとの方向
-        Vector3 fd = Vector3.right; // 視認方向
-        if (transform.localScale.x < 0) fd = Vector3.left; // 左向きなら左を向く
+        // 発見可能なら
+        if (!player.notfound)
+        {
+            Vector3 dir = player.transform.position - transform.position; // プレイヤーとの方向
+            Vector3 fd = Vector3.right; // 視認方向
+            if (transform.localScale.x < 0) fd = Vector3.left; // 左向きなら左を向く
+            else
+            {
+                // 移動速度
+                Vector2 vel = new Vector2(Mathf.Abs(agent.velocity.x), Mathf.Abs(agent.velocity.y));
+                // 上下移動時
+                if (vel.y > vel.x) fd = agent.velocity.y > 0 ? Vector3.up : Vector3.down;
+            }
+            float r = Mathf.Acos(Vector3.Dot(fd, dir.normalized)) * Mathf.Rad2Deg; // 視認範囲を計算
+            bool temp = foundPlayer; // 一時保存
+            foundPlayer = r < foundRad && dir.magnitude < sight; // 発見かどうか更新
+            if (temp && !foundPlayer)
+            {
+                foundPlayer = true;
+                lostFlag = true;
+            }
+        }
+        // 発見不可なら
         else
         {
-            // 移動速度
-            Vector2 vel = new Vector2(Mathf.Abs(agent.velocity.x), Mathf.Abs(agent.velocity.y));
-            // 上下移動時
-            if (vel.y > vel.x) fd = agent.velocity.y > 0 ? Vector3.up : Vector3.down;
-        }
-        float r = Mathf.Acos(Vector3.Dot(fd, dir.normalized)) * Mathf.Rad2Deg; // 視認範囲を計算
-        bool temp = foundPlayer; // 一時保存
-        foundPlayer = r < foundRad && dir.magnitude < sight; // 発見かどうか更新
-        if (temp && !foundPlayer)
-        {
-            foundPlayer = true;
-            lostFlag = true;
+            if (foundPlayer) lostFlag = true; // 発見状態なら見失う
         }
         // 見失い中なら
         if (lostFlag)
@@ -78,7 +88,7 @@ public class SecurityGuard : EnemyBase, IEnemy
         // プレイヤーを発見したら
         if (foundPlayer)
         {
-            agent.destination = playerPos.position; // 移動先設定
+            agent.destination = player.transform.position; // 移動先設定
             agent.speed = nowMoveSpeed; // 移動速度設定
         }
         // 通常周回

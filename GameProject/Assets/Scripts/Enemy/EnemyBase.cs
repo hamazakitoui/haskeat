@@ -15,7 +15,7 @@ public class EnemyBase : MonoBehaviour
     protected readonly string vxAnim = "X", vyAnim = "Y";
     protected Rigidbody2D rigidbody2; // RigidBody2Dコンポーネント
     protected Animator animator; // アニメーターコンポーネント
-    protected Transform playerPos; // プレイヤー位置
+    protected PlMoveAction player; // プレイヤー
     protected ActionHandler handler; // 行動変数
     protected delegate void ActionHandler(); // 行動関数
     // 最大HP
@@ -87,16 +87,17 @@ public class EnemyBase : MonoBehaviour
     /// <param name="value">発見フラグ</param>
     public void SetFoundPlayer(bool value)
     {
+        if (!foundPlayer && player.notfound) return; // 未発見状態で発見不可なら処理しない
         foundPlayer = value; // 発見フラグ更新
         // 発見したら
         if (foundPlayer)
         {
             UnityEngine.AI.NavMeshAgent agent = GetComponent<UnityEngine.AI.NavMeshAgent>(); // ナビ取得
-            agent.destination = playerPos.position; // プレイヤー位置に向かって移動
+            agent.destination = player.transform.position; // プレイヤー位置に向かって移動
             agent.speed = nowMoveSpeed; // 移動速度設定
         }
     }
     /// <summary> プレイヤーセッター </summary>
-    public Transform SetPlayer { set { playerPos = value; } }
+    public PlMoveAction SetPlayer { set { player = value; } }
     public bool Getfound { get { return foundPlayer; } }
 }
