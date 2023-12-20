@@ -108,38 +108,40 @@ public class Policeman : EnemyBase, IEnemy
         if (animDelta > rotSpan)
         {
             int state = animator.GetInteger(stateAnim); // アニメ状態
-            // 次の状態に変更
-            if (state != 0)
+            // 状態によって番号変更
+            switch (state)
             {
-                oldState = state;
-                state = 0;
-                // 左向きなら
-                if (oldState == 1)
-                {
-                    Vector3 scale = transform.localScale; // 向き
-                    scale.x = -scale.x;
-                    transform.localScale = scale;
-                }
-            }
-            else
-            {
-                switch (oldState)
-                {
-                    case 1:
-                        // 向きを反対に
-                        {
-                            Vector3 scale = transform.localScale; // 向き
-                            scale.x = -scale.x;
-                            transform.localScale = scale;
-                        }
+                // 左右向き
+                case 0:
+                    // 左向きなら
+                    if (transform.localScale.x < 0)
+                    {
+                        Vector3 scale = transform.localScale; // 向き
+                        scale.x = -scale.x;
+                        transform.localScale = scale;
                         state = 2;
-                        break;
-                    case 2:
-                        state = 1;
-                        break;
-                    default:
-                        break;
-                }
+                    }
+                    // 前向きなら
+                    else state = 1;
+                    break;
+                // 下向き
+                case 1:
+                    // 向きを反対に
+                    {
+                        Vector3 scale = transform.localScale; // 向き
+                        scale.x = -scale.x;
+                        transform.localScale = scale;
+                    }
+                    oldState = state;
+                    state = 0;
+                    break;
+                // 上向き
+                case 2:
+                    oldState = state;
+                    state = 0;
+                    break;
+                default:
+                    break;
             }
             animator.SetInteger(stateAnim, state); // アニメ変更
             animDelta = 0;
