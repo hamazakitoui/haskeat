@@ -34,9 +34,10 @@ public class decoy : MonoBehaviour
         GameObject Player = GameObject.Find("Player");
         Debug.Log(Player);
         EnemyBase[] enemies = FindObjectsOfType<EnemyBase>();
+        PlMoveAction Plscript=Player.GetComponent<PlMoveAction>();
         foreach (var e in enemies)
         {
-            e.SetPlayer = Player.transform;
+            e.SetDecoy(null);
         }
         Player.GetComponent<PlMoveAction>().paintEffect.RemoveAt(Player.GetComponent<PlMoveAction>().paintEffect.Count - 1);
     }

@@ -40,11 +40,8 @@ public class Alert : MonoBehaviour
                     isAlert = true;
                 }
                 checkfound |= Base[i].Getfound;
-              
                                  //時間計測
             }
-            
-
         }
         
         if (!checkfound)

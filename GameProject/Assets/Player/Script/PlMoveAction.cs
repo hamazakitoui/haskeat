@@ -48,8 +48,9 @@ public class PlMoveAction : MonoBehaviour
     bool damege = false;
     EnemyBase Base;
     bool Ischecklettor;
-    public bool notfound=false;
+    public bool notfound = false;
     [SerializeField] bool IsTutorial;
+    [SerializeField] GameObject[] Artpaint;
     enum Pldirection
     {
         none,
@@ -202,31 +203,29 @@ public class PlMoveAction : MonoBehaviour
                     int nowcolor = Colorscript.colornum;
                     if (Colorscript.uselimitnum[Colorscript.colornum] > 0)
                     {
-                        if (nowcolor == 0)
+                        //美術品か確認
+                        Art checkart = art.GetComponent<Art>();
+                        //美術品であれば
+                        if (checkart != null)
                         {
-                            //美術品か確認
-                            Art checkart = art.GetComponent<Art>();
-                            //美術品であれば
-                            if (checkart != null)
+                            //破壊した数を追加
+                            StageManager.AddDestroyArt(checkart.GetArtType);
+                            //目の前にあるのが絵画だった場合
+                            if (checkart.GetArtType == ArtType.Picture)
                             {
-                                //破壊した数を追加
-                                StageManager.AddDestroyArt(checkart.GetArtType);
-                                //目の前にあるのが絵画だった場合
-                                if (checkart.GetArtType == ArtType.Picture)
-                                {                                 
-                                    GameObject Spray=Instantiate(coloreffect[nowcolor]);
-                                    art.GetComponent<BoxCollider2D>().enabled = false;
-                                    Spray.transform.position = art.transform.position;
-                                }
-                                //壺だった場合の処理
-                                if (checkart.GetArtType == ArtType.Pot)
-                                {
-                                    Destroy(art.gameObject);
-                                }
-                                nowcolor = Colorscript.colornum;
-                                Colorscript.uselimitnum[nowcolor]--;
+                                GameObject Spray = Instantiate(Artpaint[nowcolor]);
+                                art.GetComponent<BoxCollider2D>().enabled = false;
+                                Spray.transform.position = art.transform.position;
                             }
+                            //壺だった場合の処理
+                            if (checkart.GetArtType == ArtType.Pot)
+                            {
+                                Destroy(art.gameObject);
+                            }
+                            nowcolor = Colorscript.colornum;
+                            Colorscript.uselimitnum[nowcolor]--;
                         }
+
                     }
                 }
             }
@@ -267,11 +266,13 @@ public class PlMoveAction : MonoBehaviour
                         }
                         else if (nowcolor == 3)
                         {
+                            //生成したオブジェクトをデコイに設定
                             Effect.GetComponent<decoy>().state = decoy.Colorkind.purple;
+                            //敵のタイプを取得
                             EnemyBase[] enemies = FindObjectsOfType<EnemyBase>();
                             foreach (var e in enemies)
                             {
-                                e.SetPlayer = paintEffect[paintEffect.Count - 1].transform;
+                                e.SetDecoy(paintEffect[paintEffect.Count - 1].transform);
                             }
 
                         }
@@ -365,16 +366,17 @@ public class PlMoveAction : MonoBehaviour
             StartCoroutine("flash");
 
         }
-        if (collision.tag == "invisible")
+        if (collision.tag == "redsplay")
         {
-            collision.enabled = false;
+            Debug.Log("invisible");
+            notfound = true;
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.tag == "invisible")
         {
-            collision.enabled = true;
+            notfound = false;
         }
     }
     bool checkfront()

@@ -622,7 +622,7 @@ PrefabInstance:
     - target: {fileID: 588188482904615741, guid: f30037958501fdb48a9fe437195f90a5,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f30037958501fdb48a9fe437195f90a5, type: 3}
@@ -16674,6 +16674,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8918558471871344932, guid: fdde33507a843164b84362233b3fc4bd,
+        type: 3}
+      propertyPath: lostSpan
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8918558471871344936, guid: fdde33507a843164b84362233b3fc4bd,
         type: 3}
       propertyPath: m_Name
@@ -17869,6 +17874,11 @@ PrefabInstance:
       propertyPath: isAround
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8918558471871344932, guid: fdde33507a843164b84362233b3fc4bd,
+        type: 3}
+      propertyPath: lostSpan
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8918558471871344936, guid: fdde33507a843164b84362233b3fc4bd,
         type: 3}
       propertyPath: m_Name
@@ -18947,6 +18957,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4597492506861775401, guid: be0aba1f9d03c2142824c61cde1da3d5,
         type: 3}
+      propertyPath: Artpaint.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597492506861775401, guid: be0aba1f9d03c2142824c61cde1da3d5,
+        type: 3}
       propertyPath: Colorscript
       value: 
       objectReference: {fileID: 1769745093}
@@ -18970,6 +18985,30 @@ PrefabInstance:
       propertyPath: EffctSpray
       value: 
       objectReference: {fileID: 815332037}
+    - target: {fileID: 4597492506861775401, guid: be0aba1f9d03c2142824c61cde1da3d5,
+        type: 3}
+      propertyPath: Artpaint.Array.data[0]
+      value: 
+      objectReference: {fileID: 926756370935749461, guid: eca38996d353e18428633519be9be26b,
+        type: 3}
+    - target: {fileID: 4597492506861775401, guid: be0aba1f9d03c2142824c61cde1da3d5,
+        type: 3}
+      propertyPath: Artpaint.Array.data[1]
+      value: 
+      objectReference: {fileID: 9197256923479154394, guid: b0c3db831712a194f929a97f5ea6e6f8,
+        type: 3}
+    - target: {fileID: 4597492506861775401, guid: be0aba1f9d03c2142824c61cde1da3d5,
+        type: 3}
+      propertyPath: Artpaint.Array.data[2]
+      value: 
+      objectReference: {fileID: 616969413716674269, guid: e2f23cf34be72f44aa2b9503141839f6,
+        type: 3}
+    - target: {fileID: 4597492506861775401, guid: be0aba1f9d03c2142824c61cde1da3d5,
+        type: 3}
+      propertyPath: Artpaint.Array.data[3]
+      value: 
+      objectReference: {fileID: 4328859820294203601, guid: 38a3e339c4c673147b9fec1430da6c09,
+        type: 3}
     - target: {fileID: 4597492506861775410, guid: be0aba1f9d03c2142824c61cde1da3d5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29201,6 +29240,11 @@ PrefabInstance:
         type: 3}
       propertyPath: isAround
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8918558471871344932, guid: fdde33507a843164b84362233b3fc4bd,
+        type: 3}
+      propertyPath: lostSpan
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8918558471871344936, guid: fdde33507a843164b84362233b3fc4bd,
         type: 3}
