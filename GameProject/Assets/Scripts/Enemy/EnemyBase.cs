@@ -109,6 +109,11 @@ public class EnemyBase : MonoBehaviour
         Decoy = decoy; // 囮セット
         decoyFlag = decoy != null; // 囮フラグ変更
     }
+    /// <summary> 強制発見 </summary>
+    public virtual void Discovery()
+    {
+        SetFoundPlayer(true); // 発見状態に変更
+    }
     /// <summary> プレイヤーセッター </summary>
     public PlMoveAction SetPlayer { set { player = value; } }
     public bool Getfound { get { return foundPlayer; } }

@@ -72,7 +72,7 @@ public class SecurityGuard : EnemyBase, IEnemy
             if (foundPlayer) lostFlag = true; // 発見状態なら見失う
         }
         // 見失い中なら
-        if (lostFlag)
+        if (lostFlag && lostSpan >= 0)
         {
             foundDelta += Time.deltaTime;
             if (foundDelta >= lostSpan)
@@ -180,6 +180,12 @@ public class SecurityGuard : EnemyBase, IEnemy
         Vector2 velocity = agent.velocity.normalized; // 移動速度
         animator.SetBool(vxAnim, Mathf.Abs(velocity.x) > Mathf.Abs(velocity.y)); // 横移動アニメ変更
         animator.SetFloat(vyAnim, agent.velocity.y); // 縦移動アニメ変更
+    }
+    /// <summary> 強制発見 </summary>
+    public override void Discovery()
+    {
+        lostSpan = -1;
+        base.Discovery();
     }
     /// <summary> 被弾 </summary>
     /// <param name="power">攻撃力</param>

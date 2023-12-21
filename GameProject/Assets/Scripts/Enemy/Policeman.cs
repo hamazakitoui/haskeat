@@ -74,7 +74,7 @@ public class Policeman : EnemyBase, IEnemy
             if (foundPlayer) lostFlag = true; // 発見状態なら見失う
         }
         // 見失い中なら
-        if (lostFlag)
+        if (lostFlag && lostSpan >= 0)
         {
             foundDelta += Time.deltaTime;
             if (foundDelta >= lostSpan)
@@ -146,6 +146,12 @@ public class Policeman : EnemyBase, IEnemy
             animator.SetInteger(stateAnim, state); // アニメ変更
             animDelta = 0;
         }
+    }
+    /// <summary> 強制発見 </summary>
+    public override void Discovery()
+    {
+        lostSpan = -1;
+        base.Discovery();
     }
     /// <summary> 被弾 </summary>
     /// <param name="power">攻撃力</param>
