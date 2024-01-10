@@ -95,7 +95,7 @@ Animator:
   m_GameObject: {fileID: 2367190804251362545}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 35de37d1e1df21946b911380634fea38, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -119,6 +119,7 @@ MonoBehaviour:
   maxHP: 1
   moveSpeed: 3
   sight: 5
+  sightRenderer: {fileID: 0}
   foundRad: 30
   lostSpan: 3
   shotSpan: 3
