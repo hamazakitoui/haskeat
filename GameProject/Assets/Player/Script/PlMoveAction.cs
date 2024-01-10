@@ -96,8 +96,7 @@ public class PlMoveAction : MonoBehaviour
         if (Ischecklettor)
         {
             //移動を検知
-            InputX = Input.GetAxisRaw("Horizontal");
-            InputY = Input.GetAxisRaw("Vertical");
+            checkArrowkey();
             //スピード代入
             float speedX = 0;
             float speedY = 0;
@@ -481,6 +480,34 @@ public class PlMoveAction : MonoBehaviour
         Destroy(motion.gameObject);
         yield return null;
 
+    }
+
+    void checkArrowkey()
+    {
+        if (Input.GetKey(KeyCode.UpArrow)) 
+        {
+            InputY = 1;
+        }
+        else if (Input.GetKey(KeyCode.DownArrow))
+        {
+            InputY = -1;
+        }
+        else if(!Input.GetKey(KeyCode.UpArrow)&&!Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            InputY = 0;
+        }
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            InputX = 1;
+        }
+        else if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            InputX = -1;
+        }
+        else if (!Input.GetKey(KeyCode.LeftArrow) && !Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            InputX = 0;
+        }
     }
 
 }

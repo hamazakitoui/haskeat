@@ -91,9 +91,7 @@ public class TitleManager : MonoBehaviour
 #endif
                     break;
             }
-
         }
-
     }
     void SceneLoad()
     {

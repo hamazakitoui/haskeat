@@ -12,7 +12,8 @@ public class Alert : MonoBehaviour
     EnemyBase[] Base;                         //部屋
     float Alertnum;                              //アラート回数
     int MaxAlert = 4;                              //最大回数
-
+    [SerializeField] StageManager Stagemane;
+    [SerializeField] GameObject Escapeanim;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,7 +28,16 @@ public class Alert : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(Alertnum);
+        if (Stagemane.IsRunAway)
+        {
+            Escapeanim.SetActive(true);
+            GetComponent<Animator>().Play("Alert");
+            for (int i = 0; i < Enemy.Length; i++)        //エネミーさんをカウント
+            {
+                Base[i].Discovery();
+            }
+            return;
+        }
         bool checkfound = false;
         for (int i = 0; i < Enemy.Length; i++)
         {
