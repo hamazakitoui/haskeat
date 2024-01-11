@@ -19,6 +19,7 @@ public class RanpWall : MonoBehaviour
     /// <param name="value">変更後の値</param> <param name="colorkind">色</param>
     private void RanpChange(decoy.Colorkind colorkind)
     {
+        if (colorkind == decoy.Colorkind.purple) return; // デコイなら無視
         Color lightColor = Color.white; // 変更後の色
         // インクの色で灯りを変更
         switch (colorkind)
@@ -39,16 +40,11 @@ public class RanpWall : MonoBehaviour
                 break;
         }
         // 灯りの色変更
-        if (lightColor != Color.white)
+        foreach (var r in ranp)
         {
-            // 灯りの色変更
-            foreach(var r in ranp)
-            {
-                r.color = lightColor;
-            }
+            r.color = lightColor;
         }
-        // アニメ変更
-        if (colorkind != decoy.Colorkind.purple) animator.SetInteger(stateAnim, (int)colorkind);
+        animator.SetInteger(stateAnim, (int)colorkind); // アニメ変更
         // タイル表示
         for (int t = 0; t < tilemap.Length; t++)
         {
