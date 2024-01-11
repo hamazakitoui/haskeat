@@ -1,7 +1,376 @@
 fileFormatVersion: 2
 guid: 0637ea2ebbfb00047a9ce821f3f95bfb
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -6377328213442202570
+    second: ToyHouse_0
+  - first:
+      213: -5814307921477643728
+    second: ToyHouse_1
+  - first:
+      213: -2036071202978955855
+    second: ToyHouse_2
+  - first:
+      213: -6556026199124155422
+    second: ToyHouse_3
+  - first:
+      213: 748044102587567558
+    second: ToyHouse_4
+  - first:
+      213: 8169382123032106918
+    second: ToyHouse_5
+  - first:
+      213: 6160021765437849166
+    second: ToyHouse_6
+  - first:
+      213: 3503272717418386786
+    second: ToyHouse_7
+  - first:
+      213: 1904393008072116281
+    second: ToyHouse_8
+  - first:
+      213: 8895690150488186513
+    second: ToyHouse_9
+  - first:
+      213: 3691459035220885839
+    second: ToyHouse_10
+  - first:
+      213: 7105332917211882124
+    second: ToyHouse_11
+  - first:
+      213: 87209286859497027
+    second: ToyHouse_12
+  - first:
+      213: 6177888029504809512
+    second: ToyHouse_13
+  - first:
+      213: -3034990695213412284
+    second: ToyHouse_14
+  - first:
+      213: -4202606104917482123
+    second: ToyHouse_15
+  - first:
+      213: -1082469845702247999
+    second: ToyHouse_16
+  - first:
+      213: -1019790768373662054
+    second: ToyHouse_17
+  - first:
+      213: -5394931590752539734
+    second: ToyHouse_18
+  - first:
+      213: 2767158235382810207
+    second: ToyHouse_19
+  - first:
+      213: 6840589508282603617
+    second: ToyHouse_20
+  - first:
+      213: -4630267333242845283
+    second: ToyHouse_21
+  - first:
+      213: -8479552009047709168
+    second: ToyHouse_22
+  - first:
+      213: -7317412369859080457
+    second: ToyHouse_23
+  - first:
+      213: 1062470883083929864
+    second: ToyHouse_24
+  - first:
+      213: 5032267357356637368
+    second: ToyHouse_25
+  - first:
+      213: -4559441448254465441
+    second: ToyHouse_26
+  - first:
+      213: 4820501430488053980
+    second: ToyHouse_27
+  - first:
+      213: -7188022069899469818
+    second: ToyHouse_28
+  - first:
+      213: -7928152261478288889
+    second: ToyHouse_29
+  - first:
+      213: -7563981991631837168
+    second: ToyHouse_30
+  - first:
+      213: -4769824133361247728
+    second: ToyHouse_31
+  - first:
+      213: 3238194600309591545
+    second: ToyHouse_32
+  - first:
+      213: -4482493032552881411
+    second: ToyHouse_33
+  - first:
+      213: -7195673116192999033
+    second: ToyHouse_34
+  - first:
+      213: -5208670441861395939
+    second: ToyHouse_35
+  - first:
+      213: 8707824652418884212
+    second: ToyHouse_36
+  - first:
+      213: 952496096805047365
+    second: ToyHouse_37
+  - first:
+      213: -7520163494176697718
+    second: ToyHouse_38
+  - first:
+      213: -7452301198388003461
+    second: ToyHouse_39
+  - first:
+      213: -3271295476183092907
+    second: ToyHouse_40
+  - first:
+      213: -6197334980701675392
+    second: ToyHouse_41
+  - first:
+      213: -4312743998718625922
+    second: ToyHouse_42
+  - first:
+      213: -2870648257808257449
+    second: ToyHouse_43
+  - first:
+      213: 5439102740673937378
+    second: ToyHouse_44
+  - first:
+      213: -6478640197374961395
+    second: ToyHouse_45
+  - first:
+      213: -5747620674909729094
+    second: ToyHouse_46
+  - first:
+      213: 1122474634787504553
+    second: ToyHouse_47
+  - first:
+      213: -2529321279669066401
+    second: ToyHouse_48
+  - first:
+      213: 7347516612005114663
+    second: ToyHouse_49
+  - first:
+      213: -7995199168389430746
+    second: ToyHouse_50
+  - first:
+      213: 7976647813911095390
+    second: ToyHouse_51
+  - first:
+      213: -1972884210755461298
+    second: ToyHouse_52
+  - first:
+      213: 6005149664611660350
+    second: ToyHouse_53
+  - first:
+      213: -4951513787586550098
+    second: ToyHouse_54
+  - first:
+      213: 7717061390940880031
+    second: ToyHouse_55
+  - first:
+      213: -2894627042225662352
+    second: ToyHouse_56
+  - first:
+      213: 1271147098445351950
+    second: ToyHouse_57
+  - first:
+      213: 1648794132651710928
+    second: ToyHouse_58
+  - first:
+      213: 4097415145389840101
+    second: ToyHouse_59
+  - first:
+      213: -2860948961005155818
+    second: ToyHouse_60
+  - first:
+      213: -822269205503993501
+    second: ToyHouse_61
+  - first:
+      213: -9218348478872163241
+    second: ToyHouse_62
+  - first:
+      213: -2329206563304744121
+    second: ToyHouse_63
+  - first:
+      213: -2476052838637014504
+    second: ToyHouse_64
+  - first:
+      213: -8865845815034920187
+    second: ToyHouse_65
+  - first:
+      213: -6163343594320702710
+    second: ToyHouse_66
+  - first:
+      213: -898989587488840361
+    second: ToyHouse_67
+  - first:
+      213: 524421007556150329
+    second: ToyHouse_68
+  - first:
+      213: 870837559859640505
+    second: ToyHouse_69
+  - first:
+      213: 7883971486254559909
+    second: ToyHouse_70
+  - first:
+      213: -1538835279400899915
+    second: ToyHouse_71
+  - first:
+      213: -6446635669210371868
+    second: ToyHouse_72
+  - first:
+      213: 5114911225571194675
+    second: ToyHouse_73
+  - first:
+      213: 7223271987831113678
+    second: ToyHouse_74
+  - first:
+      213: 3062696452880478497
+    second: ToyHouse_75
+  - first:
+      213: -2192842552242997069
+    second: ToyHouse_76
+  - first:
+      213: 3530399474179778212
+    second: ToyHouse_77
+  - first:
+      213: 8262548774891605515
+    second: ToyHouse_78
+  - first:
+      213: -3338864280028015775
+    second: ToyHouse_79
+  - first:
+      213: 1580876452989824481
+    second: ToyHouse_80
+  - first:
+      213: -2261508196569061853
+    second: ToyHouse_81
+  - first:
+      213: 1709453403126924552
+    second: ToyHouse_82
+  - first:
+      213: -7484856411947315334
+    second: ToyHouse_83
+  - first:
+      213: -2830555807643723210
+    second: ToyHouse_84
+  - first:
+      213: 5838103599756608494
+    second: ToyHouse_85
+  - first:
+      213: -2938586927654424778
+    second: ToyHouse_86
+  - first:
+      213: 5778654960834661081
+    second: ToyHouse_87
+  - first:
+      213: 8128196759449032308
+    second: ToyHouse_88
+  - first:
+      213: -7721014709064409138
+    second: ToyHouse_89
+  - first:
+      213: 194397557310957706
+    second: ToyHouse_90
+  - first:
+      213: 6279927579761162220
+    second: ToyHouse_91
+  - first:
+      213: -1338568858498766203
+    second: ToyHouse_92
+  - first:
+      213: -4841879580867937121
+    second: ToyHouse_93
+  - first:
+      213: 8763641279299884799
+    second: ToyHouse_94
+  - first:
+      213: 6927816751823040094
+    second: ToyHouse_95
+  - first:
+      213: 3678996780200512584
+    second: ToyHouse_96
+  - first:
+      213: -321345017785880868
+    second: ToyHouse_97
+  - first:
+      213: -3392918450670328832
+    second: ToyHouse_98
+  - first:
+      213: -7892157743472877252
+    second: ToyHouse_99
+  - first:
+      213: -6681425174055692463
+    second: ToyHouse_100
+  - first:
+      213: 8220449814458369665
+    second: ToyHouse_101
+  - first:
+      213: -8686345957901485100
+    second: ToyHouse_102
+  - first:
+      213: 842973941589432384
+    second: ToyHouse_103
+  - first:
+      213: -2249656854332509754
+    second: ToyHouse_104
+  - first:
+      213: -5301988855960042852
+    second: ToyHouse_105
+  - first:
+      213: 8347185813912880898
+    second: ToyHouse_106
+  - first:
+      213: 846488644848966793
+    second: ToyHouse_107
+  - first:
+      213: -2636725086436213976
+    second: ToyHouse_108
+  - first:
+      213: -7464096053419912874
+    second: ToyHouse_109
+  - first:
+      213: -1158867684006697897
+    second: ToyHouse_110
+  - first:
+      213: -7764327349601856496
+    second: ToyHouse_111
+  - first:
+      213: 5750218862236630016
+    second: ToyHouse_112
+  - first:
+      213: 1670053793862509410
+    second: ToyHouse_113
+  - first:
+      213: 7057161043903986362
+    second: ToyHouse_114
+  - first:
+      213: 3353643512498227883
+    second: ToyHouse_115
+  - first:
+      213: 1231362012170197256
+    second: ToyHouse_116
+  - first:
+      213: 7743720140066358466
+    second: ToyHouse_117
+  - first:
+      213: 4958321705250665736
+    second: ToyHouse_118
+  - first:
+      213: 1642433584104545129
+    second: ToyHouse_119
+  - first:
+      213: -3350487450127547344
+    second: ToyHouse_120
+  - first:
+      213: -7164283595899810033
+    second: ToyHouse_121
+  - first:
+      213: 6255296386000309625
+    second: ToyHouse_122
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,12 +409,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -71,9 +440,2562 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ToyHouse_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1568
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63473b547cd2f77a0800000000000000
+      internalID: -6377328213442202570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_1
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 1440
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 032d59d30cd6f4fa0800000000000000
+      internalID: -5814307921477643728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_2
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1251
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bd7909470c6eb3e0800000000000000
+      internalID: -2036071202978955855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_3
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 1504
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e3ec0f38e05405a0800000000000000
+      internalID: -6556026199124155422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_4
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1222
+        width: 29
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cdce03e526916a00800000000000000
+      internalID: 748044102587567558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_5
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1222
+        width: 29
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a751c5f1c97f5170800000000000000
+      internalID: 8169382123032106918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_6
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 1472
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4ef891982bcc7550800000000000000
+      internalID: 6160021765437849166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1344
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2655a01b9ff1e9030800000000000000
+      internalID: 3503272717418386786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_8
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1503
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93840e6d953cd6a10800000000000000
+      internalID: 1904393008072116281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_9
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1222
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19e1acb7f07d37b70800000000000000
+      internalID: 8895690150488186513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_10
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1440
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f414f313f62ba3330800000000000000
+      internalID: 3691459035220885839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_11
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1222
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c82ed4d74a63b9260800000000000000
+      internalID: 7105332917211882124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1190
+        width: 29
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34e10646264d53100800000000000000
+      internalID: 87209286859497027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_13
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1190
+        width: 29
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82aa5c45e644cb550800000000000000
+      internalID: 6177888029504809512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_14
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1186
+        width: 61
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4405033fa0c81e5d0800000000000000
+      internalID: -3034990695213412284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_15
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 1200
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 575618193085da5c0800000000000000
+      internalID: -4202606104917482123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_16
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 1204
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c978d6196b4af0f0800000000000000
+      internalID: -1082469845702247999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_17
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1190
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9e7dd103b9f8d1f0800000000000000
+      internalID: -1019790768373662054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_18
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1184
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aab69a14d4a5125b0800000000000000
+      internalID: -5394931590752539734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_19
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 1190
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f560a4901cbe66620800000000000000
+      internalID: 2767158235382810207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_20
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1184
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 168d27f2ae7aeee50800000000000000
+      internalID: 6840589508282603617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_21
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1187
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9707f2846cfdbfb0800000000000000
+      internalID: -4630267333242845283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_22
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1194
+        width: 13
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01ae246df54925a80800000000000000
+      internalID: -8479552009047709168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_23
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1158
+        width: 29
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fe008b0834537a90800000000000000
+      internalID: -7317412369859080457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_24
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1158
+        width: 29
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 809c96293a7aebe00800000000000000
+      internalID: 1062470883083929864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_25
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 1169
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc390adf7436d540800000000000000
+      internalID: 5032267357356637368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_26
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1172
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a9996e82c99b0c0800000000000000
+      internalID: -4559441448254465441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_27
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 1168
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd8b08bc28cd5e240800000000000000
+      internalID: 4820501430488053980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_28
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1153
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60c59fdd2040f3c90800000000000000
+      internalID: -7188022069899469818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_29
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 1162
+        width: 13
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7027069f58b89f190800000000000000
+      internalID: -7928152261478288889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_30
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 1155
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 018255d4476570790800000000000000
+      internalID: -7563981991631837168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_31
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 1136
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01adae9e83e2ecdb0800000000000000
+      internalID: -4769824133361247728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_32
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 1136
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fd8a0115d060fc20800000000000000
+      internalID: 3238194600309591545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_33
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1063
+        width: 94
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df2a58e065cfac1c0800000000000000
+      internalID: -4482493032552881411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_34
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 1056
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 789fc75dc65d32c90800000000000000
+      internalID: -7195673116192999033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_35
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 1057
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a46c074d517b7b0800000000000000
+      internalID: -5208670441861395939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_36
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1063
+        width: 30
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47221d5a26868d870800000000000000
+      internalID: 8707824652418884212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_37
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 1088
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54cc20c4722f73d00800000000000000
+      internalID: 952496096805047365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_38
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1088
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a82dcb4452303a790800000000000000
+      internalID: -7520163494176697718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 899
+        width: 63
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7d7dd64b8b149890800000000000000
+      internalID: -7452301198388003461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_40
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 1024
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 551b3c2b8160a92d0800000000000000
+      internalID: -3271295476183092907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_41
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 1473
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 080ac218ba4aef9a0800000000000000
+      internalID: -6197334980701675392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_42
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 992
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e77bd2dde2e0624c0800000000000000
+      internalID: -4312743998718625922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_43
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 960
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75eae3e6e986928d0800000000000000
+      internalID: -2870648257808257449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_44
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 960
+        width: 27
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ef39b200239b7b40800000000000000
+      internalID: 5439102740673937378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_45
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 928
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0916e7d01f3716a0800000000000000
+      internalID: -6478640197374961395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_46
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 928
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe8058c2795c30b0800000000000000
+      internalID: -5747620674909729094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_47
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 896
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a145e3bbb4d39f00800000000000000
+      internalID: 1122474634787504553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_48
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 896
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f552d7272bb06ecd0800000000000000
+      internalID: -2529321279669066401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_49
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 864
+        width: 56
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 723b8d70e6f97f560800000000000000
+      internalID: 7347516612005114663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_50
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 865
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62246ab77b85b0190800000000000000
+      internalID: -7995199168389430746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_51
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 865
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e582196bceeb2be60800000000000000
+      internalID: 7976647813911095390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_52
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 832
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4f91fa5348ee94e0800000000000000
+      internalID: -1972884210755461298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_53
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 865
+        width: 25
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e32fb36adc3965350800000000000000
+      internalID: 6005149664611660350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_54
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 865
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea66476c170b84bb0800000000000000
+      internalID: -4951513787586550098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_55
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 866
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9cb9e4c272881b60800000000000000
+      internalID: 7717061390940880031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_56
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 816
+        width: 62
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07656ee9a0834d7d0800000000000000
+      internalID: -2894627042225662352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_57
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 832
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c8a1c1d8504a110800000000000000
+      internalID: 1271147098445351950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_58
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 832
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d914782781b1e610800000000000000
+      internalID: 1648794132651710928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_59
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 834
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e6544e9d51fcd830800000000000000
+      internalID: 4097415145389840101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_60
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 832
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61ac3c2f31edb48d0800000000000000
+      internalID: -2860948961005155818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_61
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 832
+        width: 31
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3691130a386b694f0800000000000000
+      internalID: -822269205503993501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_62
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 769
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75cef0d36e8d11080800000000000000
+      internalID: -9218348478872163241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_63
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 770
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b56b9a8fefcafd0800000000000000
+      internalID: -2329206563304744121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_64
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 779
+        width: 51
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81271fbdf0b43add0800000000000000
+      internalID: -2476052838637014504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_65
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 768
+        width: 57
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 503c579543036f480800000000000000
+      internalID: -8865845815034920187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_66
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 774
+        width: 53
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a03d5dfd7a7677aa0800000000000000
+      internalID: -6163343594320702710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_67
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 770
+        width: 17
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 755e3f4bbb52683f0800000000000000
+      internalID: -898989587488840361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_68
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 738
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 934032cb02e174700800000000000000
+      internalID: 524421007556150329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_69
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 737
+        width: 23
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b870849526d51c00800000000000000
+      internalID: 870837559859640505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_70
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 737
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a2f281bb4e796d60800000000000000
+      internalID: 7883971486254559909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_71
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 738
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ba687b6775f4aae0800000000000000
+      internalID: -1538835279400899915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_72
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 736
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e86a5cb303f886a0800000000000000
+      internalID: -6446635669210371868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_73
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 704
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33734d1e8a0dbf640800000000000000
+      internalID: 5114911225571194675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_74
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 704
+        width: 19
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec704b63a973e3460800000000000000
+      internalID: 7223271987831113678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_75
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 704
+        width: 20
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1213ac07232e08a20800000000000000
+      internalID: 3062696452880478497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_76
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 706
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b8f13121557191e0800000000000000
+      internalID: -2192842552242997069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_77
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 706
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a626bded9f7ef030800000000000000
+      internalID: 3530399474179778212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_78
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 705
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0ec0ca75587aa270800000000000000
+      internalID: 8262548774891605515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_79
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 718
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16390bb90a8f9a1d0800000000000000
+      internalID: -3338864280028015775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_80
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 656
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1edec3612c660f510800000000000000
+      internalID: 1580876452989824481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_81
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 708
+        width: 26
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 326edd6f6428d90e0800000000000000
+      internalID: -2261508196569061853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_82
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 640
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 805867520d239b710800000000000000
+      internalID: 1709453403126924552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_83
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 640
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7f4313ffb2702890800000000000000
+      internalID: -7484856411947315334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_84
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 655
+        width: 51
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63a1a786d78d7b8d0800000000000000
+      internalID: -2830555807643723210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_85
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 673
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee30c69da4c150150800000000000000
+      internalID: 5838103599756608494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_86
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 681
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63f2d8332ca0837d0800000000000000
+      internalID: -2938586927654424778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_87
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 641
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9da491cf118e13050800000000000000
+      internalID: 5778654960834661081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_88
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 645
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 476d07f33e72dc070800000000000000
+      internalID: 8128196759449032308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_89
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 577
+        width: 60
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecf56a0a70279d490800000000000000
+      internalID: -7721014709064409138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_90
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 611
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8829b46c83a2b200800000000000000
+      internalID: 194397557310957706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_91
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 611
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce7b7de7cd8c62750800000000000000
+      internalID: 6279927579761162220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_92
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 611
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58ae7c917b27c6de0800000000000000
+      internalID: -1338568858498766203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_93
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 611
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9c3621bc203eccb0800000000000000
+      internalID: -4841879580867937121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_94
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 672
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff69e9fcf45be9970800000000000000
+      internalID: 8763641279299884799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_95
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 588
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ea96171ac842060800000000000000
+      internalID: 6927816751823040094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_96
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 588
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c48a5541c6e0330800000000000000
+      internalID: 3678996780200512584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_97
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 588
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdee78ca86a5a8bf0800000000000000
+      internalID: -321345017785880868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_98
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 588
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0042de345aee9e0d0800000000000000
+      internalID: -3392918450670328832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_100
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 544
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 157de03343fc643a0800000000000000
+      internalID: -6681425174055692463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_101
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 522
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18687bc6d87e41270800000000000000
+      internalID: 8220449814458369665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_103
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 551
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04859576558d2bb00800000000000000
+      internalID: 842973941589432384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_104
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 522
+        width: 32
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c1fcfa920d97c0e0800000000000000
+      internalID: -2249656854332509754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_105
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 518
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c920c650a3d8b66b0800000000000000
+      internalID: -5301988855960042852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_106
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 439
+        width: 31
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2070570c54927d370800000000000000
+      internalID: 8347185813912880898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_107
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 439
+        width: 31
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98cdf9600f45fbb00800000000000000
+      internalID: 846488644848966793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_108
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 439
+        width: 62
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82bbb9cf088786bd0800000000000000
+      internalID: -2636725086436213976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_109
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 439
+        width: 30
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 651d2869f243a6890800000000000000
+      internalID: -7464096053419912874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_110
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 439
+        width: 30
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754e9193bffdaefe0800000000000000
+      internalID: -1158867684006697897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_111
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 391
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0149127a9619f3490800000000000000
+      internalID: -7764327349601856496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_112
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 391
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c7d58d691eccf40800000000000000
+      internalID: 5750218862236630016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_113
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 391
+        width: 62
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 263e7f2c3193d2710800000000000000
+      internalID: 1670053793862509410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_114
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 391
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aba3f98349210f160800000000000000
+      internalID: 7057161043903986362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_115
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 391
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baa00c991098a8e20800000000000000
+      internalID: 3353643512498227883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_116
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 281
+        width: 64
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 809905dd93da61110800000000000000
+      internalID: 1231362012170197256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_117
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 96
+        width: 25
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c481bc7078377b60800000000000000
+      internalID: 7743720140066358466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_118
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 96
+        width: 26
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8053393125f7fc440800000000000000
+      internalID: 4958321705250665736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_119
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 96
+        width: 25
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96b19bb84a81bc610800000000000000
+      internalID: 1642433584104545129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_121
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 97
+        width: 24
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0fcb3c070a539c90800000000000000
+      internalID: -7164283595899810033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_122
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 97
+        width: 22
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d455ccbe64fc650800000000000000
+      internalID: 6255296386000309625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToyHouse_99
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1440
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3163f4c85c697290800000000000000
+      internalID: -7892157743472877252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
