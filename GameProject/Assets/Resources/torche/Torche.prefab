@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6529072819557489852}
   - component: {fileID: 1976375767111008492}
   - component: {fileID: 8115655376371728132}
+  - component: {fileID: 15289341613410528}
   m_Layer: 0
   m_Name: RedTorche
   m_TagString: Untagged
@@ -50,7 +51,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 186d2525d3375d44d9baa66a48297e11, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -102,3 +103,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &15289341613410528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864788792525142128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c23c8ae7b25d9ab41b94fc44c8feb1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilemap: []
+  ranp: []
