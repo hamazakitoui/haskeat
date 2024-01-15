@@ -8,19 +8,30 @@ public class RanpWall : MonoBehaviour
     // アニメーションステート名
     readonly string stateAnim = "State";
     Animator animator; // アニメーター
+    [Header("ライト変更時の時間")] [SerializeField] float changeTime = 1.0f;
+    [Header("灯りの瞬間光度")] [SerializeField] float maxRanpRange = 100;
     [Header("変更するタイル")] [SerializeField] Tilemap[] tilemap;
-    [Header("ライト")] [SerializeField] Light[] ranp;
+    [Header("自身の灯り")] [SerializeField] Light selfRanp;
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>(); // アニメーター取得
     }
     /// <summary> ランプ変更 </summary>
-    /// <param name="value">変更後の値</param> <param name="colorkind">色</param>
-    private void RanpChange(decoy.Colorkind colorkind)
+    /// <param name="colorkind">色</param> <param name="l">変更されたランプ</param>
+    private void RanpChange(decoy.Colorkind colorkind, Light l)
     {
         if (colorkind == decoy.Colorkind.purple) return; // デコイなら無視
-        Color lightColor = Color.white; // 変更後の色
+        StartCoroutine(RanpColorFade(colorkind, l)); // ランプの色を変更
+        animator.SetInteger(stateAnim, (int)colorkind); // アニメ変更
+    }
+    /// <summary> ランプの色変更 </summary>
+    /// <param name="colorkind">変更後のランプの色</param> <param name="l">変更されたランプ</param>
+    /// <returns></returns>
+    private IEnumerator RanpColorFade(decoy.Colorkind colorkind, Light l)
+    {
+        // 変更前の灯りの色、変更後の色
+        Color oldColor = selfRanp.color, lightColor = Color.white;
         // インクの色で灯りを変更
         switch (colorkind)
         {
@@ -39,19 +50,22 @@ public class RanpWall : MonoBehaviour
             default:
                 break;
         }
-        // 灯りの色変更
-        foreach (var r in ranp)
+        // 経過時間、元の灯りの大きさ
+        float time = 0.0f, oldRange = selfRanp.range;
+        // 色を変更
+        while (time < changeTime)
         {
-            r.color = lightColor;
+            Color addC = Color.Lerp(oldColor, lightColor, time / changeTime); // 変更する色
+            selfRanp.color = addC;
+            // 変更された灯りなら一瞬だけ大きくし、その後元に戻す
+            if (selfRanp == l) selfRanp.range += time <= changeTime / 2 ?
+                    (maxRanpRange - oldRange) / (changeTime / 2) :
+                    (oldRange - maxRanpRange) / (changeTime / 2);
+            time += Time.deltaTime;
+            yield return 0;
         }
-        animator.SetInteger(stateAnim, (int)colorkind); // アニメ変更
-        // タイル表示
-        for (int t = 0; t < tilemap.Length; t++)
-        {
-            Color color = tilemap[t].color; // タイルの色
-            color.a = t == (int)colorkind ? 1.0f : 0.0f; // アルファ値を変更
-            tilemap[t].color = color;
-        }
+        selfRanp.color = lightColor; // 色変更
+        if (selfRanp == l) selfRanp.range = oldRange; // 変更された灯りなら元に戻す
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -62,7 +76,14 @@ public class RanpWall : MonoBehaviour
             // ランプ消灯 & 他のランプ点灯
             foreach(var ranp in ranps)
             {
-                ranp.RanpChange(d.state);
+                ranp.RanpChange(d.state, selfRanp);
+            }
+            // タイル表示
+            for (int t = 0; t < tilemap.Length; t++)
+            {
+                Color color = tilemap[t].color; // タイルの色
+                color.a = t == (int)d.state ? 1.0f : 0.0f; // アルファ値を変更
+                tilemap[t].color = color;
             }
         }
     }
