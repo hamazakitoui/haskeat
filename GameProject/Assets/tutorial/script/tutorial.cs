@@ -27,6 +27,7 @@ public class tutorial : MonoBehaviour
     [SerializeField] GameObject key;
     [SerializeField] LayerMask hitLayer;
     [SerializeField] int[] attentionnum;
+    [SerializeField] AudioClip TutorialBGM;
     enum tutorialfall
     {
         move,    //移動
@@ -45,6 +46,7 @@ public class tutorial : MonoBehaviour
         Player.GetComponent<PlMoveAction>().IsStop = true;
         Library.PrintMessage(message[textnum], messagetext, this);
         textnum++;
+        AudioManager.Instance.PlayBGM(TutorialBGM.name);
     }
 
     // Update is called once per frame
