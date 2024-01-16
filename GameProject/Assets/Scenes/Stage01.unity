@@ -18948,6 +18948,7 @@ MonoBehaviour:
   Escapeanim: {fileID: 1961138412}
   StageBGM: {fileID: 8300000, guid: f2ae90b8970ba544c9894bb5065ed60a, type: 3}
   discoveryBGM: {fileID: 8300000, guid: a11354c4aeea79e429c35cfc132c3efd, type: 3}
+  AlartSE: {fileID: 8300000, guid: 07647e9d89a1e374fb36d24c25d2b962, type: 3}
 --- !u!1 &1477044601
 GameObject:
   m_ObjectHideFlags: 0

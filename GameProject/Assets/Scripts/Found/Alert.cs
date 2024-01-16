@@ -16,6 +16,7 @@ public class Alert : MonoBehaviour
     [SerializeField] GameObject Escapeanim;
     [SerializeField] AudioClip StageBGM;
     [SerializeField] AudioClip discoveryBGM;
+    [SerializeField] AudioClip AlartSE;
     bool IsChengeBGM = true;
     // Start is called before the first frame update
     void Start()
@@ -51,6 +52,7 @@ public class Alert : MonoBehaviour
                 {
                     AudioManager.Instance.StopBGM();
                     AudioManager.Instance.PlayBGM(discoveryBGM.name);
+                    AudioManager.Instance.PlaySE(AlartSE.name, false);
                     GetComponent<Animator>().Play("Alert");
                     isfound = true;
                     isAlert = true;
