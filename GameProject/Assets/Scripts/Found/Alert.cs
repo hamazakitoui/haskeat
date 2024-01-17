@@ -14,9 +14,14 @@ public class Alert : MonoBehaviour
     int MaxAlert = 4;                              //最大回数
     [SerializeField] StageManager Stagemane;
     [SerializeField] GameObject Escapeanim;
+    [SerializeField] AudioClip StageBGM;
+    [SerializeField] AudioClip discoveryBGM;
+    [SerializeField] AudioClip AlartSE;
+    bool IsChengeBGM = true;
     // Start is called before the first frame update
     void Start()
     {
+        AudioManager.Instance.PlayBGM(StageBGM.name);
         Base = new EnemyBase[Enemy.Length];
         for (int i = 0; i < Enemy.Length; i++)        //エネミーさんをカウント
         {
@@ -43,32 +48,46 @@ public class Alert : MonoBehaviour
         {
             if (Base[i].Getfound)
             {
-                if(!isfound)
+                if (!isfound)
                 {
+                    AudioManager.Instance.StopBGM();
+                    AudioManager.Instance.PlayBGM(discoveryBGM.name);
+                    AudioManager.Instance.PlaySE(AlartSE.name, false);
                     GetComponent<Animator>().Play("Alert");
                     isfound = true;
                     isAlert = true;
                 }
                 checkfound |= Base[i].Getfound;
-                                 //時間計測
+                //時間計測
             }
         }
-        
+
         if (!checkfound)
         {
             isfound = false;
         }
-        if(isfound==true)
+        if (isfound == true)
         {
+
             if (Alertnum > MaxAlert)
             {
                 GetComponent<Animator>().Play("StayAlert");
                 Alertnum = 0;
             }
-            else if(isAlert==true)
+            else if (isAlert == true)
             {
                 Alertnum += Time.deltaTime;
 
+
+            }
+            IsChengeBGM = false;
+        }
+        else
+        {
+            if (!IsChengeBGM)
+            {
+                AudioManager.Instance.PlayBGM(StageBGM.name);
+                IsChengeBGM = true;
             }
         }
     }

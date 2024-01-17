@@ -16,6 +16,7 @@ public class TitleManager : MonoBehaviour
     [SerializeField] SceneObject tutorialScene; // ゲームシーン
     [SerializeField] Sprite[] pictures; // 絵の配列
     [SerializeField] bool IsTitle;
+    [SerializeField] AudioClip TitleBGM;
     [SerializeField] Image SelectArrow;
     public bool Effectend;
     const int maxselect = 2;
@@ -33,7 +34,8 @@ public class TitleManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        
+        AudioManager.Instance.PlayBGM(TitleBGM.name);
         if (IsTitle)
         {
             PaintBall.SetActive(false); // ペイント非表示
@@ -49,6 +51,7 @@ public class TitleManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
 
         if (!textfade.ISSelectFadeIn)
         {
