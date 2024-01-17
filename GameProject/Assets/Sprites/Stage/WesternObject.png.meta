@@ -1,7 +1,241 @@
 fileFormatVersion: 2
 guid: 063129e721e6b124099b11e87048eb12
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 4727935710537205842
+    second: WesternObject_0
+  - first:
+      213: 5562049138063809580
+    second: WesternObject_1
+  - first:
+      213: -6921912948324253161
+    second: WesternObject_2
+  - first:
+      213: 6761460636658092933
+    second: WesternObject_3
+  - first:
+      213: 3235774153582366439
+    second: WesternObject_4
+  - first:
+      213: -3413786679652318128
+    second: WesternObject_5
+  - first:
+      213: 1424745459106980972
+    second: WesternObject_6
+  - first:
+      213: 3711823951587426358
+    second: WesternObject_7
+  - first:
+      213: -39214917101446373
+    second: WesternObject_8
+  - first:
+      213: 2527854804457822683
+    second: WesternObject_9
+  - first:
+      213: 235474775856617341
+    second: WesternObject_10
+  - first:
+      213: -6486705758241334473
+    second: WesternObject_11
+  - first:
+      213: -2121744782252256278
+    second: WesternObject_12
+  - first:
+      213: -8843919631354315870
+    second: WesternObject_13
+  - first:
+      213: 6621657815334166442
+    second: WesternObject_14
+  - first:
+      213: -7096434032264616354
+    second: WesternObject_15
+  - first:
+      213: -4477140085360146443
+    second: WesternObject_16
+  - first:
+      213: 8554411039772356340
+    second: WesternObject_17
+  - first:
+      213: 2402699775307317872
+    second: WesternObject_18
+  - first:
+      213: -5879888107779829674
+    second: WesternObject_19
+  - first:
+      213: -2993585606607710885
+    second: WesternObject_20
+  - first:
+      213: -8710656891595333428
+    second: WesternObject_21
+  - first:
+      213: -4350517359915123532
+    second: WesternObject_22
+  - first:
+      213: -1962859084076689205
+    second: WesternObject_23
+  - first:
+      213: -7347551659601749866
+    second: WesternObject_24
+  - first:
+      213: 8446442946830115975
+    second: WesternObject_25
+  - first:
+      213: -1939237995760380398
+    second: WesternObject_26
+  - first:
+      213: -4100552345529492480
+    second: WesternObject_27
+  - first:
+      213: -715966839632061322
+    second: WesternObject_28
+  - first:
+      213: 4548138473184229925
+    second: WesternObject_29
+  - first:
+      213: -3338246457673509700
+    second: WesternObject_30
+  - first:
+      213: 4714369973203590430
+    second: WesternObject_31
+  - first:
+      213: 3826961558513237639
+    second: WesternObject_32
+  - first:
+      213: -4646454227823861033
+    second: WesternObject_33
+  - first:
+      213: 548595501492526199
+    second: WesternObject_34
+  - first:
+      213: -2995101159646807257
+    second: WesternObject_35
+  - first:
+      213: 2196213075810120473
+    second: WesternObject_36
+  - first:
+      213: 6236522390856428611
+    second: WesternObject_37
+  - first:
+      213: 2265148732699251263
+    second: WesternObject_38
+  - first:
+      213: -4154916614150686389
+    second: WesternObject_39
+  - first:
+      213: 7207762191066517192
+    second: WesternObject_40
+  - first:
+      213: 5223162248506738654
+    second: WesternObject_41
+  - first:
+      213: 3258787749896171073
+    second: WesternObject_42
+  - first:
+      213: -2515640833810034664
+    second: WesternObject_43
+  - first:
+      213: -4463536012772827328
+    second: WesternObject_44
+  - first:
+      213: 2363308578987983223
+    second: WesternObject_45
+  - first:
+      213: -6760521709464713020
+    second: WesternObject_46
+  - first:
+      213: 7847894471933453845
+    second: WesternObject_47
+  - first:
+      213: 7004841022496415953
+    second: WesternObject_48
+  - first:
+      213: -6763569723077622225
+    second: WesternObject_49
+  - first:
+      213: 4937265379855132400
+    second: WesternObject_50
+  - first:
+      213: -594889220913952975
+    second: WesternObject_51
+  - first:
+      213: 5116392296716873012
+    second: WesternObject_52
+  - first:
+      213: 6613503820281373205
+    second: WesternObject_53
+  - first:
+      213: 5101175646269351804
+    second: WesternObject_54
+  - first:
+      213: 8809854604624183853
+    second: WesternObject_55
+  - first:
+      213: -2862627428723480581
+    second: WesternObject_56
+  - first:
+      213: 1948739795409672532
+    second: WesternObject_57
+  - first:
+      213: -3584312805711882004
+    second: WesternObject_58
+  - first:
+      213: -4604171535929939476
+    second: WesternObject_59
+  - first:
+      213: 482358738027996198
+    second: WesternObject_60
+  - first:
+      213: -1576495325371228577
+    second: WesternObject_61
+  - first:
+      213: 7378298328785397933
+    second: WesternObject_62
+  - first:
+      213: 2365430731811131868
+    second: WesternObject_63
+  - first:
+      213: 241899506680484336
+    second: WesternObject_64
+  - first:
+      213: 4693526961412073625
+    second: WesternObject_65
+  - first:
+      213: 4625272598296290924
+    second: WesternObject_66
+  - first:
+      213: 200330430275591919
+    second: WesternObject_67
+  - first:
+      213: 3268287799218103116
+    second: WesternObject_68
+  - first:
+      213: -2489578045242314852
+    second: WesternObject_69
+  - first:
+      213: 6710941671820892846
+    second: WesternObject_70
+  - first:
+      213: 8390290999728140084
+    second: WesternObject_71
+  - first:
+      213: -8203079896952549534
+    second: WesternObject_72
+  - first:
+      213: -4848069653194059267
+    second: WesternObject_73
+  - first:
+      213: 4538314096615423305
+    second: WesternObject_74
+  - first:
+      213: 3702709969837225173
+    second: WesternObject_75
+  - first:
+      213: -9017427653573553671
+    second: WesternObject_76
+  - first:
+      213: 8807118504433416532
+    second: WesternObject_77
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,12 +274,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -71,9 +305,1659 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: WesternObject_0
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 482
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2584473aa700d9140800000000000000
+      internalID: 4727935710537205842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_1
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 489
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2c9f89d83e503d40800000000000000
+      internalID: 5562049138063809580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_2
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 481
+        width: 60
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 712c4fce8dc60ff90800000000000000
+      internalID: -6921912948324253161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_3
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 484
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58bcac210a885dd50800000000000000
+      internalID: 6761460636658092933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_4
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 485
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eecaa5e277c7ec20800000000000000
+      internalID: 3235774153582366439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_5
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 480
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0540d541a1bcf90d0800000000000000
+      internalID: -3413786679652318128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_6
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 482
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c642c694276b5c310800000000000000
+      internalID: 1424745459106980972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_7
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 488
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 630c727c73c038330800000000000000
+      internalID: 3711823951587426358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_8
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 490
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1b954c9d3ea47ff0800000000000000
+      internalID: -39214917101446373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_9
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 495
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd9197f2d8eb41320800000000000000
+      internalID: 2527854804457822683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_10
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 488
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d779f70af03944300800000000000000
+      internalID: 235474775856617341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_11
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 456
+        width: 64
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73b5b8d1b779af5a0800000000000000
+      internalID: -6486705758241334473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_12
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 426
+        width: 64
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae3d0ddac5c0e82e0800000000000000
+      internalID: -2121744782252256278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_13
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 322
+        width: 44
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2abb50fc3f5144580800000000000000
+      internalID: -8843919631354315870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_14
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 464
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaf9e2333bad4eb50800000000000000
+      internalID: 6621657815334166442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_15
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 456
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e56efde98d6648d90800000000000000
+      internalID: -7096434032264616354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_16
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 460
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f7427230d00ed1c0800000000000000
+      internalID: -4477140085360146443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_17
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 464
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4feaf48748f57b670800000000000000
+      internalID: 8554411039772356340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_18
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 422
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0728a1137ba185120800000000000000
+      internalID: 2402699775307317872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_19
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 423
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6505db04be0766ea0800000000000000
+      internalID: -5879888107779829674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_20
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 388
+        width: 61
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b55dc6160c5a476d0800000000000000
+      internalID: -2993585606607710885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_21
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 392
+        width: 63
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc0e62845b78d1780800000000000000
+      internalID: -8710656891595333428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_22
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 395
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bcb61dd28bdf93c0800000000000000
+      internalID: -4350517359915123532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_23
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 395
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc8d57d001682c4e0800000000000000
+      internalID: -1962859084076689205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_24
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 352
+        width: 63
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6981b90d1b0480a90800000000000000
+      internalID: -7347551659601749866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_25
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 320
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 784a965eb1bc73570800000000000000
+      internalID: 8446442946830115975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_26
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 301
+        width: 63
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21613cf31517615e0800000000000000
+      internalID: -1939237995760380398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_27
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 293
+        width: 57
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00cd1dd0e59e717c0800000000000000
+      internalID: -4100552345529492480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_28
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 224
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c95c4e3ff5016f0800000000000000
+      internalID: -715966839632061322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_29
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 224
+        width: 56
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52afe6328db3e1f30800000000000000
+      internalID: 4548138473184229925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_30
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 261
+        width: 81
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb41aa5988a2ca1d0800000000000000
+      internalID: -3338246457673509700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_31
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 266
+        width: 31
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d5198438ecc6140800000000000000
+      internalID: 4714369973203590430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_32
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 264
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78eb148e2491c1530800000000000000
+      internalID: 3826961558513237639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_33
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 289
+        width: 31
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d2627d6f7a748fb0800000000000000
+      internalID: -4646454227823861033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_34
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 263
+        width: 64
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77cd6d7b3b00d9700800000000000000
+      internalID: 548595501492526199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_35
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 262
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b34e03d534f66d0800000000000000
+      internalID: -2995101159646807257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_36
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 261
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 913faba08248a7e10800000000000000
+      internalID: 2196213075810120473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_37
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 160
+        width: 83
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34c64cc62149c8650800000000000000
+      internalID: 6236522390856428611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_38
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 162
+        width: 73
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3217f765cc6f6f10800000000000000
+      internalID: 2265148732699251263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_39
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 198
+        width: 21
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b49fd266a55c656c0800000000000000
+      internalID: -4154916614150686389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_40
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 198
+        width: 22
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cec200468d170460800000000000000
+      internalID: 7207762191066517192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_41
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 224
+        width: 96
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed7897a34666c7840800000000000000
+      internalID: 5223162248506738654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_42
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 230
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14ea4f6513a893d20800000000000000
+      internalID: 3258787749896171073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_43
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 160
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81019467df5a61dd0800000000000000
+      internalID: -2515640833810034664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_44
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 128
+        width: 23
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04f138c25a55e02c0800000000000000
+      internalID: -4463536012772827328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_45
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 136
+        width: 61
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 771463991a82cc020800000000000000
+      internalID: 2363308578987983223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_46
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 136
+        width: 61
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c80a03f25dcd22a0800000000000000
+      internalID: -6760521709464713020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_47
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 160
+        width: 31
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 516685a317259ec60800000000000000
+      internalID: 7847894471933453845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_48
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 173
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d0abf5fbc1363160800000000000000
+      internalID: 7004841022496415953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_49
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 169
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f260f5afb29f222a0800000000000000
+      internalID: -6763569723077622225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_50
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 100
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f6691844b0b48440800000000000000
+      internalID: 4937265379855132400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_51
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 100
+        width: 29
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13707bac7678eb7f0800000000000000
+      internalID: -594889220913952975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_52
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 104
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43daa51afa3110740800000000000000
+      internalID: 5116392296716873012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_53
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 136
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5126f884fa2e7cb50800000000000000
+      internalID: 6613503820281373205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_54
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 136
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7722cc19340bc640800000000000000
+      internalID: 5101175646269351804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_55
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 129
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d22c6771614e24a70800000000000000
+      internalID: 8809854604624183853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_56
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 129
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf7a5aa3587e548d0800000000000000
+      internalID: -2862627428723480581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_57
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 10
+        width: 32
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4599f01e4805b0b10800000000000000
+      internalID: 1948739795409672532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_58
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 97
+        width: 19
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce8d8a36e76f14ec0800000000000000
+      internalID: -3584312805711882004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_59
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 97
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce96eebc162ba10c0800000000000000
+      internalID: -4604171535929939476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_60
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 96
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 624e67277bea1b600800000000000000
+      internalID: 482358738027996198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_61
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 99
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e1f2daad92f1ae0800000000000000
+      internalID: -1576495325371228577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_62
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 104
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da8ac16fc3bf46660800000000000000
+      internalID: 7378298328785397933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_63
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 99
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd1156ec7b2b3d020800000000000000
+      internalID: 2365430731811131868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_64
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 9
+        width: 63
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f15807d1566b5300800000000000000
+      internalID: 241899506680484336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_65
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 6
+        width: 127
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9986fae67e1c22140800000000000000
+      internalID: 4693526961412073625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_66
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 6
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c666cc22ce4403040800000000000000
+      internalID: 4625272598296290924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_67
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 7
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee17460777b7c200800000000000000
+      internalID: 200330430275591919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_68
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 0
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c436320ff6a4b5d20800000000000000
+      internalID: 3268287799218103116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_69
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 1
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9f68bc45fd337dd0800000000000000
+      internalID: -2489578045242314852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_70
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 1
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa1049f4ed022d50800000000000000
+      internalID: 6710941671820892846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_71
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 2
+        width: 31
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43fe3f8e53d407470800000000000000
+      internalID: 8390290999728140084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_72
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 448
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26fcef5ab4ec82e80800000000000000
+      internalID: -8203079896952549534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_73
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 449
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df1540b265238bcb0800000000000000
+      internalID: -4848069653194059267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_74
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 417
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94df8e730a45bfe30800000000000000
+      internalID: 4538314096615423305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_75
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 416
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d4f17a891ba26330800000000000000
+      internalID: 3702709969837225173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_76
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 365
+        width: 33
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f1d6f05359abd280800000000000000
+      internalID: -9017427653573553671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WesternObject_77
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 94
+        width: 70
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 459f58f1e9b293a70800000000000000
+      internalID: 8807118504433416532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
