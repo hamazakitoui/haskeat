@@ -126,6 +126,8 @@ public class Policeman : EnemyBase, IEnemy
                     }
                     // 前向きなら
                     else state = 1;
+                    // 視界の角度設定
+                    sightRenderer.rectTransform.rotation = Quaternion.Euler(0, 0, foundRad / 2);
                     break;
                 // 下向き
                 case 1:
@@ -137,11 +139,15 @@ public class Policeman : EnemyBase, IEnemy
                     }
                     oldState = state;
                     state = 0;
+                    sightRenderer.rectTransform.rotation = Quaternion.Euler
+                        (0, 0, Dictionary.DEG_MAX * 3 / 4 + foundRad / 2);
                     break;
                 // 上向き
                 case 2:
                     oldState = state;
                     state = 0;
+                    sightRenderer.rectTransform.rotation = Quaternion.Euler
+                        (0, 0, Dictionary.DEG_MAX / 4 + foundRad / 2);
                     break;
                 default:
                     break;
