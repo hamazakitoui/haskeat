@@ -22,6 +22,8 @@ public class Policeman : EnemyBase, IEnemy
     void Start()
     {
         StartSet(); // 初期処理
+        // プレイヤー検索
+        player = GameObject.FindGameObjectWithTag(Dictionary.PLAYER_TAG).GetComponent<PlMoveAction>();
         // 関数登録
         handler += PlayerFound;
         handler += AnimationRotate;
