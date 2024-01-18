@@ -107,7 +107,6 @@ public class Policeman : EnemyBase, IEnemy
     {
         if (foundPlayer) return; // プレイヤーを見つけてたら無視
         animDelta += Time.deltaTime;
-        Debug.Log("de");
         if (animDelta > rotSpan)
         {
             int state = animator.GetInteger(stateAnim); // アニメ状態
