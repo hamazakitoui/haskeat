@@ -71,6 +71,7 @@ public class RanpWall : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         decoy d = collision.GetComponent<decoy>(); // デコイ検索
+        Debug.Log($"デコイある? {d != null}");
         if (d != null)
         {
             RanpWall[] ranps = FindObjectsOfType<RanpWall>(); // 全てのランプ検索
