@@ -7,6 +7,7 @@ public class RanpWall : MonoBehaviour
 {
     // アニメーションステート名
     readonly string stateAnim = "State";
+    bool trigger = true;
     Animator animator; // アニメーター
     [Header("ライト変更時の時間")] [SerializeField] float changeTime = 1.0f;
     [Header("灯りの瞬間光度")] [SerializeField] float maxRanpRange = 100;
@@ -68,35 +69,32 @@ public class RanpWall : MonoBehaviour
         selfRanp.color = lightColor; // 色変更
         if (selfRanp == l) selfRanp.range = oldRange; // 変更された灯りなら元に戻す
     }
-    void OnTriggerEnter2D(Collider2D collision)
+    /// <summary> ランプ変更 </summary>
+    /// <param name="d">スプレー</param>
+    public void RanpChange(decoy d)
     {
-        decoy d = collision.GetComponent<decoy>(); // デコイ検索
-        Debug.Log($"デコイある? {d != null}");
-        if (d != null)
+        RanpWall[] ranps = FindObjectsOfType<RanpWall>(); // 全てのランプ検索
+        // ランプ消灯 & 他のランプ点灯
+        foreach (var ranp in ranps)
         {
-            RanpWall[] ranps = FindObjectsOfType<RanpWall>(); // 全てのランプ検索
-            // ランプ消灯 & 他のランプ点灯
-            foreach(var ranp in ranps)
+            ranp.RanpChange(d.state, selfRanp);
+        }
+        // タイル表示切り替え
+        for (int t = 0; t < tilemap.Count; t++)
+        {
+            for (int u = 0; u < tilemap[t].Length; u++)
             {
-                ranp.RanpChange(d.state, selfRanp);
+                Color color = tilemap[t][u].color; // タイルの色
+                color.a = t == (int)d.state ? 1.0f : 0.0f; // アルファ値を変更
+                tilemap[t][u].color = color;
             }
-            // タイル表示切り替え
-            for (int t = 0; t < tilemap.Count; t++)
+        }
+        // 絵画表示切替
+        for (int p = 0; p < pictures.Count; p++)
+        {
+            for (int q = 0; q < pictures[p].Length; q++)
             {
-                for(int u = 0; u < tilemap[t].Length; u++)
-                {
-                    Color color = tilemap[t][u].color; // タイルの色
-                    color.a = t == (int)d.state ? 1.0f : 0.0f; // アルファ値を変更
-                    tilemap[t][u].color = color;
-                }
-            }
-            // 絵画表示切替
-            for(int p = 0; p < pictures.Count; p++)
-            {
-                for(int q = 0; q < pictures[p].Length; q++)
-                {
-                    pictures[p][q].SetActive(p == (int)d.state);
-                }
+                pictures[p][q].SetActive(p == (int)d.state);
             }
         }
     }
