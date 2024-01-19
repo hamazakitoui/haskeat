@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 /// <summary> 多次元配列Inspector表示用構造体 </summary>
 namespace UnityEngine.ListArray
@@ -119,6 +120,21 @@ namespace UnityEngine.ListArray
         [SerializeField] private List<Transform> storage = new List<Transform>();
         /// <summary> 要素 </summary> <param name="i">要素番号</param> <returns></returns>
         public Transform this[int i]
+        {
+            get { return this.storage[i]; }
+            set { this.storage[i] = value; }
+        }
+        /// <summary> 要素数 </summary>
+        public int Length { get { return storage.Count; } }
+    }
+    /// <summary> 2次元配列Inspector表示用クラス Tilemap型 </summary>
+    [Serializable]
+    public class ListArrayTilemap
+    {
+        // 収納配列
+        [SerializeField] private List<Tilemap> storage = new List<Tilemap>();
+        /// <summary> 要素 </summary> <param name="i">要素番号</param> <returns></returns>
+        public Tilemap this[int i]
         {
             get { return this.storage[i]; }
             set { this.storage[i] = value; }

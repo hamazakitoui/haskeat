@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Tilemaps;
 using UnityEngine.ListArray;
 
 public class RanpWall : MonoBehaviour
@@ -11,7 +10,7 @@ public class RanpWall : MonoBehaviour
     Animator animator; // アニメーター
     [Header("ライト変更時の時間")] [SerializeField] float changeTime = 1.0f;
     [Header("灯りの瞬間光度")] [SerializeField] float maxRanpRange = 100;
-    [Header("変更するタイル")] [SerializeField] Tilemap[] tilemap;
+    [Header("変更するタイル")] [SerializeField] List<ListArrayTilemap> tilemap;
     [Header("表示変更する絵")] [SerializeField] List<ListArrayGameObject> pictures;
     [Header("自身の灯り")] [SerializeField] Light selfRanp;
     // Start is called before the first frame update
@@ -80,12 +79,15 @@ public class RanpWall : MonoBehaviour
             {
                 ranp.RanpChange(d.state, selfRanp);
             }
-            // タイル表示
-            for (int t = 0; t < tilemap.Length; t++)
+            // タイル表示切り替え
+            for (int t = 0; t < tilemap.Count; t++)
             {
-                Color color = tilemap[t].color; // タイルの色
-                color.a = t == (int)d.state ? 1.0f : 0.0f; // アルファ値を変更
-                tilemap[t].color = color;
+                for(int u = 0; u < tilemap[t].Length; u++)
+                {
+                    Color color = tilemap[t][u].color; // タイルの色
+                    color.a = t == (int)d.state ? 1.0f : 0.0f; // アルファ値を変更
+                    tilemap[t][u].color = color;
+                }
             }
             // 絵画表示切替
             for(int p = 0; p < pictures.Count; p++)
