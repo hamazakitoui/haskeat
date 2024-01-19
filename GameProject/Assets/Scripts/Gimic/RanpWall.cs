@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using UnityEngine.ListArray;
 
 public class RanpWall : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class RanpWall : MonoBehaviour
     [Header("ライト変更時の時間")] [SerializeField] float changeTime = 1.0f;
     [Header("灯りの瞬間光度")] [SerializeField] float maxRanpRange = 100;
     [Header("変更するタイル")] [SerializeField] Tilemap[] tilemap;
+    [Header("表示変更する絵")] [SerializeField] List<ListArrayGameObject> pictures;
     [Header("自身の灯り")] [SerializeField] Light selfRanp;
     // Start is called before the first frame update
     void Start()
@@ -84,6 +86,14 @@ public class RanpWall : MonoBehaviour
                 Color color = tilemap[t].color; // タイルの色
                 color.a = t == (int)d.state ? 1.0f : 0.0f; // アルファ値を変更
                 tilemap[t].color = color;
+            }
+            // 絵画表示切替
+            for(int p = 0; p < pictures.Count; p++)
+            {
+                for(int q = 0; q < pictures[p].Length; q++)
+                {
+                    pictures[p][q].SetActive(p == (int)d.state);
+                }
             }
         }
     }
