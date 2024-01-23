@@ -8,7 +8,7 @@ public class ClaerManeger : MonoBehaviour
     [SerializeField] Text messagetext;
     float AnimCount;
     int CountMax=2;
-    string Scenename = "TitleScene";
+    string Scenename = "Stage02";
     [SerializeField] string message = "ステージクリア！！";
     bool AnimEnd;
     bool ismessage;

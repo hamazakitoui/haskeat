@@ -224,6 +224,20 @@ public class PlMoveAction : MonoBehaviour
                             nowcolor = Colorscript.colornum;
                             Colorscript.uselimitnum[nowcolor]--;
                         }
+                        RanpWall ranp = art.GetComponent<RanpWall>();
+                        if (ranp != null)
+                        {
+                            Debug.Log("Check");
+                            GameObject Effect = Instantiate(Artpaint[nowcolor]);
+                            //罠にスクリプトをアタッチ
+                            decoy d = Effect.AddComponent<decoy>();
+                            d.state = (decoy.Colorkind)System.Enum.ToObject(typeof(decoy.Colorkind), nowcolor);
+                            ranp.RanpChange(d);
+                        }
+                        Colorscript.uselimitnum[nowcolor]--;
+
+
+                        Debug.Log(Colorscript.uselimitnum[nowcolor]);
 
                     }
                 }
@@ -274,9 +288,16 @@ public class PlMoveAction : MonoBehaviour
                                 e.SetDecoy(paintEffect[paintEffect.Count - 1].transform);
                             }
 
+                            
+                        }
+                        RanpWall ranp = art.GetComponent<RanpWall>();
+                        if (ranp != null)
+                        {
+                            Debug.Log("Check");
+                            ranp.RanpChange(Effect.GetComponent<decoy>());
                         }
                         Colorscript.uselimitnum[nowcolor]--;
-                        Debug.Log(Colorscript.uselimitnum[nowcolor]);
+
                         //else
                         //{
                         //    Colorscript.uselimitnum[nowcolor] = 0;
@@ -484,7 +505,7 @@ public class PlMoveAction : MonoBehaviour
 
     void checkArrowkey()
     {
-        if (Input.GetKey(KeyCode.UpArrow)) 
+        if (Input.GetKey(KeyCode.UpArrow))
         {
             InputY = 1;
         }
@@ -492,7 +513,7 @@ public class PlMoveAction : MonoBehaviour
         {
             InputY = -1;
         }
-        else if(!Input.GetKey(KeyCode.UpArrow)&&!Input.GetKeyDown(KeyCode.DownArrow))
+        else if (!Input.GetKey(KeyCode.UpArrow) && !Input.GetKeyDown(KeyCode.DownArrow))
         {
             InputY = 0;
         }
