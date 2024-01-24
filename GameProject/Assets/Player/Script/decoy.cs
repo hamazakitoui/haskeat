@@ -32,7 +32,6 @@ public class decoy : MonoBehaviour
             return;
         }
         GameObject Player = GameObject.Find("Player");
-        Debug.Log(Player);
         EnemyBase[] enemies = FindObjectsOfType<EnemyBase>();
         PlMoveAction Plscript=Player.GetComponent<PlMoveAction>();
         foreach (var e in enemies)

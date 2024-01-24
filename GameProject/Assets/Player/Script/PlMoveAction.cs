@@ -60,6 +60,7 @@ public class PlMoveAction : MonoBehaviour
         Left,
         Diagonal
     };
+    float InvisibleTime;
     Pldirection state = Pldirection.none;
     // Start is called before the first frame update
     void Start()
@@ -80,6 +81,16 @@ public class PlMoveAction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(notfound);
+        if (notfound)
+        {
+            InvisibleTime += Time.deltaTime;
+            if (InvisibleTime>3.7)
+            {
+                notfound = false;
+                InvisibleTime = 0;
+            }
+        }
         if (IsStop)
         {
             return;
@@ -224,20 +235,32 @@ public class PlMoveAction : MonoBehaviour
                             nowcolor = Colorscript.colornum;
                         }
                         RanpWall ranp = art.GetComponent<RanpWall>();
+                        bool isUse = true;
                         if (ranp != null)
                         {
                             Debug.Log("Check");
-                            GameObject Effect = Instantiate(Artpaint[nowcolor]);
-                            //罠にスクリプトをアタッチ
-                            decoy d = Effect.AddComponent<decoy>();
-                            d.state = (decoy.Colorkind)System.Enum.ToObject(typeof(decoy.Colorkind), nowcolor);
-                            ranp.RanpChange(d);
+
+                            if (nowcolor == 3)
+                            {
+                                if (art.tag == "toche")
+                                {
+                                    isUse = false;
+                                }
+                            }
+                            else
+                            {
+                                GameObject Effect = Instantiate(Artpaint[nowcolor]);
+                                //罠にスクリプトをアタッチ
+                                decoy d = Effect.AddComponent<decoy>();
+                                d.state = (decoy.Colorkind)System.Enum.ToObject(typeof(decoy.Colorkind), nowcolor);
+                                ranp.RanpChange(d);
+
+                            }
                         }
-                        Colorscript.uselimitnum[nowcolor]--;
-
-
-                        Debug.Log(Colorscript.uselimitnum[nowcolor]);
-
+                        if (isUse)
+                        {
+                            Colorscript.uselimitnum[nowcolor]--;
+                        }
                     }
                 }
             }
@@ -287,18 +310,8 @@ public class PlMoveAction : MonoBehaviour
                                 e.SetDecoy(paintEffect[paintEffect.Count - 1].transform);
                             }
                         }
-                        RanpWall ranp = art.GetComponent<RanpWall>();
-                        if (ranp != null)
-                        {
-                            Debug.Log("Check");
-                            ranp.RanpChange(Effect.GetComponent<decoy>());
-                        }
-                        Colorscript.uselimitnum[nowcolor]--;
 
-                        //else
-                        //{
-                        //    Colorscript.uselimitnum[nowcolor] = 0;
-                        //}
+                        Colorscript.uselimitnum[nowcolor]--;
                     }
                     else if (art.tag == "wall")
                     {
@@ -387,13 +400,6 @@ public class PlMoveAction : MonoBehaviour
         {
             Debug.Log("invisible");
             notfound = true;
-        }
-    }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.tag == "invisible")
-        {
-            notfound = false;
         }
     }
     bool checkfront()

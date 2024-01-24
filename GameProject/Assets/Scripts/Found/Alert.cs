@@ -11,7 +11,7 @@ public class Alert : MonoBehaviour
     bool isAlert;
     EnemyBase[] Base;                         //部屋
     float Alertnum;                              //アラート回数
-    int MaxAlert = 4;                              //最大回数
+    int MaxAlert = 3;                              //最大回数
     [SerializeField] StageManager Stagemane;
     [SerializeField] GameObject Escapeanim;
     [SerializeField] AudioClip StageBGM;
@@ -58,7 +58,6 @@ public class Alert : MonoBehaviour
                     isAlert = true;
                 }
                 checkfound |= Base[i].Getfound;
-                //時間計測
             }
         }
 
@@ -73,13 +72,13 @@ public class Alert : MonoBehaviour
             {
                 GetComponent<Animator>().Play("StayAlert");
                 Alertnum = 0;
+                isAlert = false;
             }
-            else if (isAlert == true)
+            if (isAlert == true)
             {
                 Alertnum += Time.deltaTime;
-
-
             }
+            
             IsChengeBGM = false;
         }
         else
