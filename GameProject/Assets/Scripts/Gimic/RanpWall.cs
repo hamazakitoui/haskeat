@@ -73,6 +73,7 @@ public class RanpWall : MonoBehaviour
     /// <param name="d">スプレー</param>
     public void RanpChange(decoy d)
     {
+        if (d.state == decoy.Colorkind.purple) return; // 黒は処理ししない
         RanpWall[] ranps = FindObjectsOfType<RanpWall>(); // 全てのランプ検索
         // ランプ消灯 & 他のランプ点灯
         foreach (var ranp in ranps)
