@@ -18,6 +18,8 @@ public class StageManager : MonoBehaviour
     [SerializeField] ClearCondition Condition; // クリア条件
     [SerializeField] SceneObject GameScene; // ゲームシーン
     int num;
+    [SerializeField] Canvas escapeEffect;
+    [SerializeField] GameObject[] Enemy;
     [SerializeField] Text nownolma;
     // Start is called before the first frame update
     void Start()
@@ -40,6 +42,11 @@ public class StageManager : MonoBehaviour
         GoalGate goal = FindObjectOfType<GoalGate>(); // ゴール取得
         Collider2D collider2 = goal.GetComponent<Collider2D>(); // コライダー取得
         collider2.isTrigger = true; // 逃走可能にする
+        escapeEffect.enabled = true;
+        for (int i = 0; i < Enemy.Length; i++)        //エネミーさんをカウント
+        {
+            Enemy[i].GetComponent<EnemyBase>().Discovery();
+        }
     }
     /// <summary> 開始時イベント </summary>
     /// <returns></returns>

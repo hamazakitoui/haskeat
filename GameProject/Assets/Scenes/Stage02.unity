@@ -27406,6 +27406,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 468804626}
   m_PrefabAsset: {fileID: 0}
+--- !u!223 &517703052 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 7111154626193678951, guid: f7e6fb83c8595634dbc6433fe7ca2b8c,
+    type: 3}
+  m_PrefabInstance: {fileID: 2019872236}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &533241239
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49748,7 +49754,7 @@ PrefabInstance:
     - target: {fileID: 3461995205324991538, guid: 3afc9579c83fdf34ead46e9ded57c057,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3afc9579c83fdf34ead46e9ded57c057, type: 3}
@@ -52114,7 +52120,7 @@ PrefabInstance:
     - target: {fileID: 3461995205324991538, guid: 3afc9579c83fdf34ead46e9ded57c057,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3afc9579c83fdf34ead46e9ded57c057, type: 3}
@@ -52567,6 +52573,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stagemaneger
       objectReference: {fileID: 0}
+    - target: {fileID: 8321691631420973714, guid: a74149aec14228f4085d692ec6d7d97b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8321691631420973715, guid: a74149aec14228f4085d692ec6d7d97b,
+        type: 3}
+      propertyPath: Enemy.Array.size
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8321691631420973715, guid: a74149aec14228f4085d692ec6d7d97b,
         type: 3}
       propertyPath: MissionText
@@ -52592,6 +52608,46 @@ PrefabInstance:
       propertyPath: picNolma
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 8321691631420973715, guid: a74149aec14228f4085d692ec6d7d97b,
+        type: 3}
+      propertyPath: escapeEffect
+      value: 
+      objectReference: {fileID: 517703052}
+    - target: {fileID: 8321691631420973715, guid: a74149aec14228f4085d692ec6d7d97b,
+        type: 3}
+      propertyPath: Enemy.Array.data[0]
+      value: 
+      objectReference: {fileID: 159556013}
+    - target: {fileID: 8321691631420973715, guid: a74149aec14228f4085d692ec6d7d97b,
+        type: 3}
+      propertyPath: Enemy.Array.data[1]
+      value: 
+      objectReference: {fileID: 2109554006}
+    - target: {fileID: 8321691631420973715, guid: a74149aec14228f4085d692ec6d7d97b,
+        type: 3}
+      propertyPath: Enemy.Array.data[2]
+      value: 
+      objectReference: {fileID: 1659105194}
+    - target: {fileID: 8321691631420973715, guid: a74149aec14228f4085d692ec6d7d97b,
+        type: 3}
+      propertyPath: Enemy.Array.data[3]
+      value: 
+      objectReference: {fileID: 1489584066}
+    - target: {fileID: 8321691631420973715, guid: a74149aec14228f4085d692ec6d7d97b,
+        type: 3}
+      propertyPath: Enemy.Array.data[4]
+      value: 
+      objectReference: {fileID: 1264442140}
+    - target: {fileID: 8321691631420973715, guid: a74149aec14228f4085d692ec6d7d97b,
+        type: 3}
+      propertyPath: Enemy.Array.data[5]
+      value: 
+      objectReference: {fileID: 1264442140}
+    - target: {fileID: 8321691631420973715, guid: a74149aec14228f4085d692ec6d7d97b,
+        type: 3}
+      propertyPath: Enemy.Array.data[6]
+      value: 
+      objectReference: {fileID: 159556013}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a74149aec14228f4085d692ec6d7d97b, type: 3}
 --- !u!1 &1404323559 stripped

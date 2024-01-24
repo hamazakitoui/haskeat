@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Stage01.unity
     guid: a5d40378d1c24044f858743a238f7816
   - enabled: 1
+    path: Assets/Scenes/Stage02.unity
+    guid: 820dea9de3a8a6d43988d12f8d499832
+  - enabled: 1
     path: Assets/Scenes/ClearScene.unity
     guid: 9aefb1fe1d13d49409c353438b80fd67
   - enabled: 1

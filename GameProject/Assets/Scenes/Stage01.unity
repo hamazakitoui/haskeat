@@ -28132,6 +28132,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cliareffect
       objectReference: {fileID: 0}
+    - target: {fileID: 7111154626193678948, guid: f7e6fb83c8595634dbc6433fe7ca2b8c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7111154626193678968, guid: f7e6fb83c8595634dbc6433fe7ca2b8c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28239,6 +28244,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7e6fb83c8595634dbc6433fe7ca2b8c, type: 3}
+--- !u!223 &7111154626405268105 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 7111154626193678951, guid: f7e6fb83c8595634dbc6433fe7ca2b8c,
+    type: 3}
+  m_PrefabInstance: {fileID: 7111154626405268104}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8321691630803921150
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28308,6 +28319,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8321691631420973715, guid: a74149aec14228f4085d692ec6d7d97b,
         type: 3}
+      propertyPath: Enemy.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8321691631420973715, guid: a74149aec14228f4085d692ec6d7d97b,
+        type: 3}
       propertyPath: MissionText
       value: 
       objectReference: {fileID: 1159514352}
@@ -28326,6 +28342,31 @@ PrefabInstance:
       propertyPath: StageBGM
       value: 
       objectReference: {fileID: 8300000, guid: f2ae90b8970ba544c9894bb5065ed60a, type: 3}
+    - target: {fileID: 8321691631420973715, guid: a74149aec14228f4085d692ec6d7d97b,
+        type: 3}
+      propertyPath: escapeEffect
+      value: 
+      objectReference: {fileID: 7111154626405268105}
+    - target: {fileID: 8321691631420973715, guid: a74149aec14228f4085d692ec6d7d97b,
+        type: 3}
+      propertyPath: Enemy.Array.data[0]
+      value: 
+      objectReference: {fileID: 469855680}
+    - target: {fileID: 8321691631420973715, guid: a74149aec14228f4085d692ec6d7d97b,
+        type: 3}
+      propertyPath: Enemy.Array.data[1]
+      value: 
+      objectReference: {fileID: 2036668592}
+    - target: {fileID: 8321691631420973715, guid: a74149aec14228f4085d692ec6d7d97b,
+        type: 3}
+      propertyPath: Enemy.Array.data[2]
+      value: 
+      objectReference: {fileID: 277492016}
+    - target: {fileID: 8321691631420973715, guid: a74149aec14228f4085d692ec6d7d97b,
+        type: 3}
+      propertyPath: Enemy.Array.data[3]
+      value: 
+      objectReference: {fileID: 537442531}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a74149aec14228f4085d692ec6d7d97b, type: 3}
 --- !u!1001 &8731559140340180452

@@ -222,7 +222,6 @@ public class PlMoveAction : MonoBehaviour
                                 Destroy(art.gameObject);
                             }
                             nowcolor = Colorscript.colornum;
-                            Colorscript.uselimitnum[nowcolor]--;
                         }
                         RanpWall ranp = art.GetComponent<RanpWall>();
                         if (ranp != null)
@@ -287,8 +286,6 @@ public class PlMoveAction : MonoBehaviour
                             {
                                 e.SetDecoy(paintEffect[paintEffect.Count - 1].transform);
                             }
-
-                            
                         }
                         RanpWall ranp = art.GetComponent<RanpWall>();
                         if (ranp != null)
