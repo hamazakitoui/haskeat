@@ -23,7 +23,7 @@ public class ClaerManeger : MonoBehaviour
     void Update()
     {
         ismessage = Library.IsPrintMessage;
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             if (AnimEnd)
             {

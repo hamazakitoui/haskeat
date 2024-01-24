@@ -2165,6 +2165,11 @@ PrefabInstance:
       propertyPath: picNolma
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8321691631420973715, guid: a74149aec14228f4085d692ec6d7d97b,
+        type: 3}
+      propertyPath: GameScene.sceneName
+      value: Stage01
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a74149aec14228f4085d692ec6d7d97b, type: 3}
 --- !u!114 &848074092 stripped
