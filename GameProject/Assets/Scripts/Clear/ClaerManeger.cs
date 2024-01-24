@@ -7,10 +7,9 @@ public class ClaerManeger : MonoBehaviour
 {
     [SerializeField] Text messagetext;
     float AnimCount;
-    int CountMax=2;
+    int CountMax = 2;
     string Scenename = "Stage02";
     [SerializeField] string message = "ステージクリア！！";
-    bool AnimEnd;
     bool ismessage;
     bool TextStart = false;
     // Start is called before the first frame update
@@ -25,10 +24,7 @@ public class ClaerManeger : MonoBehaviour
         ismessage = Library.IsPrintMessage;
         if (Input.GetKeyDown(KeyCode.Z))
         {
-            if (AnimEnd)
-            {
-                FadeSceneManager.Instance.LoadScene(Scenename);
-            }
+            FadeSceneManager.Instance.LoadScene(Scenename);
         }
         if (AnimCount < CountMax)
         {
@@ -36,7 +32,7 @@ public class ClaerManeger : MonoBehaviour
         }
         else
         {
-            messagetext.enabled=true;
+            messagetext.enabled = true;
         }
 
 
